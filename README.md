@@ -1,133 +1,51 @@
-# Guild DIVINE (Guild Wars 2)
+<p align="center">
+  <img src="assets/readme/banner.jpg" alt="Arte oficial de Guild Wars 2: Visions of Eternity" width="100%">
+</p>
 
-Site estático com os guias da guilda **DIVINE**: Raids, Fractals, Dungeons, Endgame e Recursos Úteis.
-Cada guia funciona sozinho (CSS embutido), abre em qualquer navegador e tem a versão em PDF.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/logo-escuro.png">
+    <img src="assets/readme/logo-claro.png" alt="Brasão da guilda DIVINE" width="110">
+  </picture>
+</p>
 
-```
-divine-gw2-manual/
-├── index.html              ← página inicial (grid com os 5 guias)
-├── assets/
-│   ├── divine.css          ← folha de estilo única (fonte da verdade; é embutida nos guias)
-│   ├── fonts/              ← Barlow Condensed, Source Sans 3, IBM Plex Mono (OFL, auto-hospedadas)
-│   └── img/                ← cópias locais otimizadas de todas as imagens (JPEG/WebP)
-├── guias/
-│   ├── raids.html
-│   ├── fractals.html
-│   ├── dungeons.html
-│   ├── endgame.html
-│   └── recursos-uteis.html
-├── pdfs/                   ← mesmos guias em PDF (A4)
-└── README.md
-```
+<h1 align="center">Guild DIVINE</h1>
 
-> **Não edite os arquivos de `guias/` à mão.** Eles são gerados pelo `build_site.ps1` (na pasta-mãe)
-> a partir dos HTMLs originais + `_build/fixes.ps1`. Para mudar um texto: edite o original
-> (ou adicione uma correção em `_build/fixes.ps1`) e rode a build de novo.
+<p align="center">
+  <b>Guias da guilda para Guild Wars 2</b><br>
+  Fundamentos, builds e mecânicas de Raids, Fractals e Dungeons.
+</p>
+
+<p align="center">
+  <a href="https://marcos3g.github.io/divine-gw2-manual/"><img src="https://img.shields.io/badge/Abrir%20o%20site-0a7487?style=for-the-badge" alt="Abrir o site"></a>
+  <img src="https://img.shields.io/badge/atualizado-nov.%202026-8a5f0e?style=for-the-badge" alt="Atualizado em novembro de 2026">
+  <img src="https://img.shields.io/badge/idioma-PT--BR-44546a?style=for-the-badge" alt="Português do Brasil">
+</p>
 
 ---
 
-## Opção 1 — GitHub Pages (recomendado)
+## Guias
 
-Grátis, com histórico de versões e URL estável (`https://<usuario>.github.io/divine-gw2-manual/`).
+| | Guia | O que você encontra | |
+|:-:|---|---|---|
+| <img src="assets/img/4b61cGW2-EX6QR2-Wallpaper-1920x1080-7b99c4-760.jpg" width="180" alt=""> | **[Endgame](https://marcos3g.github.io/divine-gw2-manual/guias/endgame.html)**<br><sub>comece por aqui</sub> | Tipos de dano, boons e conditions, atributos, roles, builds, golem de treino, ArcDPS e como entrar em um squad. | [PDF](https://marcos3g.github.io/divine-gw2-manual/pdfs/endgame.pdf) |
+| <img src="assets/img/9a3b3gw2-ex6-voe-launch-wallpaper-1920x1080-7e4a01-760.jpg" width="180" alt=""> | **[Raids](https://marcos3g.github.io/divine-gw2-manual/guias/raids.html)** | As 8 wings e os 16 Raid Encounters, recompensas, CM e Legendary Mode, Quickplay e vídeo de cada boss. | [PDF](https://marcos3g.github.io/divine-gw2-manual/pdfs/raids.pdf) |
+| <img src="assets/img/mlNOp2u-0211f6-760.jpg" width="180" alt=""> | **[Fractals](https://marcos3g.github.io/divine-gw2-manual/guias/fractals.html)** | Tiers e Agony Resistance, instabilidades, dailies, Account Augmentations, títulos e Challenge Mode. | [PDF](https://marcos3g.github.io/divine-gw2-manual/pdfs/fractals.pdf) |
+| <img src="assets/img/Ascalonian-Catacombs-story-loading-screen-076a2d-760.jpg" width="180" alt=""> | **[Dungeons](https://marcos3g.github.io/divine-gw2-manual/guias/dungeons.html)** | As 8 dungeons clássicas de Tyria: acesso, recompensas, achievements e vídeo de cada path. | [PDF](https://marcos3g.github.io/divine-gw2-manual/pdfs/dungeons.pdf) |
+| <img src="assets/img/800px-The-Battle-for-Lion-s-Arch-loading-screen-7254a0-760.jpg" width="180" alt=""> | **[Recursos Úteis](https://marcos3g.github.io/divine-gw2-manual/guias/recursos-uteis.html)** | 56 sites e ferramentas da comunidade: builds, conta, logs, gold, crafting, mapas, WvW e homestead. | [PDF](https://marcos3g.github.io/divine-gw2-manual/pdfs/recursos-uteis.pdf) |
 
-**Pelo navegador (sem instalar nada):**
+## No site
 
-1. Entre em <https://github.com/new> e crie o repositório **`divine-gw2-manual`** (público).
-2. Na página do repositório: **Add file → Upload files** e arraste **o conteúdo** desta pasta
-   (`index.html`, `assets/`, `guias/`, `pdfs/`, `README.md`). Clique em **Commit changes**.
-3. Vá em **Settings → Pages** → *Build and deployment* → **Source: Deploy from a branch** →
-   Branch **`main`** / pasta **`/ (root)`** → **Save**.
-4. Em 1–2 minutos o site estará em `https://<seu-usuario>.github.io/divine-gw2-manual/`.
+- Tema **claro e escuro**, que segue o do seu sistema, com botão para trocar.
+- Funciona bem no **celular**.
+- **Sumário lateral** que acompanha a leitura.
+- **PDF** de cada guia para ler offline ou durante o jogo.
+- Informações conferidas na [Guild Wars 2 Wiki](https://wiki.guildwars2.com) em novembro de 2026.
 
-**Pelo terminal (com Git instalado):**
+## Créditos
 
-```bash
-cd divine-gw2-manual
-git init -b main
-git add .
-git commit -m "Manual da Guilda DIVINE"
-git remote add origin https://github.com/<seu-usuario>/divine-gw2-manual.git
-git push -u origin main
-```
+- Conteúdo: guilda **DIVINE**, a partir dos guias publicados no Discord da guilda.
+- Guild Wars 2 e suas artes são marcas da **ArenaNet**. Imagens: Guild Wars 2 Wiki, wallpapers oficiais do guildwars2.com e artes da guilda.
+- Ícones: [Lucide](https://lucide.dev) (ISC). Fontes: Barlow Condensed, Source Sans 3 e IBM Plex Mono (SIL Open Font License).
 
-Depois ative o Pages como no passo 3.
-
-**Para atualizar:** rode a build de novo e faça upload/commit dos arquivos alterados.
-
-## Opção 2 — Cloudflare Pages
-
-1. <https://dash.cloudflare.com> → **Workers & Pages → Create → Pages → Upload assets**.
-2. Nome do projeto: `divine-gw2-manual` → arraste esta pasta → **Deploy**.
-3. URL: `https://divine-gw2-manual.pages.dev` (dá para ligar a um domínio próprio depois).
-
-Também aceita conectar o repositório do GitHub para deploy automático a cada commit.
-
-## Opção 3 — Netlify
-
-1. <https://app.netlify.com/drop> → arraste esta pasta.
-2. Pronto: URL `https://<nome-aleatorio>.netlify.app` (renomeável em *Site configuration*).
-
-## Comparativo
-
-| | GitHub Pages | Cloudflare Pages | Netlify |
-|---|---|---|---|
-| Custo | Grátis | Grátis | Grátis (limite de banda generoso) |
-| Deploy | Upload/commit no repo | Arrastar pasta ou Git | Arrastar pasta ou Git |
-| Histórico de versões | ✅ completo (Git) | ✅ por deploy | ✅ por deploy |
-| Velocidade global | Boa | Excelente (CDN própria) | Muito boa |
-| Edição colaborativa | ✅ PRs / vários editores | Via Git | Via Git |
-| Conta necessária | GitHub | Cloudflare | Netlify |
-| Melhor para | Guilda com mais de um editor | Desempenho / domínio próprio | Publicar em 30 segundos |
-
-**Google Drive** serve só para guardar os PDFs: ele não renderiza HTML como site.
-
----
-
-## Como editar
-
-O passo a passo completo para mudar textos, imagens, logos e visual está em **`COMO_EDITAR.md`**, na pasta-mãe do projeto (fora desta pasta publicada). Lá também estão exemplos prontos de cada bloco.
-
-## Design
-
-O visual segue o design system **Codex DIVINE**, documentado em `DESIGN.md` na pasta-mãe (formato do blueprint TypeUI). Lá estão as fontes, os tokens de cor, os componentes e as regras. Qualquer mudança de estilo deve começar por esse arquivo.
-
-## Tema claro e escuro
-
-- Os guias seguem o tema do sistema (claro ou escuro).
-- O botão na barra do topo troca o tema, e a escolha fica salva no navegador.
-- **PDFs e impressão saem sempre no tema claro.**
-- Todas as cores vêm de tokens no topo de `assets/divine.css`. Para mudar a paleta, edite só ali.
-
-## Gerar de novo os HTMLs e PDFs
-
-Requisitos: Node.js. Na primeira vez, instale as dependências da build:
-
-```bash
-cd "_build"
-npm install
-```
-
-Depois, na pasta **`Guias Divine`** (pasta-mãe), no PowerShell:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\build_site.ps1 -Pdf
-```
-
-O que a build faz:
-1. `build_site.ps1` lê os HTMLs originais e aplica as correções de `_build/fixes.ps1`, o CSS, as âncoras e a logo.
-2. `_build/postprocess.mjs` organiza a estrutura semântica, troca emojis por ícones SVG (Lucide, licença ISC), revisa o texto e gera as cópias locais otimizadas das imagens.
-3. Com `-Pdf`, o Microsoft Edge imprime os PDFs (A4, sem cabeçalho nem rodapé do navegador).
-
-Sem `-Pdf`, gera só os HTMLs. Para conferir a qualidade (contraste, celular, tema escuro):
-
-```bash
-node _build/qa_audit.js divine-gw2-manual
-```
-
-## Imagens
-
-- **Todas as imagens são servidas de `assets/img/`.** O site não depende de hotlink do Discord, Imgur ou da Wiki para funcionar.
-- As fontes originais são a **Wiki oficial** (boons, conditions, atributos, moedas, loading screens), o **Imgur da guilda** (logo e artes) e alguns emojis do Discord sem equivalente oficial (títulos de Fractal, Attuned/Infused, CM/LM). A build baixa uma vez (cache em `_build/cache/`) e gera cópias no tamanho de exibição ×2:
-  - **JPEG** para fotos e artes;
-  - **WebP** para ícones com transparência.
-- Os banners decorativos têm todos a mesma proporção (2:1). Screenshots, mapas e infográficos mantêm o tamanho natural.
+<sub>Este repositório contém o site já pronto, publicado pelo GitHub Pages. Os arquivos-fonte e o guia de edição ficam com quem mantém o site.</sub>
