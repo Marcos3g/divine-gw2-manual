@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Recursos Úteis · Guild DIVINE (Guild Wars 2)">
+<link rel="icon" href="data:image/webp;base64,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" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/webp;base64,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" media="(prefers-color-scheme: dark)">
+<title>Recursos Úteis para Guild Wars 2 · DIVINE</title>
+<script>/* tema salvo: aplica antes de pintar a página */try{var t=localStorage.getItem('divine-tema');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script><style>
+/* =====================================================================
+   Codex DIVINE — design system da Guild DIVINE (Guild Wars 2)
+   Fonte da verdade: DESIGN.md (blueprint TypeUI). Embutido em cada página pela build.
+   Layout: topo imersivo de ponta a ponta + corpo editorial (sumário fixo no desktop).
+   ===================================================================== */
+
+/* ---------- FONTES (servidas de assets/fonts; funcionam offline e no PDF) ---------- */
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/barlow-condensed-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/barlow-condensed-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+/* ---------- TOKENS: CLARO ---------- */
+:root{
+  --font-display:"Barlow Condensed","Arial Narrow","Segoe UI",sans-serif;
+  --font-body:"Source Sans 3","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",Consolas,"Courier New",monospace;
+  --bg:#f5f7fa; --surface:#ffffff; --surface-2:#f0f4f9; --line:#dbe3ee; --line-strong:#c5d1e0;
+  --text:#0f1a2a; --text-soft:#44546a; --text-mute:#5a6a80;
+  --accent:#1cc4dc; --accent-text:#0a7487; --accent-tint:rgba(28,196,220,.12);
+  --gold:#8a5f0e; --gold-tint:rgba(224,176,82,.16); --gold-line:rgba(176,124,28,.45);
+  --action-bg:#0a7487; --action-bg-hover:#085f6f; --on-action:#ffffff;
+  --hero-scrim:rgba(10,17,28,.38);
+  --shadow:0 1px 2px rgba(15,26,42,.05), 0 8px 24px rgba(15,26,42,.06);
+  --nav-bg:rgba(245,247,250,.86);
+  --selection:#bdeef6;
+  /* compatibilidade com estilos inline antigos */
+  --texto-soft:var(--text-soft); --azul-esc:var(--accent-text);
+  color-scheme:light;
+}
+/* ---------- TOKENS: ESCURO (sistema e botão; nunca na impressão) ---------- */
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a111c; --surface:#111b2b; --surface-2:#162337; --line:#22324a; --line-strong:#2e4260;
+    --text:#e7eef7; --text-soft:#a9b8ca; --text-mute:#8597ad;
+    --accent-text:#5fd6e8; --accent-tint:rgba(28,196,220,.14);
+    --gold:#e0b052; --gold-tint:rgba(224,176,82,.12); --gold-line:rgba(224,176,82,.4);
+    --action-bg:#1cc4dc; --action-bg-hover:#5fd6e8; --on-action:#06121c;
+    --hero-scrim:rgba(5,9,16,.45); --shadow:none; --nav-bg:rgba(10,17,28,.82); --selection:#164b5a;
+    color-scheme:dark;
+  }
+}
+@media screen{
+  :root[data-theme="dark"]{
+    --bg:#0a111c; --surface:#111b2b; --surface-2:#162337; --line:#22324a; --line-strong:#2e4260;
+    --text:#e7eef7; --text-soft:#a9b8ca; --text-mute:#8597ad;
+    --accent-text:#5fd6e8; --accent-tint:rgba(28,196,220,.14);
+    --gold:#e0b052; --gold-tint:rgba(224,176,82,.12); --gold-line:rgba(224,176,82,.4);
+    --action-bg:#1cc4dc; --action-bg-hover:#5fd6e8; --on-action:#06121c;
+    --hero-scrim:rgba(5,9,16,.45); --shadow:none; --nav-bg:rgba(10,17,28,.82); --selection:#164b5a;
+    color-scheme:dark;
+  }
+}
+
+/* ---------- BASE ---------- */
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+html,body{margin:0;padding:0;}
+html{scroll-behavior:smooth;scrollbar-color:var(--line-strong) var(--bg);}
+body{
+  font-family:var(--font-body);font-size:16px;line-height:1.6;
+  color:var(--text);background:var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+::selection{background:var(--selection);color:var(--text);}
+a{color:var(--accent-text);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:color-mix(in srgb, var(--accent-text) 45%, transparent);}
+a:hover{text-decoration-color:currentColor;}
+a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+[id]{scroll-margin-top:84px;}
+img{max-width:100%;}
+p{margin:0 0 12px;text-wrap:pretty;}
+li{text-wrap:pretty;}
+b, strong{font-weight:700;}
+small{color:var(--text-soft);}
+code, kbd{
+  font-family:var(--font-mono);font-size:.82em;color:var(--text);
+  background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:1px 6px;
+}
+kbd{border-bottom-width:2px;}
+
+/* ---------- BARRA DO TOPO ---------- */
+.topnav{
+  position:sticky;top:0;z-index:20;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px max(20px, env(safe-area-inset-right, 0px)) 10px max(20px, env(safe-area-inset-left, 0px));
+  background:var(--nav-bg);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--line);font-size:14px;
+}
+.topnav a{color:var(--text);text-decoration:none;font-weight:600;}
+.topnav .where{display:flex;align-items:center;min-width:0;gap:4px;}
+.topnav .home{display:flex;align-items:center;gap:10px;min-width:0;font-family:var(--font-display);font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;}
+.topnav .crumb{color:var(--text-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.topnav .crumb::before{content:"/";margin:0 10px;color:var(--line-strong);}
+.topnav .actions{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.topnav .btn, .theme-toggle{
+  display:inline-flex;align-items:center;gap:8px;min-height:36px;
+  border:1px solid var(--line);background:var(--surface);color:var(--text);
+  padding:6px 14px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;
+  transition:border-color .15s ease-out, background-color .15s ease-out;
+}
+.topnav .btn:hover, .theme-toggle:hover{border-color:var(--accent);}
+.theme-toggle{padding:6px 10px;}
+.theme-toggle svg, .topnav .btn svg{width:16px;height:16px;}
+.theme-toggle .i-sol{display:none;}
+:root[data-theme="dark"] .theme-toggle .i-sol{display:inline;}
+:root[data-theme="dark"] .theme-toggle .i-lua{display:none;}
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .theme-toggle .i-sol{display:inline;}
+  :root:not([data-theme="light"]) .theme-toggle .i-lua{display:none;}
+}
+
+/* ---------- EMBLEMA (logo amarela no tema claro, branca no escuro) ---------- */
+/* fundo: no claro, a cor do texto (azul-tinta) realça a logo amarela; no escuro, a superfície */
+:root{ --emblem-bg:var(--text); }
+@media screen and (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --emblem-bg:var(--surface); } }
+@media screen{ :root[data-theme="dark"]{ --emblem-bg:var(--surface); } }
+.emblem{
+  display:inline-grid;place-items:center;flex-shrink:0;border-radius:50%;
+  background:var(--emblem-bg);border:2px solid var(--accent);
+  box-shadow:0 10px 30px rgba(28,196,220,.28);
+}
+.emblem img{grid-area:1/1;width:72%;height:72%;object-fit:contain;display:block;}
+.emblem-lg{width:124px;height:124px;}
+.emblem-sm{width:30px;height:30px;border-width:1.5px;box-shadow:none;}
+.emblem-sm img{width:78%;height:78%;}
+.emblem-escuro{display:none !important;}
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .emblem-claro{display:none !important;}
+  :root:not([data-theme="light"]) .emblem-escuro{display:block !important;}
+}
+@media screen{
+  :root[data-theme="dark"] .emblem-claro{display:none !important;}
+  :root[data-theme="dark"] .emblem-escuro{display:block !important;}
+}
+
+/* ---------- HERÓI (topo imersivo, de ponta a ponta) ---------- */
+.hero{position:relative;}
+.hero-bg{position:relative;height:clamp(260px, 38vw, 520px);overflow:hidden;background:var(--surface-2);}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to bottom, var(--hero-scrim) 0%, transparent 24%, transparent 56%, var(--bg) 100%);
+}
+.hero-bar{
+  position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:flex-end;
+  padding:max(16px, env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px));
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:860px;margin:0 auto;text-align:center;
+  padding:0 max(20px, env(safe-area-inset-right, 0px)) 8px max(20px, env(safe-area-inset-left, 0px));
+}
+.hero-inner .emblem{margin-top:-64px;margin-bottom:16px;}
+.hero h1{
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(40px, 6vw, 64px);line-height:.98;letter-spacing:.02em;margin:0;color:var(--text);text-wrap:balance;
+}
+.hero .hero-sub{
+  font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:.28em;
+  font-size:15px;color:var(--accent-text);margin:10px 0 0;
+}
+.hero .hero-desc{max-width:58ch;margin:16px auto 0;font-size:18px;line-height:1.5;color:var(--text-soft);text-wrap:balance;}
+.hero-chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 0;padding:0;}
+.hero-chips li, .badge-lvl{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.02em;color:var(--text-soft);
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 10px;
+  font-variant-numeric:tabular-nums;
+}
+.hero-chips li.is-date{color:var(--gold);border-color:var(--gold-line);background:var(--gold-tint);}
+.badge-lvl{display:inline-block;margin:0 4px 6px 0;background:var(--surface-2);}
+
+/* ---------- LAYOUT DO GUIA ---------- */
+.layout{
+  max-width:1160px;margin:40px auto 0;
+  padding:0 max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px));
+}
+.content{min-width:0;}
+.page{max-width:760px;margin:0 auto;}
+.page + .page{margin-top:56px;}
+@media screen and (min-width:1100px){
+  .layout{display:grid;grid-template-columns:232px minmax(0,1fr);gap:56px;align-items:start;}
+  .page{margin:0;}
+  .sidebar{position:sticky;top:76px;max-height:calc(100vh - 96px);overflow:auto;padding-bottom:24px;}
+}
+
+/* ---------- SUMÁRIO ---------- */
+.toc{margin:0 0 32px;}
+.toc h2{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-mute);margin:0 0 12px;
+}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:cap;}
+.toc ol > li{counter-increment:cap;margin:0 0 10px;font-size:15px;}
+.toc ol > li > b{font-weight:700;}
+.toc ol > li > b > a::before{content:counter(cap, decimal-leading-zero);font-family:var(--font-mono);font-size:12px;color:var(--gold);margin-right:10px;font-weight:500;}
+.toc ul{margin:6px 0 0;padding:0 0 0 14px;list-style:none;border-left:1px solid var(--line);}
+.toc ul li{font-size:14px;margin:0;}
+.toc a{display:block;padding:4px 0 4px 10px;margin-left:-11px;border-left:2px solid transparent;color:var(--text-soft);text-decoration:none;line-height:1.35;}
+.toc ol > li > b > a{margin-left:0;padding-left:0;border-left:0;color:var(--text);}
+.toc a:hover{color:var(--accent-text);}
+.toc a.is-active{color:var(--accent-text);border-left-color:var(--gold);}
+.toc ol > li > b > a.is-active{color:var(--accent-text);}
+.toc.cols ul{border:0;padding:0;}
+@media screen and (max-width:1099px){
+  .sidebar .toc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .toc.cols ol{columns:2;column-gap:28px;}
+  .toc.cols li{break-inside:avoid;}
+}
+@media (max-width:600px){ .toc.cols ol{columns:1;} }
+
+/* ---------- SEÇÕES ---------- */
+h2.section{
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.02em;
+  font-size:clamp(28px, 3.4vw, 36px);line-height:1.05;color:var(--text);
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  margin:0 0 8px;padding-bottom:12px;border-bottom:1px solid var(--line);text-wrap:balance;
+}
+/* número do capítulo: mesma fonte e tamanho do título, em dourado (lê como "01 Fundamentos") */
+h2.section .num{font-family:var(--font-display);font-size:inherit;font-weight:600;letter-spacing:.02em;color:var(--gold);font-variant-numeric:tabular-nums;}
+.section-sub{color:var(--text-soft);font-size:17px;margin:12px 0 28px;max-width:62ch;}
+h3, h4{text-wrap:balance;}
+h4{font-size:17px;font-weight:700;margin:28px 0 10px;color:var(--text);}
+
+/* ---------- CARDS ---------- */
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:24px;margin:0 0 20px;box-shadow:var(--shadow);
+}
+/* cabeçalho do card: ícone + título na mesma linha; o texto ocupa a largura toda (borda esquerda única) */
+.card .card-head{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;align-items:center;margin-bottom:4px;}
+.card .card-head > div{display:contents;}
+.card .card-head > :not(div):not(h3):not(h4):not(p){grid-column:1;}
+.card .card-head h3, .card .card-head h4{grid-column:2;font-family:var(--font-body);font-size:21px;font-weight:700;line-height:1.25;margin:0;color:var(--text);}
+.card .card-head p{grid-column:1 / -1;margin-top:14px;}
+.card .card-head > div > :first-child:not(h3):not(h4){grid-column:1 / -1;}
+.card p{margin:0 0 12px;}
+.card > :last-child, .card .card-head p:last-child{margin-bottom:0;}
+.card > .card-head + p, .card > p + p{margin-top:12px;}
+.card > h4:first-of-type{margin-top:24px;}
+.ico-wrap, .card .icon{
+  width:44px;height:44px;flex-shrink:0;border-radius:10px;
+  background:var(--accent-tint);border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.card .icon{object-fit:contain;padding:6px;}
+.ico-wrap{display:flex;align-items:center;justify-content:center;color:var(--accent-text);}
+.ico-wrap svg{width:22px;height:22px;stroke-width:1.8;}
+
+/* ---------- IMAGENS ---------- */
+.hero-img{display:block;width:100%;height:auto;border-radius:12px;margin:20px 0;background:var(--surface-2);border:1px solid var(--line);}
+.hero-img.natural{margin-inline:auto;}
+.hero-img.banner{aspect-ratio:2/1;object-fit:cover;object-position:center;}
+img.emoji{height:1.15em;width:auto;vertical-align:-0.22em;margin:0 1px;}
+.img-fallback{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--surface-2);color:var(--accent-text);font-size:13px;}
+.img-fallback.inline{width:1.1em;height:1.1em;font-size:.7em;vertical-align:-0.2em;}
+
+/* ---------- LISTAS COM ÍCONE (sem caixa dentro de caixa) ---------- */
+.tier{display:flex;gap:14px;align-items:flex-start;padding:12px 0;margin:0;}
+.tier + .tier{border-top:1px solid var(--line);}
+.card > .tier:first-of-type, .card > h4 + .tier{margin-top:8px;}
+.tier > img:not(.emoji){width:28px;height:28px;object-fit:contain;flex-shrink:0;margin-top:1px;}
+.tier > .ico-wrap{width:30px;height:30px;border-radius:8px;}
+.tier > .ico-wrap svg{width:16px;height:16px;}
+.tier p{margin:0;flex:1;min-width:0;}
+.tier b, .tier .label{color:var(--text);}
+
+/* ---------- TABELAS ---------- */
+table.map{width:100%;border-collapse:separate;border-spacing:0;margin:16px 0;font-size:15px;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-variant-numeric:tabular-nums;}
+table.map th, table.map td{padding:10px 14px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line);}
+table.map tr:last-child td{border-bottom:0;}
+table.map th{font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mute);background:var(--surface-2);}
+table.map td img{height:22px;width:auto;vertical-align:middle;margin-right:6px;}
+table.map td.arrow{text-align:center;color:var(--gold);font-weight:700;width:40px;}
+
+/* ---------- DESTAQUES ---------- */
+.highlight, .note{border-radius:12px;padding:14px 18px;margin:16px 0;font-size:15.5px;}
+.highlight{background:var(--accent-tint);border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);}
+.note{background:var(--gold-tint);border:1px solid var(--gold-line);}
+.note b:first-child{color:var(--gold);}
+ol.steps{padding-left:0;margin:12px 0;list-style:none;counter-reset:passo;}
+ol.steps li{counter-increment:passo;display:flex;gap:12px;align-items:baseline;padding:6px 0;}
+ol.steps li::before{content:counter(passo);font-family:var(--font-mono);font-size:12px;color:var(--gold);min-width:20px;height:20px;border:1px solid var(--gold-line);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+/* ---------- WINGS / DUNGEONS (arte com nome sobreposto) ---------- */
+.wing, .dungeon{
+  display:grid;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  margin:0 0 20px;box-shadow:var(--shadow);
+}
+.wing > .wing-img, .dungeon > .dungeon-img, .wing > .wing-head, .dungeon > .dungeon-head{grid-area:1/1;}
+.wing-img, .dungeon-img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block;height:auto;}
+.wing-head, .dungeon-head{
+  align-self:end;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;
+  padding:48px 20px 16px;color:#fff;
+  background:linear-gradient(to top, rgba(6,10,18,.88) 0%, rgba(6,10,18,.55) 55%, rgba(6,10,18,0) 100%);
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:26px;line-height:1;
+  text-shadow:0 1px 2px rgba(0,0,0,.4);
+}
+.wing-head .wing-num, .dungeon-head .lvl{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-shadow:none;
+  color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);border-radius:6px;padding:4px 8px;white-space:nowrap;
+}
+.dungeon-head .lvls{display:flex;gap:6px;flex-wrap:wrap;}
+.bosses, .dungeon-body{grid-row:2;padding:8px 20px 12px;}
+.boss, .path{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px 0;font-size:16px;
+}
+.boss + .boss, .path + .path{border-top:1px solid var(--line);}
+.boss > span, .path > span{font-weight:600;}
+.boss a, .path a{
+  display:inline-flex;align-items:center;gap:6px;min-height:32px;white-space:nowrap;
+  font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--accent-text);text-decoration:none;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 12px;
+  transition:border-color .15s ease-out;
+}
+.boss a:hover, .path a:hover{border-color:var(--accent);}
+.boss a svg, .path a svg{width:12px;height:12px;}
+.dungeon-meta{display:flex;gap:6px 20px;flex-wrap:wrap;font-size:15px;color:var(--text-soft);padding:8px 0 12px;border-bottom:1px solid var(--line);margin-bottom:4px;}
+.dungeon-meta b{color:var(--text);}
+.dungeon-meta a{display:inline-block;padding-block:2px;}
+.paths{display:flex;flex-direction:column;}
+
+/* ---------- RECURSOS ÚTEIS ---------- */
+.resource{
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 12px;
+  transition:border-color .15s ease-out;
+}
+.resource:hover{border-color:var(--line-strong);}
+.resource .res-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
+.resource .res-name{font-weight:700;font-size:18px;color:var(--text);}
+.resource .res-desc{font-size:15.5px;color:var(--text-soft);margin:0 0 10px;}
+.resource .res-url{
+  display:inline-flex;align-items:center;min-height:30px;max-width:100%;
+  font-family:var(--font-mono);font-size:12.5px;color:var(--accent-text);text-decoration:none;word-break:break-all;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 10px;
+}
+.resource .res-url:hover{border-color:var(--accent);}
+.resource .res-new{font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.08em;color:var(--gold);border:1px solid var(--gold-line);background:var(--gold-tint);border-radius:6px;padding:1px 7px;}
+/* lista de recursos em 2 colunas no desktop e no PDF */
+@media screen and (min-width:900px), print{
+  .page:has(> .resource){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px;align-content:start;}
+  .page:has(> .resource) > :not(.resource){grid-column:1 / -1;}
+  .page:has(> .resource) > .resource{margin:0 0 14px;display:flex;flex-direction:column;}
+  .page:has(> .resource) > .resource .res-url{margin-top:auto;align-self:flex-start;}
+}
+.featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 8px;}
+@media (max-width:600px){ .featured-grid{grid-template-columns:1fr;} }
+.featured{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:border-color .15s ease-out;}
+.featured:hover{border-color:var(--accent);}
+.featured .f-name{font-weight:700;color:var(--text);font-size:16px;margin-bottom:2px;}
+.featured .f-url{font-family:var(--font-mono);font-size:12px;color:var(--accent-text);word-break:break-all;}
+
+/* ---------- RODAPÉ ---------- */
+.footer{margin:72px auto 0;padding:28px 20px 40px;border-top:1px solid var(--line);text-align:center;max-width:1160px;}
+.footer a{display:inline-block;padding-block:4px;}
+.footer-brand{
+  margin:0;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:2px 0;
+  font-family:var(--font-display);font-weight:600;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-soft);
+}
+.footer-brand b{color:var(--text);font-weight:700;letter-spacing:.18em;}
+.footer-brand .sep{color:var(--gold);margin:0 14px;}
+
+/* ---------- MOVIMENTO ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+}
+
+/* ---------- CELULAR ---------- */
+@media screen and (max-width:640px){
+  body{font-size:16px;}
+  .hero-inner .emblem{width:96px;height:96px;margin-top:-50px;}
+  .hero .hero-desc{font-size:16.5px;}
+  .layout{margin-top:28px;}
+  .card{padding:18px;}
+  .card .card-head{column-gap:12px;}
+  .card .card-head h3{font-size:19px;}
+  .wing-head, .dungeon-head{font-size:21px;padding:36px 14px 12px;}
+  .bosses, .dungeon-body{padding:6px 14px 10px;}
+  .topnav{padding:8px 12px;}
+  .topnav .crumb, .topnav .home > span:not(.emblem){display:none;}
+  .topnav .btn .lbl{display:none;}
+}
+
+/* ---------- IMPRESSÃO / PDF (sempre claro, uma coluna) ---------- */
+@media print{
+  @page{size:A4;margin:16mm 14mm;}
+  body{font-size:10.5pt;line-height:1.5;background:#fff;}
+  .topnav, .hero-bar{display:none;}
+  a{color:inherit;text-decoration:none;}
+  /* capa */
+  .hero{page-break-after:always;break-after:page;padding-top:4mm;}
+  .hero-bg{height:92mm;border-radius:12px;}
+  .hero-bg::after{display:none;}
+  .hero-inner{padding:0;}
+  .hero-inner .emblem{margin-top:-62px;width:124px;height:124px;box-shadow:none;}
+  .hero h1{font-size:44pt;}
+  .hero .hero-desc{font-size:13pt;}
+  /* corpo */
+  .layout{display:block;margin:0;padding:0;max-width:none;}
+  .sidebar{page-break-after:always;break-after:page;}
+  .page{max-width:none;}
+  .page + .page{margin-top:0;}
+  .page-break{page-break-before:always;break-before:page;}
+  .card, .wing, .dungeon{box-shadow:none;}
+  .no-break, .card{break-inside:auto;page-break-inside:auto;}
+  .tier, table.map tr, .boss, .path, .resource, .featured, .note, .highlight,
+  .hero-img, .card-head, ol.steps li, .wing, .dungeon{break-inside:avoid;page-break-inside:avoid;}
+  h2.section, .section-sub, h3, h4, .card-head{break-after:avoid;page-break-after:avoid;}
+  h2.section{font-size:24pt;}
+  .wing-img, .dungeon-img{height:52mm;aspect-ratio:auto;}
+  .hero-img{max-height:95mm;width:auto;max-width:100%;object-fit:contain;margin-inline:auto;}
+  .hero-img.banner{width:100%;height:58mm;max-height:none;aspect-ratio:auto;object-fit:cover;}
+  .footer{margin-top:36px;padding-bottom:0;}
+}
+</style>
+<script>
+/* Fallback de imagens: se um ícone/imagem externa falhar, troca por um marcador neutro. */
+document.addEventListener('error', function (e) {
+  var t = e.target;
+  if (!t || t.tagName !== 'IMG' || t.dataset.failed) return;
+  t.dataset.failed = '1';
+  if (/(^|\s)(hero-img|wing-img|dungeon-img|logo)(\s|$)/.test(t.className)) { t.style.display = 'none'; return; }
+  var s = document.createElement('span');
+  s.className = 'img-fallback' + (t.classList.contains('emoji') ? ' inline' : '');
+  s.textContent = '\u25C6'; s.title = t.alt || ''; s.setAttribute('aria-label', t.alt || '');
+  t.replaceWith(s);
+}, true);
+</script>
+</head>
+<body>
+<nav class="topnav" aria-label="Guild DIVINE"><div class="where"><a class="home" href="../index.html"><span class="emblem emblem-sm"><img width="64" height="64" decoding="async" class="emblem-img sm emblem-claro" src="data:image/webp;base64,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" alt=""><img width="64" height="64" decoding="async" class="emblem-img sm emblem-escuro" src="data:image/webp;base64,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" alt=""></span><span>Guild DIVINE</span></a><span class="crumb">Recursos Úteis</span></div><div class="actions"><button type="button" class="theme-toggle" aria-label="Alternar tema claro ou escuro"><svg class="ico i-lua" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /> </svg><svg class="ico i-sol" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /> </svg></button><a class="btn" href="../pdfs/recursos-uteis.pdf" download><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="7 10 12 15 17 10" /> <line x1="12" x2="12" y1="15" y2="3" /> </svg><span class="lbl">Baixar PDF</span></a></div></nav>
+
+<!-- ============ CAPA ============ -->
+<header class="hero hero-guide">
+  <div class="hero-bg"><img width="800" height="400" decoding="async" class="hero-banner-img" src="../assets/img/800px-The-Battle-for-Lion-s-Arch-loading-screen-7254a0-800.jpg" alt=""></div>
+  <div class="hero-inner">
+    <span class="emblem emblem-lg"><img width="240" height="240" decoding="async" class="emblem-img lg emblem-claro" src="../assets/img/bwzdTWW-6321c6-240.webp" alt="Brasão da guilda DIVINE"><img width="240" height="240" decoding="async" class="emblem-img lg emblem-escuro" src="../assets/img/TGpP3lG-1936fb-240.webp" alt=""></span>
+    <h1>Recursos Úteis</h1>
+    <p class="hero-sub">DIVINE · Guild Wars 2</p>
+    <p class="hero-desc">Sites e ferramentas da comunidade para builds, conta, logs, gold, crafting, mapas e WvW.</p>
+    <ul class="hero-chips"><li>11 categorias</li><li>56 links</li><li class="is-date">Atualizado em nov. 2026</li></ul>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar"><nav class="toc cols" aria-label="Sumário">
+    <h2>Neste guia</h2>
+    <ol>
+      <li><a href="#secao-1">Geral, wiki e conta</a></li>
+      <li><a href="#secao-2">Builds e theorycraft</a></li>
+      <li><a href="#secao-3">Raids, Strikes e Fractals</a></li>
+      <li><a href="#secao-4">Gold, farm e Trading Post</a></li>
+      <li><a href="#secao-5">Crafting e lendários</a></li>
+      <li><a href="#secao-6">Mapas, eventos e timers</a></li>
+      <li><a href="#secao-7">World vs World</a></li>
+      <li><a href="#secao-8">Fashion e wardrobe</a></li>
+      <li><a href="#secao-9">Homestead</a></li>
+      <li><a href="#secao-10">Bancos de dados e guias</a></li>
+      <li><a href="#secao-11">Diretório geral</a></li>
+      <li><a href="#recomendados">Recomendados para favoritos</a></li>
+    </ol>
+  </nav></aside>
+<main id="conteudo" class="content">
+
+<!-- ============ SUMÁRIO + RECOMENDADOS ============ -->
+<div class="page page-break">
+
+  
+
+  <div class="highlight" id="recomendados">
+    <b>Recomendados para favoritos</b>: se for salvar apenas os essenciais, comece por estes.
+    Eles cobrem 90% do que você vai usar no dia a dia.
+  </div>
+
+  <div class="featured-grid">
+    <a class="featured" href="https://wiki.guildwars2.com/" target="_blank" rel="noopener"><div class="f-name">GW2 Wiki</div><div class="f-url">https://wiki.guildwars2.com/</div></a>
+    <a class="featured" href="https://gw2efficiency.com/" target="_blank" rel="noopener"><div class="f-name">GW2Efficiency</div><div class="f-url">https://gw2efficiency.com/</div></a>
+    <a class="featured" href="https://gw2.app/" target="_blank" rel="noopener"><div class="f-name">GW2.app</div><div class="f-url">https://gw2.app/</div></a>
+    <a class="featured" href="https://snowcrows.com/" target="_blank" rel="noopener"><div class="f-name">Snow Crows</div><div class="f-url">https://snowcrows.com/</div></a>
+    <a class="featured" href="https://guildjen.com/" target="_blank" rel="noopener"><div class="f-name">GuildJen</div><div class="f-url">https://guildjen.com/</div></a>
+    <a class="featured" href="https://gw2tldr.com/" target="_blank" rel="noopener"><div class="f-name">GW2TLDR</div><div class="f-url">https://gw2tldr.com/</div></a>
+    <a class="featured" href="https://gw2wingman.nevermindcreations.de/" target="_blank" rel="noopener"><div class="f-name">GW2 Wingman</div><div class="f-url">https://gw2wingman.nevermindcreations.de/</div></a>
+    <a class="featured" href="https://killproof.me/" target="_blank" rel="noopener"><div class="f-name">KillProof.me</div><div class="f-url">https://killproof.me/</div></a>
+    <a class="featured" href="https://canicraft.com/" target="_blank" rel="noopener"><div class="f-name">Can I Craft?</div><div class="f-url">https://canicraft.com/</div></a>
+    <a class="featured" href="https://fast.farming-community.eu/" target="_blank" rel="noopener"><div class="f-name">[fast] Farming Community</div><div class="f-url">https://fast.farming-community.eu/</div></a>
+    <a class="featured" href="https://peuresearchcenter.com/" target="_blank" rel="noopener"><div class="f-name">Peu Research Center</div><div class="f-url">https://peuresearchcenter.com/</div></a>
+    <a class="featured" href="https://www.gw2bltc.com/" target="_blank" rel="noopener"><div class="f-name">GW2BLTC</div><div class="f-url">https://www.gw2bltc.com/</div></a>
+    <a class="featured" href="https://gw2mists.com/" target="_blank" rel="noopener"><div class="f-name">GW2Mists</div><div class="f-url">https://gw2mists.com/</div></a>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ============ GERAL, WIKI E CONTA ============ -->
+<div class="page">
+  <h2 class="section" id="secao-1"><span class="num">01</span>Geral, wiki e conta</h2>
+  <p class="section-sub">Referência do jogo, conta, progresso e organização geral.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Wiki</span></div>
+    <div class="res-desc">Referência principal para itens, achievements, eventos, coleções, mapas, NPCs, mecânicas e praticamente tudo do jogo.</div>
+    <a class="res-url" href="https://wiki.guildwars2.com/" target="_blank" rel="noopener">https://wiki.guildwars2.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Efficiency</span></div>
+    <div class="res-desc">Conta, banco, personagens, materiais, crafting, valor da conta, achievements, dailies e progresso geral.</div>
+    <a class="res-url" href="https://gw2efficiency.com/" target="_blank" rel="noopener">https://gw2efficiency.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2.app</span></div>
+    <div class="res-desc">Crie objetivos e acompanhe automaticamente lendários, moedas, achievements, Wizard's Vault, waypoints e outros progressos.</div>
+    <a class="res-url" href="https://gw2.app/" target="_blank" rel="noopener">https://gw2.app/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Mastery</span></div>
+    <div class="res-desc">Acompanhamento de Mastery Points, map completion e mounts.</div>
+    <a class="res-url" href="https://www.gw2mastery.com/" target="_blank" rel="noopener">https://www.gw2mastery.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Unlocks</span></div>
+    <div class="res-desc">Rastreamento de skins, achievements, minis, novelties e outros unlocks.</div>
+    <a class="res-url" href="https://gw2unlocks.com/" target="_blank" rel="noopener">https://gw2unlocks.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2EST (Every Single Thing)</span></div>
+    <div class="res-desc">Ferramenta focada em completionism e unlocks da conta.</div>
+    <a class="res-url" href="https://gw2est.com/" target="_blank" rel="noopener">https://gw2est.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2AP</span></div>
+    <div class="res-desc">Ferramenta para organizar, filtrar e acompanhar achievements.</div>
+    <a class="res-url" href="https://gw2ap.com/" target="_blank" rel="noopener">https://gw2ap.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Material Heatmap</span></div>
+    <div class="res-desc">Mostra o valor dos materiais armazenados na sua conta.</div>
+    <a class="res-url" href="https://windwarrior.github.io/GW2MaterialHeatmap/" target="_blank" rel="noopener">https://windwarrior.github.io/GW2MaterialHeatmap/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Stacks</span></div>
+    <div class="res-desc">Ajuda a organizar o inventário e identificar stacks, itens consumíveis e coisas que podem ser limpas.</div>
+    <a class="res-url" href="https://gw.zweistein.cz/gw2stacks/" target="_blank" rel="noopener">https://gw.zweistein.cz/gw2stacks/</a>
+  </div>
+</div>
+
+<!-- ============ BUILDS ============ -->
+<div class="page">
+  <h2 class="section" id="secao-2"><span class="num">02</span>Builds e theorycraft</h2>
+  <p class="section-sub">Builds prontas, editor de traits e teoria por trás das escolhas.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Snow Crows</span></div>
+    <div class="res-desc">Principal referência para builds, benchmarks, rotações e PvE endgame.</div>
+    <a class="res-url" href="https://snowcrows.com/" target="_blank" rel="noopener">https://snowcrows.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Discretize</span></div>
+    <div class="res-desc">Especializado em Fractals, builds, estratégias e otimização.</div>
+    <a class="res-url" href="https://discretize.eu/" target="_blank" rel="noopener">https://discretize.eu/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">MetaBattle</span></div>
+    <div class="res-desc">Builds para Open World, PvE, PvP e WvW.</div>
+    <a class="res-url" href="https://metabattle.com/" target="_blank" rel="noopener">https://metabattle.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GuildJen</span></div>
+    <div class="res-desc">Builds, achievements, mounts, lendários, PvP, WvW e guias gerais.</div>
+    <a class="res-url" href="https://guildjen.com/" target="_blank" rel="noopener">https://guildjen.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Accessibility Wars</span></div>
+    <div class="res-desc">Builds acessíveis e opções low-intensity para conteúdo avançado.</div>
+    <a class="res-url" href="https://aw2.help/" target="_blank" rel="noopener">https://aw2.help/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Skills</span></div>
+    <div class="res-desc">Editor completo para theorycraft de traits, equipamentos, runes, sigils e atributos.</div>
+    <a class="res-url" href="https://en.gw2skills.net/editor/" target="_blank" rel="noopener">https://en.gw2skills.net/editor/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Hardstuck</span></div>
+    <div class="res-desc">Builds e guias gerais para vários tipos de conteúdo.</div>
+    <a class="res-url" href="https://hardstuck.gg/" target="_blank" rel="noopener">https://hardstuck.gg/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Good Ways 2 Gear</span></div>
+    <div class="res-desc">Ajuda a descobrir como conseguir equipamentos com determinados atributos.</div>
+    <a class="res-url" href="https://www.gw2gear.com/" target="_blank" rel="noopener">https://www.gw2gear.com/</a>
+  </div>
+</div>
+
+<!-- ============ RAIDS, STRIKES, FRACTALS ============ -->
+<div class="page">
+  <h2 class="section" id="secao-3"><span class="num">03</span>Raids, Strikes e Fractals</h2>
+  <p class="section-sub">Mecânicas resumidas, KP, logs e desempenho.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2TLDR</span></div>
+    <div class="res-desc">Mecânicas resumidas para raids, encounters, strikes, fractals e outros conteúdos.</div>
+    <a class="res-url" href="https://gw2tldr.com/" target="_blank" rel="noopener">https://gw2tldr.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">KillProof.me</span></div>
+    <div class="res-desc">Perfil de Kill Proof, LI, UFE e histórico de clears.</div>
+    <a class="res-url" href="https://killproof.me/" target="_blank" rel="noopener">https://killproof.me/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Wingman</span></div>
+    <div class="res-desc">Banco de dados de logs do ArcDPS e estatísticas de desempenho em bosses.</div>
+    <a class="res-url" href="https://gw2wingman.nevermindcreations.de/" target="_blank" rel="noopener">https://gw2wingman.nevermindcreations.de/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">dps.report</span></div>
+    <div class="res-desc">Hospedagem e análise de logs do ArcDPS.</div>
+    <a class="res-url" href="https://dps.report/" target="_blank" rel="noopener">https://dps.report/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Scratch</span></div>
+    <div class="res-desc">Organização e gerenciamento de logs do ArcDPS.</div>
+    <a class="res-url" href="https://gw2scratch.com/" target="_blank" rel="noopener">https://gw2scratch.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">ArcDPS</span></div>
+    <div class="res-desc">DPS meter utilizado para análise de combate e criação de logs.</div>
+    <a class="res-url" href="https://www.deltaconnected.com/arcdps/" target="_blank" rel="noopener">https://www.deltaconnected.com/arcdps/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Elite Insights</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Parser oficial dos logs do ArcDPS (.evtc/.zevtc): gera um relatório HTML detalhado da luta.</div>
+    <a class="res-url" href="https://github.com/baaron4/GW2-Elite-Insights-Parser/releases" target="_blank" rel="noopener">https://github.com/baaron4/GW2-Elite-Insights-Parser/releases</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Raidcore Nexus</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Gerenciador de addons: carrega o ArcDPS e extensões, instala e atualiza com um clique.</div>
+    <a class="res-url" href="https://raidcore.gg/gw2/nexus" target="_blank" rel="noopener">https://raidcore.gg/gw2/nexus</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Mistlocked [FotM] (Discord)</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Comunidade de Fractals e CMs para encontrar grupo; é a indicada pela Discretize.</div>
+    <a class="res-url" href="https://discord.gg/zxeVeSqpuS" target="_blank" rel="noopener">https://discord.gg/zxeVeSqpuS</a>
+  </div>
+</div>
+
+<!-- ============ GOLD, FARM, TP ============ -->
+<div class="page">
+  <h2 class="section" id="secao-4"><span class="num">04</span>Gold, farm e Trading Post</h2>
+  <p class="section-sub">Rotas de farm, conversão de currencies e mercado.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">[fast] Farming Community</span></div>
+    <div class="res-desc">Referência para gold/h, farm trains, conversão de currencies, metas, gathering e reward tracks.</div>
+    <a class="res-url" href="https://fast.farming-community.eu/" target="_blank" rel="noopener">https://fast.farming-community.eu/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Peu Research Center</span></div>
+    <div class="res-desc">Open World farm, fishing, node farms, Research Notes e benchmarks de farm.</div>
+    <a class="res-url" href="https://peuresearchcenter.com/" target="_blank" rel="noopener">https://peuresearchcenter.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2BLTC</span></div>
+    <div class="res-desc">Histórico de preços, buy/sell orders, tendências e acompanhamento do Trading Post.</div>
+    <a class="res-url" href="https://www.gw2bltc.com/" target="_blank" rel="noopener">https://www.gw2bltc.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2TP</span></div>
+    <div class="res-desc">Mercado, histórico de preços e ferramentas relacionadas ao Trading Post.</div>
+    <a class="res-url" href="https://www.gw2tp.com/" target="_blank" rel="noopener">https://www.gw2tp.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">True Farming</span></div>
+    <div class="res-desc">Farms, rotas, salvaging e ferramentas de mercado.</div>
+    <a class="res-url" href="https://true-farming.com/" target="_blank" rel="noopener">https://true-farming.com/</a>
+  </div>
+</div>
+
+<!-- ============ CRAFTING E LENDÁRIOS ============ -->
+<div class="page">
+  <h2 class="section" id="secao-5"><span class="num">05</span>Crafting e lendários</h2>
+  <p class="section-sub">Calculadoras, guias de leveling de profissão e planners de lendários.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Efficiency Crafting Calculator</span></div>
+    <div class="res-desc">Calcula materiais necessários levando em consideração o que você já possui na conta.</div>
+    <a class="res-url" href="https://gw2efficiency.com/crafting/calculator" target="_blank" rel="noopener">https://gw2efficiency.com/crafting/calculator</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Crafts</span></div>
+    <div class="res-desc">Guias otimizados para subir profissões de crafting gastando o mínimo possível.</div>
+    <a class="res-url" href="https://gw2crafts.net/" target="_blank" rel="noopener">https://gw2crafts.net/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Can I Craft?</span></div>
+    <div class="res-desc">Mostra quais lendários você já está mais perto de conseguir fabricar com os materiais atuais da conta.</div>
+    <a class="res-url" href="https://canicraft.com/" target="_blank" rel="noopener">https://canicraft.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">The Legendary Quest</span></div>
+    <div class="res-desc">Planner completo para crafting de equipamentos lendários.</div>
+    <a class="res-url" href="https://redglow.github.io/TheLegendaryQuest/" target="_blank" rel="noopener">https://redglow.github.io/TheLegendaryQuest/</a>
+  </div>
+</div>
+
+<!-- ============ MAPAS, EVENTOS, TIMERS ============ -->
+<div class="page">
+  <h2 class="section" id="secao-6"><span class="num">06</span>Mapas, eventos e timers</h2>
+  <p class="section-sub">Timers de mundo, mapas interativos e ferramentas de acompanhamento.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Timer</span></div>
+    <div class="res-desc">Eventos, timers, mapa interativo e outras ferramentas.</div>
+    <a class="res-url" href="https://gw2timer.com/" target="_blank" rel="noopener">https://gw2timer.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Tyria Interactive Map</span></div>
+    <div class="res-desc">Mapa interativo de Tyria.</div>
+    <a class="res-url" href="https://maps.gw2.io/" target="_blank" rel="noopener">https://maps.gw2.io/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Wiki Event Timers</span></div>
+    <div class="res-desc">Timers oficiais organizados pela Wiki.</div>
+    <a class="res-url" href="https://wiki.guildwars2.com/wiki/Event_timers" target="_blank" rel="noopener">https://wiki.guildwars2.com/wiki/Event_timers</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Ninja</span></div>
+    <div class="res-desc">Timers, collections, chat codes, ferramentas de WvW e outras utilidades.</div>
+    <a class="res-url" href="https://gw2.ninja/" target="_blank" rel="noopener">https://gw2.ninja/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Blish HUD</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Overlay com módulos: marcadores, timers, mapa e ferramentas de conta dentro do jogo.</div>
+    <a class="res-url" href="https://blishhud.com/" target="_blank" rel="noopener">https://blishhud.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Tekkit's Workshop</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Marcadores e trilhas (via Blish HUD) para farm, map completion e achievements.</div>
+    <a class="res-url" href="https://www.tekkitsworkshop.net/" target="_blank" rel="noopener">https://www.tekkitsworkshop.net/</a>
+  </div>
+</div>
+
+<!-- ============ WvW ============ -->
+<div class="page">
+  <h2 class="section" id="secao-7"><span class="num">07</span>World vs World</h2>
+  <p class="section-sub">Builds, matchups, placares e live maps.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Mists</span></div>
+    <div class="res-desc">Builds, guias, guilds, matchmaking e recursos focados em WvW.</div>
+    <a class="res-url" href="https://gw2mists.com/" target="_blank" rel="noopener">https://gw2mists.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">WvW.gg</span></div>
+    <div class="res-desc">Placares e acompanhamento dos matchups atuais.</div>
+    <a class="res-url" href="https://wvw.gg/" target="_blank" rel="noopener">https://wvw.gg/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Ninja</span></div>
+    <div class="res-desc">Live map, leaderboard e informações adicionais de WvW.</div>
+    <a class="res-url" href="https://gw2.ninja/" target="_blank" rel="noopener">https://gw2.ninja/</a>
+  </div>
+</div>
+
+<!-- ============ FASHION + HOMESTEAD ============ -->
+<div class="page">
+  <h2 class="section" id="secao-8"><span class="num">08</span>Fashion e wardrobe</h2>
+  <p class="section-sub">Inspiração visual e rastreamento de skins.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">UAoT.art</span></div>
+    <div class="res-desc">Galeria de Fashion Wars, perfis, outfits e inspiração visual.</div>
+    <a class="res-url" href="https://uaot.art/" target="_blank" rel="noopener">https://uaot.art/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">Wardrobe Unlock Analyser</span></div>
+    <div class="res-desc">Mostra skins ainda bloqueadas, origem e custo aproximado.</div>
+    <a class="res-url" href="https://immortius.xyz/wardrobe-unlock-analyser/" target="_blank" rel="noopener">https://immortius.xyz/wardrobe-unlock-analyser/</a>
+  </div>
+
+  
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Armor Gallery</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Galeria de sets de armadura, outfits e lendários por raça e peso.</div>
+    <a class="res-url" href="https://gw2armorgallery.com/" target="_blank" rel="noopener">https://gw2armorgallery.com/</a>
+  </div>
+  <h2 class="section" id="secao-9"><span class="num">09</span>Homestead</h2>
+  <p class="section-sub">Ferramentas e comunidade de decoração.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Deco Tools</span></div>
+    <div class="res-desc">Ferramentas para layouts, XML, posicionamento e gerenciamento de decorações.</div>
+    <a class="res-url" href="https://gw2decotools.com/" target="_blank" rel="noopener">https://gw2decotools.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Homes</span></div>
+    <div class="res-desc">Galeria e comunidade focada em Homesteads.</div>
+    <a class="res-url" href="https://gw2.homes/" target="_blank" rel="noopener">https://gw2.homes/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Wiki: Homestead</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Referência oficial de decorações, coleta e upgrades do Homestead.</div>
+    <a class="res-url" href="https://wiki.guildwars2.com/wiki/Homestead" target="_blank" rel="noopener">https://wiki.guildwars2.com/wiki/Homestead</a>
+  </div>
+</div>
+
+<!-- ============ BANCOS DE DADOS ============ -->
+<div class="page">
+  <h2 class="section" id="secao-10"><span class="num">10</span>Bancos de dados e guias</h2>
+  <p class="section-sub">Databases, walkthroughs e conteúdo editorial da comunidade.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2Treasures</span></div>
+    <div class="res-desc">Database de itens, achievements, skills, TP e dados da API.</div>
+    <a class="res-url" href="https://gw2treasures.com/" target="_blank" rel="noopener">https://gw2treasures.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">that_shaman</span></div>
+    <div class="res-desc">Datamining, ferramentas, timers e utilidades históricas da comunidade.</div>
+    <a class="res-url" href="https://www.thatshaman.com/" target="_blank" rel="noopener">https://www.thatshaman.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">MuklukLabs</span></div>
+    <div class="res-desc">Guias gerais, achievements, conteúdos endgame e lendários.</div>
+    <a class="res-url" href="https://mukluklabs.com/" target="_blank" rel="noopener">https://mukluklabs.com/</a>
+  </div>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">AyinMaiden</span></div>
+    <div class="res-desc">Walkthroughs de achievements, collections e jumping puzzles.</div>
+    <a class="res-url" href="https://www.ayinmaiden.com/gw2" target="_blank" rel="noopener">https://www.ayinmaiden.com/gw2</a>
+  </div>
+
+  
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 API (Wiki)</span> <span class="res-new">NOVO</span></div>
+    <div class="res-desc">Documentação da API oficial: base para ferramentas da comunidade e para criar suas chaves de API.</div>
+    <a class="res-url" href="https://wiki.guildwars2.com/wiki/API:Main" target="_blank" rel="noopener">https://wiki.guildwars2.com/wiki/API:Main</a>
+  </div>
+  <h2 class="section" id="secao-11"><span class="num">11</span>Diretório geral</h2>
+  <p class="section-sub">Um índice de tudo, útil para descobrir ferramentas que você nem sabia que existiam.</p>
+
+  <div class="resource">
+    <div class="res-head"><span class="res-name">GW2 Directory</span></div>
+    <div class="res-desc">Um grande índice de sites, ferramentas, mapas, builds, guildas, Discords, WvW, crafting, TP, Fashion e Homestead.</div>
+    <a class="res-url" href="https://gw2.directory/" target="_blank" rel="noopener">https://gw2.directory/</a>
+  </div>
+
+  
+</div>
+</main>
+</div>
+<footer class="footer"><p class="footer-brand"><b>DIVINE</b><span class="sep" aria-hidden="true">·</span>Recursos Úteis<span class="sep" aria-hidden="true">·</span>Guild Wars 2</p></footer>
+
+<script>
+(function () {
+  var items = [].slice.call(document.querySelectorAll('.sidebar .toc a[href^="#"]')).map(function (a) {
+    return { a: a, t: document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))) };
+  }).filter(function (x) { return x.t; });
+  if (!items.length) return;
+  var cur = null, pinned = null, ticking = false;
+  function set(a) {
+    if (a === cur) return;
+    if (cur) { cur.classList.remove('is-active'); cur.removeAttribute('aria-current'); }
+    cur = a; if (!a) return;
+    a.classList.add('is-active'); a.setAttribute('aria-current', 'location');
+    var sb = a.closest('.sidebar');
+    if (sb && sb.scrollHeight > sb.clientHeight) {
+      var r = a.getBoundingClientRect(), s = sb.getBoundingClientRect();
+      if (r.top < s.top + 8 || r.bottom > s.bottom - 8) sb.scrollTop += r.top - s.top - s.height / 3;
+    }
+  }
+  function update() {
+    ticking = false;
+    if (pinned) { set(pinned); return; }
+    var best = items[0], i;
+    for (i = 0; i < items.length; i++) if (items[i].t.getBoundingClientRect().top <= 110) best = items[i];
+    var atEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atEnd) for (i = items.length - 1; i >= 0; i--) if (items[i].t.getBoundingClientRect().top < window.innerHeight - 60) { best = items[i]; break; }
+    set(best.a);
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  function unpin() { pinned = null; }
+  items.forEach(function (x) { x.a.addEventListener('click', function () { pinned = x.a; set(x.a); }); });
+  // qualquer rolagem do próprio usuário (inclusive com o mouse sobre o sumário) solta o item clicado;
+  // o clique seguinte num link volta a fixá-lo (mousedown acontece antes do click)
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
+    window.addEventListener(ev, unpin, { passive: true });
+  });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  if (location.hash) items.forEach(function (x) { if (x.a.getAttribute('href') === location.hash) pinned = x.a; });
+  update();
+})();
+</script>
+
+<script id="theme-toggle-js">
+(function () {
+  var b = document.querySelector('.theme-toggle'); if (!b) return;
+  var r = document.documentElement;
+  function eff() { var t = r.getAttribute('data-theme'); if (t) return t;
+    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  function sync() { var d = eff() === 'dark'; b.setAttribute('aria-pressed', d ? 'true' : 'false');
+    b.title = d ? 'Usar tema claro' : 'Usar tema escuro'; }
+  b.addEventListener('click', function () { var n = eff() === 'dark' ? 'light' : 'dark';
+    r.setAttribute('data-theme', n); try { localStorage.setItem('divine-tema', n); } catch (e) {} sync(); });
+  if (window.matchMedia) { try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync); } catch (e) {} }
+  sync();
+})();
+</script></body>
+</html>

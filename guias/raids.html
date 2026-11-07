@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guia de Raids · Guild DIVINE (Guild Wars 2)">
+<link rel="icon" href="data:image/webp;base64,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" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/webp;base64,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" media="(prefers-color-scheme: dark)">
+<title>Guia de Raids · DIVINE</title>
+<script>/* tema salvo: aplica antes de pintar a página */try{var t=localStorage.getItem('divine-tema');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script><style>
+/* =====================================================================
+   Codex DIVINE — design system da Guild DIVINE (Guild Wars 2)
+   Fonte da verdade: DESIGN.md (blueprint TypeUI). Embutido em cada página pela build.
+   Layout: topo imersivo de ponta a ponta + corpo editorial (sumário fixo no desktop).
+   ===================================================================== */
+
+/* ---------- FONTES (servidas de assets/fonts; funcionam offline e no PDF) ---------- */
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/barlow-condensed-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/barlow-condensed-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+/* ---------- TOKENS: CLARO ---------- */
+:root{
+  --font-display:"Barlow Condensed","Arial Narrow","Segoe UI",sans-serif;
+  --font-body:"Source Sans 3","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",Consolas,"Courier New",monospace;
+  --bg:#f5f7fa; --surface:#ffffff; --surface-2:#f0f4f9; --line:#dbe3ee; --line-strong:#c5d1e0;
+  --text:#0f1a2a; --text-soft:#44546a; --text-mute:#5a6a80;
+  --accent:#1cc4dc; --accent-text:#0a7487; --accent-tint:rgba(28,196,220,.12);
+  --gold:#8a5f0e; --gold-tint:rgba(224,176,82,.16); --gold-line:rgba(176,124,28,.45);
+  --action-bg:#0a7487; --action-bg-hover:#085f6f; --on-action:#ffffff;
+  --hero-scrim:rgba(10,17,28,.38);
+  --shadow:0 1px 2px rgba(15,26,42,.05), 0 8px 24px rgba(15,26,42,.06);
+  --nav-bg:rgba(245,247,250,.86);
+  --selection:#bdeef6;
+  /* compatibilidade com estilos inline antigos */
+  --texto-soft:var(--text-soft); --azul-esc:var(--accent-text);
+  color-scheme:light;
+}
+/* ---------- TOKENS: ESCURO (sistema e botão; nunca na impressão) ---------- */
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a111c; --surface:#111b2b; --surface-2:#162337; --line:#22324a; --line-strong:#2e4260;
+    --text:#e7eef7; --text-soft:#a9b8ca; --text-mute:#8597ad;
+    --accent-text:#5fd6e8; --accent-tint:rgba(28,196,220,.14);
+    --gold:#e0b052; --gold-tint:rgba(224,176,82,.12); --gold-line:rgba(224,176,82,.4);
+    --action-bg:#1cc4dc; --action-bg-hover:#5fd6e8; --on-action:#06121c;
+    --hero-scrim:rgba(5,9,16,.45); --shadow:none; --nav-bg:rgba(10,17,28,.82); --selection:#164b5a;
+    color-scheme:dark;
+  }
+}
+@media screen{
+  :root[data-theme="dark"]{
+    --bg:#0a111c; --surface:#111b2b; --surface-2:#162337; --line:#22324a; --line-strong:#2e4260;
+    --text:#e7eef7; --text-soft:#a9b8ca; --text-mute:#8597ad;
+    --accent-text:#5fd6e8; --accent-tint:rgba(28,196,220,.14);
+    --gold:#e0b052; --gold-tint:rgba(224,176,82,.12); --gold-line:rgba(224,176,82,.4);
+    --action-bg:#1cc4dc; --action-bg-hover:#5fd6e8; --on-action:#06121c;
+    --hero-scrim:rgba(5,9,16,.45); --shadow:none; --nav-bg:rgba(10,17,28,.82); --selection:#164b5a;
+    color-scheme:dark;
+  }
+}
+
+/* ---------- BASE ---------- */
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+html,body{margin:0;padding:0;}
+html{scroll-behavior:smooth;scrollbar-color:var(--line-strong) var(--bg);}
+body{
+  font-family:var(--font-body);font-size:16px;line-height:1.6;
+  color:var(--text);background:var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+::selection{background:var(--selection);color:var(--text);}
+a{color:var(--accent-text);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:color-mix(in srgb, var(--accent-text) 45%, transparent);}
+a:hover{text-decoration-color:currentColor;}
+a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+[id]{scroll-margin-top:84px;}
+img{max-width:100%;}
+p{margin:0 0 12px;text-wrap:pretty;}
+li{text-wrap:pretty;}
+b, strong{font-weight:700;}
+small{color:var(--text-soft);}
+code, kbd{
+  font-family:var(--font-mono);font-size:.82em;color:var(--text);
+  background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:1px 6px;
+}
+kbd{border-bottom-width:2px;}
+
+/* ---------- BARRA DO TOPO ---------- */
+.topnav{
+  position:sticky;top:0;z-index:20;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px max(20px, env(safe-area-inset-right, 0px)) 10px max(20px, env(safe-area-inset-left, 0px));
+  background:var(--nav-bg);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--line);font-size:14px;
+}
+.topnav a{color:var(--text);text-decoration:none;font-weight:600;}
+.topnav .where{display:flex;align-items:center;min-width:0;gap:4px;}
+.topnav .home{display:flex;align-items:center;gap:10px;min-width:0;font-family:var(--font-display);font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;}
+.topnav .crumb{color:var(--text-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.topnav .crumb::before{content:"/";margin:0 10px;color:var(--line-strong);}
+.topnav .actions{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.topnav .btn, .theme-toggle{
+  display:inline-flex;align-items:center;gap:8px;min-height:36px;
+  border:1px solid var(--line);background:var(--surface);color:var(--text);
+  padding:6px 14px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;
+  transition:border-color .15s ease-out, background-color .15s ease-out;
+}
+.topnav .btn:hover, .theme-toggle:hover{border-color:var(--accent);}
+.theme-toggle{padding:6px 10px;}
+.theme-toggle svg, .topnav .btn svg{width:16px;height:16px;}
+.theme-toggle .i-sol{display:none;}
+:root[data-theme="dark"] .theme-toggle .i-sol{display:inline;}
+:root[data-theme="dark"] .theme-toggle .i-lua{display:none;}
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .theme-toggle .i-sol{display:inline;}
+  :root:not([data-theme="light"]) .theme-toggle .i-lua{display:none;}
+}
+
+/* ---------- EMBLEMA (logo amarela no tema claro, branca no escuro) ---------- */
+/* fundo: no claro, a cor do texto (azul-tinta) realça a logo amarela; no escuro, a superfície */
+:root{ --emblem-bg:var(--text); }
+@media screen and (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --emblem-bg:var(--surface); } }
+@media screen{ :root[data-theme="dark"]{ --emblem-bg:var(--surface); } }
+.emblem{
+  display:inline-grid;place-items:center;flex-shrink:0;border-radius:50%;
+  background:var(--emblem-bg);border:2px solid var(--accent);
+  box-shadow:0 10px 30px rgba(28,196,220,.28);
+}
+.emblem img{grid-area:1/1;width:72%;height:72%;object-fit:contain;display:block;}
+.emblem-lg{width:124px;height:124px;}
+.emblem-sm{width:30px;height:30px;border-width:1.5px;box-shadow:none;}
+.emblem-sm img{width:78%;height:78%;}
+.emblem-escuro{display:none !important;}
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .emblem-claro{display:none !important;}
+  :root:not([data-theme="light"]) .emblem-escuro{display:block !important;}
+}
+@media screen{
+  :root[data-theme="dark"] .emblem-claro{display:none !important;}
+  :root[data-theme="dark"] .emblem-escuro{display:block !important;}
+}
+
+/* ---------- HERÓI (topo imersivo, de ponta a ponta) ---------- */
+.hero{position:relative;}
+.hero-bg{position:relative;height:clamp(260px, 38vw, 520px);overflow:hidden;background:var(--surface-2);}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to bottom, var(--hero-scrim) 0%, transparent 24%, transparent 56%, var(--bg) 100%);
+}
+.hero-bar{
+  position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:flex-end;
+  padding:max(16px, env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px));
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:860px;margin:0 auto;text-align:center;
+  padding:0 max(20px, env(safe-area-inset-right, 0px)) 8px max(20px, env(safe-area-inset-left, 0px));
+}
+.hero-inner .emblem{margin-top:-64px;margin-bottom:16px;}
+.hero h1{
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(40px, 6vw, 64px);line-height:.98;letter-spacing:.02em;margin:0;color:var(--text);text-wrap:balance;
+}
+.hero .hero-sub{
+  font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:.28em;
+  font-size:15px;color:var(--accent-text);margin:10px 0 0;
+}
+.hero .hero-desc{max-width:58ch;margin:16px auto 0;font-size:18px;line-height:1.5;color:var(--text-soft);text-wrap:balance;}
+.hero-chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 0;padding:0;}
+.hero-chips li, .badge-lvl{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.02em;color:var(--text-soft);
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 10px;
+  font-variant-numeric:tabular-nums;
+}
+.hero-chips li.is-date{color:var(--gold);border-color:var(--gold-line);background:var(--gold-tint);}
+.badge-lvl{display:inline-block;margin:0 4px 6px 0;background:var(--surface-2);}
+
+/* ---------- LAYOUT DO GUIA ---------- */
+.layout{
+  max-width:1160px;margin:40px auto 0;
+  padding:0 max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px));
+}
+.content{min-width:0;}
+.page{max-width:760px;margin:0 auto;}
+.page + .page{margin-top:56px;}
+@media screen and (min-width:1100px){
+  .layout{display:grid;grid-template-columns:232px minmax(0,1fr);gap:56px;align-items:start;}
+  .page{margin:0;}
+  .sidebar{position:sticky;top:76px;max-height:calc(100vh - 96px);overflow:auto;padding-bottom:24px;}
+}
+
+/* ---------- SUMÁRIO ---------- */
+.toc{margin:0 0 32px;}
+.toc h2{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-mute);margin:0 0 12px;
+}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:cap;}
+.toc ol > li{counter-increment:cap;margin:0 0 10px;font-size:15px;}
+.toc ol > li > b{font-weight:700;}
+.toc ol > li > b > a::before{content:counter(cap, decimal-leading-zero);font-family:var(--font-mono);font-size:12px;color:var(--gold);margin-right:10px;font-weight:500;}
+.toc ul{margin:6px 0 0;padding:0 0 0 14px;list-style:none;border-left:1px solid var(--line);}
+.toc ul li{font-size:14px;margin:0;}
+.toc a{display:block;padding:4px 0 4px 10px;margin-left:-11px;border-left:2px solid transparent;color:var(--text-soft);text-decoration:none;line-height:1.35;}
+.toc ol > li > b > a{margin-left:0;padding-left:0;border-left:0;color:var(--text);}
+.toc a:hover{color:var(--accent-text);}
+.toc a.is-active{color:var(--accent-text);border-left-color:var(--gold);}
+.toc ol > li > b > a.is-active{color:var(--accent-text);}
+.toc.cols ul{border:0;padding:0;}
+@media screen and (max-width:1099px){
+  .sidebar .toc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .toc.cols ol{columns:2;column-gap:28px;}
+  .toc.cols li{break-inside:avoid;}
+}
+@media (max-width:600px){ .toc.cols ol{columns:1;} }
+
+/* ---------- SEÇÕES ---------- */
+h2.section{
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.02em;
+  font-size:clamp(28px, 3.4vw, 36px);line-height:1.05;color:var(--text);
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  margin:0 0 8px;padding-bottom:12px;border-bottom:1px solid var(--line);text-wrap:balance;
+}
+/* número do capítulo: mesma fonte e tamanho do título, em dourado (lê como "01 Fundamentos") */
+h2.section .num{font-family:var(--font-display);font-size:inherit;font-weight:600;letter-spacing:.02em;color:var(--gold);font-variant-numeric:tabular-nums;}
+.section-sub{color:var(--text-soft);font-size:17px;margin:12px 0 28px;max-width:62ch;}
+h3, h4{text-wrap:balance;}
+h4{font-size:17px;font-weight:700;margin:28px 0 10px;color:var(--text);}
+
+/* ---------- CARDS ---------- */
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:24px;margin:0 0 20px;box-shadow:var(--shadow);
+}
+/* cabeçalho do card: ícone + título na mesma linha; o texto ocupa a largura toda (borda esquerda única) */
+.card .card-head{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;align-items:center;margin-bottom:4px;}
+.card .card-head > div{display:contents;}
+.card .card-head > :not(div):not(h3):not(h4):not(p){grid-column:1;}
+.card .card-head h3, .card .card-head h4{grid-column:2;font-family:var(--font-body);font-size:21px;font-weight:700;line-height:1.25;margin:0;color:var(--text);}
+.card .card-head p{grid-column:1 / -1;margin-top:14px;}
+.card .card-head > div > :first-child:not(h3):not(h4){grid-column:1 / -1;}
+.card p{margin:0 0 12px;}
+.card > :last-child, .card .card-head p:last-child{margin-bottom:0;}
+.card > .card-head + p, .card > p + p{margin-top:12px;}
+.card > h4:first-of-type{margin-top:24px;}
+.ico-wrap, .card .icon{
+  width:44px;height:44px;flex-shrink:0;border-radius:10px;
+  background:var(--accent-tint);border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.card .icon{object-fit:contain;padding:6px;}
+.ico-wrap{display:flex;align-items:center;justify-content:center;color:var(--accent-text);}
+.ico-wrap svg{width:22px;height:22px;stroke-width:1.8;}
+
+/* ---------- IMAGENS ---------- */
+.hero-img{display:block;width:100%;height:auto;border-radius:12px;margin:20px 0;background:var(--surface-2);border:1px solid var(--line);}
+.hero-img.natural{margin-inline:auto;}
+.hero-img.banner{aspect-ratio:2/1;object-fit:cover;object-position:center;}
+img.emoji{height:1.15em;width:auto;vertical-align:-0.22em;margin:0 1px;}
+.img-fallback{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--surface-2);color:var(--accent-text);font-size:13px;}
+.img-fallback.inline{width:1.1em;height:1.1em;font-size:.7em;vertical-align:-0.2em;}
+
+/* ---------- LISTAS COM ÍCONE (sem caixa dentro de caixa) ---------- */
+.tier{display:flex;gap:14px;align-items:flex-start;padding:12px 0;margin:0;}
+.tier + .tier{border-top:1px solid var(--line);}
+.card > .tier:first-of-type, .card > h4 + .tier{margin-top:8px;}
+.tier > img:not(.emoji){width:28px;height:28px;object-fit:contain;flex-shrink:0;margin-top:1px;}
+.tier > .ico-wrap{width:30px;height:30px;border-radius:8px;}
+.tier > .ico-wrap svg{width:16px;height:16px;}
+.tier p{margin:0;flex:1;min-width:0;}
+.tier b, .tier .label{color:var(--text);}
+
+/* ---------- TABELAS ---------- */
+table.map{width:100%;border-collapse:separate;border-spacing:0;margin:16px 0;font-size:15px;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-variant-numeric:tabular-nums;}
+table.map th, table.map td{padding:10px 14px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line);}
+table.map tr:last-child td{border-bottom:0;}
+table.map th{font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mute);background:var(--surface-2);}
+table.map td img{height:22px;width:auto;vertical-align:middle;margin-right:6px;}
+table.map td.arrow{text-align:center;color:var(--gold);font-weight:700;width:40px;}
+
+/* ---------- DESTAQUES ---------- */
+.highlight, .note{border-radius:12px;padding:14px 18px;margin:16px 0;font-size:15.5px;}
+.highlight{background:var(--accent-tint);border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);}
+.note{background:var(--gold-tint);border:1px solid var(--gold-line);}
+.note b:first-child{color:var(--gold);}
+ol.steps{padding-left:0;margin:12px 0;list-style:none;counter-reset:passo;}
+ol.steps li{counter-increment:passo;display:flex;gap:12px;align-items:baseline;padding:6px 0;}
+ol.steps li::before{content:counter(passo);font-family:var(--font-mono);font-size:12px;color:var(--gold);min-width:20px;height:20px;border:1px solid var(--gold-line);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+/* ---------- WINGS / DUNGEONS (arte com nome sobreposto) ---------- */
+.wing, .dungeon{
+  display:grid;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  margin:0 0 20px;box-shadow:var(--shadow);
+}
+.wing > .wing-img, .dungeon > .dungeon-img, .wing > .wing-head, .dungeon > .dungeon-head{grid-area:1/1;}
+.wing-img, .dungeon-img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block;height:auto;}
+.wing-head, .dungeon-head{
+  align-self:end;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;
+  padding:48px 20px 16px;color:#fff;
+  background:linear-gradient(to top, rgba(6,10,18,.88) 0%, rgba(6,10,18,.55) 55%, rgba(6,10,18,0) 100%);
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:26px;line-height:1;
+  text-shadow:0 1px 2px rgba(0,0,0,.4);
+}
+.wing-head .wing-num, .dungeon-head .lvl{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-shadow:none;
+  color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);border-radius:6px;padding:4px 8px;white-space:nowrap;
+}
+.dungeon-head .lvls{display:flex;gap:6px;flex-wrap:wrap;}
+.bosses, .dungeon-body{grid-row:2;padding:8px 20px 12px;}
+.boss, .path{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px 0;font-size:16px;
+}
+.boss + .boss, .path + .path{border-top:1px solid var(--line);}
+.boss > span, .path > span{font-weight:600;}
+.boss a, .path a{
+  display:inline-flex;align-items:center;gap:6px;min-height:32px;white-space:nowrap;
+  font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--accent-text);text-decoration:none;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 12px;
+  transition:border-color .15s ease-out;
+}
+.boss a:hover, .path a:hover{border-color:var(--accent);}
+.boss a svg, .path a svg{width:12px;height:12px;}
+.dungeon-meta{display:flex;gap:6px 20px;flex-wrap:wrap;font-size:15px;color:var(--text-soft);padding:8px 0 12px;border-bottom:1px solid var(--line);margin-bottom:4px;}
+.dungeon-meta b{color:var(--text);}
+.dungeon-meta a{display:inline-block;padding-block:2px;}
+.paths{display:flex;flex-direction:column;}
+
+/* ---------- RECURSOS ÚTEIS ---------- */
+.resource{
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 12px;
+  transition:border-color .15s ease-out;
+}
+.resource:hover{border-color:var(--line-strong);}
+.resource .res-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
+.resource .res-name{font-weight:700;font-size:18px;color:var(--text);}
+.resource .res-desc{font-size:15.5px;color:var(--text-soft);margin:0 0 10px;}
+.resource .res-url{
+  display:inline-flex;align-items:center;min-height:30px;max-width:100%;
+  font-family:var(--font-mono);font-size:12.5px;color:var(--accent-text);text-decoration:none;word-break:break-all;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 10px;
+}
+.resource .res-url:hover{border-color:var(--accent);}
+.resource .res-new{font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.08em;color:var(--gold);border:1px solid var(--gold-line);background:var(--gold-tint);border-radius:6px;padding:1px 7px;}
+/* lista de recursos em 2 colunas no desktop e no PDF */
+@media screen and (min-width:900px), print{
+  .page:has(> .resource){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px;align-content:start;}
+  .page:has(> .resource) > :not(.resource){grid-column:1 / -1;}
+  .page:has(> .resource) > .resource{margin:0 0 14px;display:flex;flex-direction:column;}
+  .page:has(> .resource) > .resource .res-url{margin-top:auto;align-self:flex-start;}
+}
+.featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 8px;}
+@media (max-width:600px){ .featured-grid{grid-template-columns:1fr;} }
+.featured{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:border-color .15s ease-out;}
+.featured:hover{border-color:var(--accent);}
+.featured .f-name{font-weight:700;color:var(--text);font-size:16px;margin-bottom:2px;}
+.featured .f-url{font-family:var(--font-mono);font-size:12px;color:var(--accent-text);word-break:break-all;}
+
+/* ---------- RODAPÉ ---------- */
+.footer{margin:72px auto 0;padding:28px 20px 40px;border-top:1px solid var(--line);text-align:center;max-width:1160px;}
+.footer a{display:inline-block;padding-block:4px;}
+.footer-brand{
+  margin:0;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:2px 0;
+  font-family:var(--font-display);font-weight:600;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-soft);
+}
+.footer-brand b{color:var(--text);font-weight:700;letter-spacing:.18em;}
+.footer-brand .sep{color:var(--gold);margin:0 14px;}
+
+/* ---------- MOVIMENTO ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+}
+
+/* ---------- CELULAR ---------- */
+@media screen and (max-width:640px){
+  body{font-size:16px;}
+  .hero-inner .emblem{width:96px;height:96px;margin-top:-50px;}
+  .hero .hero-desc{font-size:16.5px;}
+  .layout{margin-top:28px;}
+  .card{padding:18px;}
+  .card .card-head{column-gap:12px;}
+  .card .card-head h3{font-size:19px;}
+  .wing-head, .dungeon-head{font-size:21px;padding:36px 14px 12px;}
+  .bosses, .dungeon-body{padding:6px 14px 10px;}
+  .topnav{padding:8px 12px;}
+  .topnav .crumb, .topnav .home > span:not(.emblem){display:none;}
+  .topnav .btn .lbl{display:none;}
+}
+
+/* ---------- IMPRESSÃO / PDF (sempre claro, uma coluna) ---------- */
+@media print{
+  @page{size:A4;margin:16mm 14mm;}
+  body{font-size:10.5pt;line-height:1.5;background:#fff;}
+  .topnav, .hero-bar{display:none;}
+  a{color:inherit;text-decoration:none;}
+  /* capa */
+  .hero{page-break-after:always;break-after:page;padding-top:4mm;}
+  .hero-bg{height:92mm;border-radius:12px;}
+  .hero-bg::after{display:none;}
+  .hero-inner{padding:0;}
+  .hero-inner .emblem{margin-top:-62px;width:124px;height:124px;box-shadow:none;}
+  .hero h1{font-size:44pt;}
+  .hero .hero-desc{font-size:13pt;}
+  /* corpo */
+  .layout{display:block;margin:0;padding:0;max-width:none;}
+  .sidebar{page-break-after:always;break-after:page;}
+  .page{max-width:none;}
+  .page + .page{margin-top:0;}
+  .page-break{page-break-before:always;break-before:page;}
+  .card, .wing, .dungeon{box-shadow:none;}
+  .no-break, .card{break-inside:auto;page-break-inside:auto;}
+  .tier, table.map tr, .boss, .path, .resource, .featured, .note, .highlight,
+  .hero-img, .card-head, ol.steps li, .wing, .dungeon{break-inside:avoid;page-break-inside:avoid;}
+  h2.section, .section-sub, h3, h4, .card-head{break-after:avoid;page-break-after:avoid;}
+  h2.section{font-size:24pt;}
+  .wing-img, .dungeon-img{height:52mm;aspect-ratio:auto;}
+  .hero-img{max-height:95mm;width:auto;max-width:100%;object-fit:contain;margin-inline:auto;}
+  .hero-img.banner{width:100%;height:58mm;max-height:none;aspect-ratio:auto;object-fit:cover;}
+  .footer{margin-top:36px;padding-bottom:0;}
+}
+</style>
+<script>
+/* Fallback de imagens: se um ícone/imagem externa falhar, troca por um marcador neutro. */
+document.addEventListener('error', function (e) {
+  var t = e.target;
+  if (!t || t.tagName !== 'IMG' || t.dataset.failed) return;
+  t.dataset.failed = '1';
+  if (/(^|\s)(hero-img|wing-img|dungeon-img|logo)(\s|$)/.test(t.className)) { t.style.display = 'none'; return; }
+  var s = document.createElement('span');
+  s.className = 'img-fallback' + (t.classList.contains('emoji') ? ' inline' : '');
+  s.textContent = '\u25C6'; s.title = t.alt || ''; s.setAttribute('aria-label', t.alt || '');
+  t.replaceWith(s);
+}, true);
+</script>
+</head>
+<body>
+<nav class="topnav" aria-label="Guild DIVINE"><div class="where"><a class="home" href="../index.html"><span class="emblem emblem-sm"><img width="64" height="64" decoding="async" class="emblem-img sm emblem-claro" src="data:image/webp;base64,UklGRhoPAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSGoIAAAB8Lht27E32v/vaz/P805qIx3btj21sUxT223GVm0zqRGrUa2k7UxtK03NQZXc14lrf1AljYgJwO2XAtdVEnekwDuxm5fO6fdpGUDKOwGQj44N0ueFsU9BqDsCAk9v4oUtzI+6F0rcCTIUlddyYvh5nmkDKYqcVIDEfSdZM+xPMrIYZNGSEhAPftLtrQhmo3QKuagsZBESCnhuwOZLljveDuonUCyRXFUOoshIhReSgqTv2eMfnuOzCJTIJtMURBFRKD4oSBfUvuWcT5gdAolHTjmOhCwaCvetpvUMeTYvOmw51ybOCi+DDtRsBFUUFJ49Qm3oNs5NbnPfcjrS5+5PkUXurwhReBKPHqU2zJuYtqBNuTqfVe+WUeAX0LV92QU5AKrQBEr/SW25fOTO70pCABB4dy+dz24J5Ll7IQpLYgy1ZfrEXS9CKUgVKBaCilFTf+3b+6NFBzkEqpAk3vGcYc7YnWEICABKAFU/6T5sdmz0uIjWPQeECFU4AvOpebHvrvuhAEgJ+UnMWZ/XN3sj34ZQhSHxiucbRi3p+RQEIAU+XeOT1vM8rbV2pEl+AkrcPoWh1Dw5JfK3IVBQCIsmrTbG8f+dMcbySh9IcbuECGynx7T0dodyEFB49yiNsY40p/ft2n/GkNZqy+iSkLdHhOCZAhrOSG9JtgM6ab/AWtpd6bHz01NTE6Mz9jpaq7m4LMTtkCJwbzgNL8WP+ZrW+77YhGv0yW0z0xfP+KJl07Y9BsWkxO2jdZpZxSFuTaHUrKV9qHkq5bsu9Cx3dfq4c8ye+KQ1EdUgJKrnDGndOS4p0/pOMxLylhRe2sakb6l5LPGHSueprc+zyX2qP92kFGRIIBTNae2yur+ujPN8Z9gZ6hYU6v3jmPolNU8n/1pryAUabUjqIzM7PQGIULRj0DL/2YZr433f8sJjkDel0NSzhpmdaXg1cfyjKb9so++01o4+ry4OLynRl8YZ8x7arVxCqznv5hSq5xvunrquOZ3hvCXy9SXjJu+1JK3W2ve5vwvm0zj+HQYMyMylde59yBtJPHzK56qX9/qfHafhqsyauLtvfOSk5G3nfdLXnmFB7X20lhsFUCYzi8zz5t+MQCaZU3wW+WEGDS/OmAJ8FN5n0tw5c2dk7rhEaq5tTOdrjoZSaL00l7kZfBFSXEehNXmozEfkFkTQWCYt+hjr/dgvP2v7e2xWRkrariC/mELjO1aHAsqlbWTBYE5EIFAWgECxTfQ+RSL5O+4/Q8srU9MeOUbL0xWB+5qOWZGZsLrmeTrLnSUgoDBgg+EvWy7djeptIKHQkByHcsfJ6sAAasuDP4Ybv4BZCAgIVOy8uk5/Gt/wVwT+r9GhC/wmkhOey/0WCgoxPP0AKv3Fy08CFfbRGE5tQaP5EwIQSgkUe+MvOsfT70wsCSHx3Nl8hn9Fz7IHlECFQxyOEKzgmXsQQA3jNCePpnasBQUAIhTRNL7mkLbrBkMKVD3FU1U/pPMYDiXxKq8+jwAezr10H6RCBIPssZKGl+9BQAAIoA2t73jyvX+XLW8EhdJ5th4Cncdf5uuQCi14YkPue+jj6VcgofADL7S4RMN1zzwKoaTCY6dpfc1eg1gwL6MkUOYot1YA2vBUGITCV/Qs0wJ5ZHsoQOHb2B9oNCd8vPG7MEhU3kzPGC5733PcNr8zEHaGbITQHGZBIICfePUSTz13jpwLCUChwk5aw67D/khfNPzT4u+sPkuf+e/2cr5lfGIoXijw2RxNyW5QCOBb1nnpAlvu4Mn1L0ICIehC61jw5n6eWJG+IGVExyY909m7atZiaq5b+Ala0F17TG3liWoQUIgYBwxlVCwvr4iEQgCPnaGzXPyJsz6vHVyTnZY8rmfNUPye9jd5LuMHzCIzMJwcCAUIPP888Ix3cjS5bk1zhKLaJlrfsPMIetrzSXtpb3bSvCZ4df4uas6PqniOwacbk4erQACAkJCYxowjtCnrXkLLg9TO8kSlGusc6bygo8/zaYsjEL+cmmuiPie7fRq0bAqF6whIPP53/hnyn5i1H4+g79PwK6jAy6P2O5LGsz6Xptbqu5Ca26N+ZGSE1hwEhZtUiKDxHS/GrfqqzrjdQWaHQOK1ls83/Tnjb/rGGC6t88NCZ7l32ne5i33NqRC4aYFEer5jwaLMlB/aNO78ZIkX20atWHH68PQudb7cSGcd3+q7gIZ7pn1JazlKiFsqt5aec47HFy5MzUxKW565LHuvJh2PP4oOF6jZNSqDmpumf0f+2xFS4BYlqmRTW2d9/nNoc87KdYfOO1qtmfcRAnjlHPObJ+bQcGnUKKY8DiVwyxIlp5PGWOPz+tozZNLdkAhFV8b1TjtCPz+j7/dNIRRup5RovIc+ndZeMOhpR3JjAwgJSDx8sn5aAi13LWoEKSVur1Ao1XrZCcfr+6fjaodCCgAC1d6ZmnCAhunzy0Hh9iuJkj0jfhwfkzFrSESTEoBQACCUwLCsLBrmZn4NhcIUIej399K5Xz3WP3L5gfYApFJCSFSNXphM65i0uCJEoUAgsIKa/QbS+Ux/RwEoFlKq89LYlbSGy3KaQaGQJR48SnPlqY/z6NMdmjNoeq/7RmelnaQxXL9kEBQKXeH9y457ypX9au35SyfzuezxEZtP0deOfy6aCIEiqFC/wHBZSajKJVvx4qPptNSOV5ZnD5GiSECh7iXHJZUQgtlc8+Jla8hr2xavbAMpUDQV3jxKbn4KGM28x/fx6omd2cuG3AclUFQV7skkL3TFs5fZs9mlvdnRXz0KIVGEpZCdT5M5L/difoMaDZ8NAZRAkZYKYQNOkkv38WpLCKEkirwSqNR2QT59n+uqF8edKBSAKnV+mBS9JOY9iDsAkEqi8AFWUDggigYAABAgAJ0BKkAAQAA+KRCGQiGhCwYDZgwBQlsALEexwtXpf4V/sB8GNifsv21/ZjpRztdQf4v8kP6r9OvQB5gH6H/5b+T/sB/Je4B5gP1s/WP3gPRX6AH8t/t3WAegB+1Xqsf7v/df4v4Fv2f/8X+c+AD+Q/1D/ndYB6AHYAfx38AO4B4W10/TA2XRI4lu8lwpkd3otZz/qb2Bf5L/TP+N/dfbA6lD9Rm+2svNCx18BppSkjYog5JWzH7lKhLual8HHqn+F7iyV6idLJhONqElFlL+5p0hb8iKGhFlj/sGXDseiXMeaUHPaiEes59bSaVf4j1OUIufcI91hzaUiZy4Eoe9Dsj0we90AAAA/v4thff6fRvrOQ3i+TwIkuISpnp6ULOpTTmsCn+qCmCDEPez3KWvlrtjmMier4cBwWeLZtzKE2nLibi6tgNxjFGfb6wYDC6o230o7oVfrhyzOuA2VSBoYXxr6qlfQHdmhrOdZXZYxf3CiHShLb9VZB9yMyBHICuacN6yoQ0jz52t3ohM38gnPMxrZUOYKyapC+Q2p7YxmCmqL69wuDNxnY5Nx12EFsSRw3esFijg4rG85SH3GV+fZWaeFXYnwxJsrb7ttn0po3vdjJQt3mTxaHiNEbJy4tXEgdDyogF7s7Hhuoa6HmfM0J1gqcy1yjjrMCAtfDpGTyvbDK8b6ZvKISr/cQBKpe7DTCjPH5sP/ia569kEz/qyBrfqoVAojD6d2aKFjbAx0SlOvQ95ZfCFytFXTv5rWelm73wID0UgqzCoZ4t0LbUlsJp4d/7cmbGu8rw+sWyknX0H9CDclV7SlFHfBho8DRO92VSyKC2xPanSP2PrR0G5RkyO7db9YfXTinhb0z9ZXddYNjchXKDdPP/wp1It9isWx6JEjV5iEQlbz18diHjCTxOagM6Lnsx0uMsBqpA+ukCSHZEQBMsNbshm8oa8VlY1PkrYkisDujd5hy5SEbeGB1VuKQlBYO+V6qNXj2I6dZqa4kegai0GWLLeEvzfnTFtNqxJUgM9GTPCmjcU5fyY/NJbXXa5qMiu0tV+Ax/ubniHdma5k9u8P/Y/7c6Pv/KvuctFMq2Ka50Gd+E+a+8pBAbqc+kXnrvy74Ajnlk2EnsGJbGqeFAEIH/i6QM5PO2ND1U2G1tBg3PSTOvi0OpDjweOT5DA+1sdOSkPjzpf/nKurR73sPmnEcyZbU3IlBhnEeV2W70w7fDEc2kTPxqvqrWVimv6hv8GZ+QSx9TxmZ/XdnGYA+c7PDMW9YTPbweHpPf1if5j/HVH6hfJETow7r7ntbvAnZ314saym5i07dltYvC36KT/EvvfPSDB0lYvEWdGciJ3L8n5QMkJ8c+0J7M7644xCBy6gZuL0PhWwrZ2087m3+23pPSKJLkO8D2ItkhqvNVaDFl90afgK5jhyEJ1sHZYIEbM1+t7WttIjFEkVvQ6tGvgD/oSuReOgbcNc0CwRS00B6mVKlZRNoH38Aas2xIN/0G7DDfdT0a4fsAdXcc457lNT3xcOYwB8jy5t/u6D12fqIIUuMEB/gHBb9lbtRjO6IsSfn/+wOUrgLxrWTCesxk14CKwE4fHF9fXJp++kO1vdUAmnoodzJ5cABClahZdbLv5ov0feGExia3pJYgZmB32MNvuuPilX8tRsHf22nD9Qi09Vn4lgXvhQsJDZnsb8zYdmpYWXSHxd9uvQqs2BnWXTnz6pdxEWFoiLXHjH/fQ9lgfurIC3uuHAxTIgXGOkaQp0gfiG7/+OwBWSWe9jqVXk3ygYwD/CRHJ0TRNmgPWj1a7VH2LdrPEqBj3dyPqpspLZsGnLJUlpWieWQ054ywWKfdHkm/IVtbu1fRWhSVR4FM29Q3JHH7ZPvg4iU2qFG70x76wcaDkCgjw85IUFJHq7S3WnTOfjxM2MeiFB2va1e6I27v/zwgzOj/xYnlNVOSV58g4YekodSVThCPsezAn0VW3igUraH9Dg3VsLGpbg0HHwrkt/6uVrMQq9nTusdJlzniDmh+k1/7u43nBljCie0izA7NEBAeIB9DREPBjP66yMvpHpR9iLjaCdCbeNHBf8w/7Q9XcJ7z0Lq6SD/iqIGkc7MgoW2AaYLC89r3/KXPkq3NuJhxb+H75OVtmfPxcctRrABvB/Hsb4efvRe3sif/2uZEbP7ZYf+IYcb/9nEomOYK8URNvwdtKiRWHXtp119zehnoWok3ng7IrYZAAAA==" alt=""><img width="64" height="64" decoding="async" class="emblem-img sm emblem-escuro" src="data:image/webp;base64,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" alt=""></span><span>Guild DIVINE</span></a><span class="crumb">Guia de Raids</span></div><div class="actions"><button type="button" class="theme-toggle" aria-label="Alternar tema claro ou escuro"><svg class="ico i-lua" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /> </svg><svg class="ico i-sol" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /> </svg></button><a class="btn" href="../pdfs/raids.pdf" download><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="7 10 12 15 17 10" /> <line x1="12" x2="12" y1="15" y2="3" /> </svg><span class="lbl">Baixar PDF</span></a></div></nav>
+
+<!-- ============ CAPA ============ -->
+<header class="hero hero-guide">
+  <div class="hero-bg"><img width="1920" height="1080" decoding="async" class="hero-banner-img" src="../assets/img/9a3b3gw2-ex6-voe-launch-wallpaper-1920x1080-7e4a01-1920.jpg" alt=""></div>
+  <div class="hero-inner">
+    <span class="emblem emblem-lg"><img width="240" height="240" decoding="async" class="emblem-img lg emblem-claro" src="../assets/img/bwzdTWW-6321c6-240.webp" alt="Brasão da guilda DIVINE"><img width="240" height="240" decoding="async" class="emblem-img lg emblem-escuro" src="../assets/img/TGpP3lG-1936fb-240.webp" alt=""></span>
+    <h1>Guia de Raids</h1>
+    <p class="hero-sub">DIVINE · Guild Wars 2</p>
+    <p class="hero-desc">Wings, Raid Encounters, recompensas e modos de dificuldade, com vídeo de cada boss.</p>
+    <ul class="hero-chips"><li>8 Wings</li><li>16 Raid Encounters</li><li>CM e Legendary Mode</li><li class="is-date">Atualizado em nov. 2026</li></ul>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar"><nav class="toc" aria-label="Sumário">
+    <h2>Neste guia</h2>
+    <ol>
+      <li><b><a href="#secao-1">Introdução e fundamentos</a></b>
+        <ul>
+          <li><a href="#introducao-as-raids">Introdução às Raids</a></li>
+          <li><a href="#recompensas">Recompensas</a></li>
+          <li><a href="#envoy-armor-armadura-lendaria">Envoy Armor</a></li>
+          <li><a href="#coalescence-anel-lendario">Coalescence</a></li>
+          <li><a href="#tiers-de-dificuldade">Tiers de dificuldade</a></li>
+          <li><a href="#quickplay">Quickplay</a></li>
+        </ul>
+      </li>
+      <li><b><a href="#secao-2">Raid Wings (1 a 8)</a></b>
+        <ul>
+          <li><a href="#spirit-vale">Wing 1: Spirit Vale</a></li>
+          <li><a href="#salvation-pass">Wing 2: Salvation Pass</a></li>
+          <li><a href="#stronghold-of-the-faithful">Wing 3: Stronghold of the Faithful</a></li>
+          <li><a href="#bastion-of-the-penitent">Wing 4: Bastion of the Penitent</a></li>
+          <li><a href="#hall-of-chains">Wing 5: Hall of Chains</a></li>
+          <li><a href="#mythwright-gambit">Wing 6: Mythwright Gambit</a></li>
+          <li><a href="#the-key-of-ahdashim">Wing 7: The Key of Ahdashim</a></li>
+          <li><a href="#mount-balrior">Wing 8: Mount Balrior</a></li>
+        </ul>
+      </li>
+      <li><b><a href="#secao-3">Raid Encounters</a></b>
+        <ul>
+          <li><a href="#living-world-season-1">Living World Season 1</a></li>
+          <li><a href="#icebrood-saga">Icebrood Saga</a></li>
+          <li><a href="#end-of-dragons">End of Dragons</a></li>
+          <li><a href="#secrets-of-the-obscure">Secrets of the Obscure</a></li>
+          <li><a href="#visions-of-eternity">Visions of Eternity</a></li>
+        </ul>
+      </li>
+    </ol>
+  </nav></aside>
+<main id="conteudo" class="content">
+
+<!-- ============ SUMÁRIO + INTRO ============ -->
+<div class="page page-break">
+
+  
+
+  <h2 class="section" id="secao-1"><span class="num">01</span>Introdução e fundamentos</h2>
+  <p class="section-sub">Tudo o que você precisa saber antes de entrar na sua primeira raid.</p>
+
+  <!-- INTRODUÇÃO -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="introducao-as-raids">Introdução às Raids</h3>
+        <p>
+          As <b>Raids</b> são instâncias de nível 80 que podem conter apenas um boss
+          (<i>Encounters</i>) ou uma sequência de bosses e eventos (<i>Wings</i>),
+          desafiados por um squad de <b>10 jogadores</b>.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Presentes nas expansões
+      <span class="badge-lvl">Heart of Thorns</span>
+      <span class="badge-lvl">Path of Fire</span>
+      <span class="badge-lvl">End of Dragons</span>
+      <span class="badge-lvl">Secrets of the Obscure</span>
+      <span class="badge-lvl">Janthir Wilds</span>
+      <span class="badge-lvl">Visions of Eternity</span>
+      e nas Living Worlds
+      <span class="badge-lvl">Season 1</span>
+      <span class="badge-lvl">Icebrood Saga</span>.
+    </p>
+    <p>
+      Para acessar as Raids é necessário ir até o portal de entrada, localizado dentro do
+      <b>Lion's Arch Aerodrome</b>
+      (<a href="https://wiki.guildwars2.com/wiki/Lion%27s_Arch_Aerodrome" target="_blank" rel="noopener">Aerodrome Waypoint</a>).
+    </p>
+    <p>
+      Algumas mecânicas são liberadas pela <b>Mastery Raids</b>, localizada em
+      Heart of Thorns. São necessários <b>8 pontos</b> para desbloquear a Mastery completa.
+    </p>
+    <img width="1300" height="731" decoding="async" class="hero-img banner"
+         src="../assets/img/Raid-portal-fe5fc9-1300.jpg"
+         alt="Portal de Raids no Aerodrome">
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /> </svg></span><p><b>Acesso por expansão</b>: Quickplay e Old Lion's Court são liberados para todos. As Raids de Heart of Thorns e Path of Fire são liberadas ao possuir a expansão (os encontros da Icebrood Saga exigem Path of Fire). Os encontros de End of Dragons, Secrets of the Obscure e Visions of Eternity só podem ser abertos por quem completou as missões de história correspondentes, mas é possível entrar em instâncias abertas por outros jogadores.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" /> <circle cx="12" cy="12" r="3" /> </svg></span><p><b>Masteries obrigatórias</b>: Wing 1 exige Glider Basics e Updraft Use. Wing 2 exige Updraft Use e Bouncing Mushrooms. Wing 3 exige Ley Line Gliding e Bouncing Mushrooms. Wing 4 exige Glider Basics. Em Mount Balrior, a Warclaw é recomendada.</p></div>
+  </div>
+
+  <!-- RECOMPENSAS -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="96" height="96" decoding="async" class="icon" src="../assets/img/Chest-event-gold-open-1ff410-96.webp" alt="">
+      <div>
+        <h3 id="recompensas">Recompensas</h3>
+        <p>As recompensas das Raids são <b>semanais</b> e variam entre gold puro, equipamentos e moedas específicas do conteúdo.</p>
+      </div>
+    </div>
+    <img width="1024" height="512" decoding="async" class="hero-img banner" src="../assets/img/URzQbtM-650a7d-1024.jpg" alt="Recompensas de Raid">
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /> <path d="M8 16H3v5" /> </svg></span><p><b>Reset semanal</b>: as recompensas especiais de cada encontro valem uma vez por semana. O reset é toda segunda-feira às 07:30 UTC (04:30 no horário de Brasília). Emboldened e Call of the Mists mudam de Raid uma hora depois, às 08:30 UTC. As Daily Raid Bounties (quatro achievements por dia, cada um com um coffer extra) resetam às 00:00 UTC (21:00 em Brasília).</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /> </svg></span><p><b>Limite de Magnetite Shard</b>: 800 por semana. Depois disso, o boss entrega o item No Reward no lugar da moeda. Os encontros da expansão mais recente dão Gaeting Crystal em vez de Magnetite Shard.</p></div>
+
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,UklGRigJAABXRUJQVlA4IBwJAABQJQCdASpAAEAAPikOhkIhhcMlxgYAoSxAFnZez2SRjbOqo0p5TXMfng9Gu3J8wHm6+i3++ecz1lv7VewB+oHpr/tF8In7bekB/9MExaCZ+fdfyQ/db3gsGdoXz/e2/k/yJ8AL8e/ln9k/KH9yPXn2BQAPzH+df5r8jPO+1LPAHol/mv+P/NL4D/uniyUA/5f/ev9j/efy7+P3/F/LL/ge3r6I/4HuB/yf+a/5D+7/uL/iv/19VHso/Z32W/1uc6HPLCh7xC2ug4AuCRu/j/ZjQP4HBecfvhnsTVqIWucOkZMQjd37Hi2UoI7phTGlb8wazHtFhkTF6WIaUM+xfEcdF1J+fMeHJw0uEmOBeCZSSnhbAAFN44JTvolgrIwjA8qFpDNXllZwQ2ajdqWR5VjL1gywAP7//xOrvi8OgfZU8wM2UmE8MB59RUu8nSZ1LQxVnSfTDMsgYNqamaBAWWwIpKS1xzPHM84aZGLTIrLYmCVBLOoDfEncsX+velouGEckqxoec7C5sPZJkNN/blQ/WQMD7uAGAPCdFm3erm+5p3dW47jG8cu5TwDDLComWnzIDRopw0IKirXZnbru380uA2ng3yNPYqjPYFR+XmbR4XfR9GmCRaizTOBgUHsksOIhycoQTrujf8jGRWbbMIshm5Nf1e7kF2D2eOcJZTNd6jXWvu7h6S0FW9OD6krjOf99wVh4E5ukIc6/5Bd11/dsvUMtsJbIoXN/mJeGyc+hnCJZaI9/7o7DeG3qtswsHSeizi+bZzbe5ggKOPj6g9CbfFlfZ7TihjECiLbCn885rRWsYNkQ+FpsMwkQvWaMWHwhw8RdXDmBzgbcbSNDfSWWGm33k5/KKHhcW4igoUfjk+LhwGWfMnO2Ty0eEVJFCs/j25bPhd/nYUWELH3pfTz9Z4eu/q9AilDPX77I7WPCOxTJPdRE1MMsqligEvUdSqrRW3XuywyDiox9zjicsBqDZWHH7fhIQZ5F+Qwim1syW4oVnVBxXdKG8bYwCE33hNiAufRZuXAZrH3zJID3Ro7n00fixviBVC9ka2lS9qTC+flNV6L/CNLJQmdBav7ZXlwqEwX/usE5x+sitF1Yq0IoRZYxnaWyjx2WUNGpZoiLf+n3/nmLn/ydi28ANXKc9efVzRe/j5I/lzbf36RTCk699p54fo/iuf9BZWaZBsqiR1xLqTw83sH8fEk7dMPxqKLdEKavac+koavrrGj3rYZfoaK6YFNqjAEvUy6+BC88viJs5hSrmzlxhLf4ko3wRDDh2CWMe2SnRenJh8v1WaNahq2Xf5J4bUAcFeONL5rus+CXTQw5KrPxzMOdEjXZaMjdfe09pWnNtvbN/8eqSZpREBaZWTdn/2dIlgaHqn9dc3A2aAhiFYdkn2mb0PZdgvun2oWCU81voXabVb0nr0Rq7t0zGeNq3MNT143oqk1LszZ4545XSEsH0LJzPylgSaDUGEaG+/iw023OqO5KFkyzMZitFL+nzvlfIMpFt2r/k+yhSaXaTQKwxuKwTb0frHEOTSOiJlgsaSLy7fTk3TTtzA5LwU915ppZXrqSwHG+xs//oxgc2zfH/pJZW5/9q9JtG4B6m32ZXuJ4lyg8Wne7C9hPfyaRMTHZvii1BANI9F3amD3MzWhEsU8z4Hoy2Fo0YkKbhyn/V40skABLC4H7itxLEQEy740VfIJW2S4x49K4Gbuv+VSM1cOPIklgBOXU7MPrqFZFndnByWEndoZS5xORU0xt65KBlHs99eJLhZCxgVG998Fbb7xNngJCUSKmIbZMS52TCw2PEYaRoWR/oscJMFx5dcTRBF3eP89WSxhKG/NIQUK4ZEkvpZybH+l6+jy13ULIe7WMGK7u/j7unnQMe0HbgC/fCABX5NHMIUvmOytU9CeAUWvEadpud7UndpKJfpeh5C9i2gHLNEUd5fzVNigy4C8pjZ3VJG6ozvCVmRq6otqGYzJ/qDBfSv4RTf+JnXE55EFkHWQpzhWsFJCn6clXq+N5sR9MmaRmsZ1S6u914YukFXO0tUMFv370GiuBSQZFV9B2lDN0oDmXOPD3/CShrL1Qpv/8fcehF8E5pGIgR+dIE1/b+9csEpFu5Xrk1sny6P/EUwFM+CqcynSgJL26fUjDKuhx4YS5f63rijnB4UoYVHVEN3/ET9C+Q5he1fjZbtqEB7BonuTHglvzR9NEUHTP1nIY7OFaby8s+uol2oL64Fn2XxgzEMNO9V8fKDhfOav2n+7+1GueGLvaRvyE+7gZUlXblOfXzDhOy4LCXZVHIyfw7jFBnuNuX2bx8WaDtws088n0mAEzl0jd3UTWz5o5/8NXgS+cx4fWHWIaSdmb10E4Br1RIMZgmS5A8/RQ7vx5EP84J3zhyKJ3Uz4BZ1PGQ48XO8HYjCj6pcEtrAkIa/rR+Eohta6PcBDMeifE+fbKg5CpM6VcrGjrKVdtYD8pdnIVwUwkjWCxRMgqwJ8sRC+Uahvw1KgrV9BVUuFep6qkFGkcZnutPFTrruRtP2oRBQEprLc3fgaLMRz0zmZHA975BM5aor1U0Po7//k2B6Jaj1xhgPxxcOrSt7H6EF8OtmEtv3x7TVYu1UJ9dSIaWT++VW29OcvjVczL3JCRFiu1qa955F5a2IKWi5iF63QRQcXF/LdVW+MXV64fNAGfItf7mG6KZOofWDHKJ4NQcBRH1Y1NbNIaWUoiMZSw5tlx6o9VMnXFmwhZjaOJ4BEf6YA4Z21VhOLIpIO2OmEzd1L07vr9JZi34BHJakt9Gsb0iYkJnMatLKwCI4pP7zb9M5PKTeMPMrCBjtrzCshAIJYnUqlR2CK5dm8jPLdSaQFKGrz1EUAHc/82RjEUsqdLvWj1gDl1l11D1Ks1Vk+TTFmePP3IkBtbuROjQTm15snVwCEm7MUaq8S/vjIkEHH1dj/Bu2gbx5MgbIMOPU30ii0q68oC8K5v//LZtV+9ihBDyoD6QOhzhrdTPdOIkWjo63hnJbyQSi82SCvmSSvnStwPyYfgGc35dunyrkl7XDvG5wFhCis+0MYiE3ajgJqxIbY+bzHM/ss6WaxpAZHiHs7xruT55MoUS3Gp7X1FjvMwmgAA" alt="Magnetite Shard">
+      <p><b>Magnetite Shard</b>: moeda principal obtida após derrotar bosses e finalizar eventos. Utilizada para comprar equipamentos ascended, infusions, materiais e decorações.</p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Legendary Insight">
+      <p><b>Legendary Insight (LI)</b>: moeda adquirida ao derrotar bosses, nas <i>Daily Raid Bounties</i> e no achievement semanal de Quickplay. Utilizada para craftar armaduras e o anel lendário das Raids.</p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Provisioner Token">
+      <p><b>Provisioner Token</b>: obtido trocando itens com os <i>Faction Provisioners</i> (desde fev/2026 não é mais recompensa do Challenge Mode). Utilizado para craftar armaduras, sigils e runas lendárias.</p>
+    </div>
+
+    <h4>Baús especiais</h4>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Vigil Emissary Chest">
+      <p><b>Vigil Emissary Chest</b>: baú semanal localizado no Eye of the North, com 5 orbes ativados ao completar as Raids da Icebrood Saga. Quanto mais orbes ativos, maiores as recompensas.</p>
+    </div>
+    <div class="tier">
+      <img width="32" height="32" decoding="async" src="data:image/webp;base64,UklGRnIDAABXRUJQVlA4IGYDAACwEgCdASogACAAPiEMhEIhhvwGAIEtgBOmUI9P8d/CD8buiS3O7u7QiQKEBtgP0r9QH6ufqT2APOS6gD9APYA8s/2Jv3K9LjABNon0bwB7qfiX2JyaT3T8kfyZ1B39rx2fUAcxf/hfyx15P+u9LL+08mXzf/1/cG/l/9I/0PYj9DD9Tyvble76O5BM/yZMZt6fHBEd0UjCfFmF2hlCYAD+/4xx0RbREmHT7Xrx4vg6uAze9SBhPa5C1WHvm1iFS4rNYvvskoNTXUyn4MQHmj9tPu9gG/+Gn5iPXOc7np4lhzLrY1detHpyOkPEDrG1oj8amdfSNNzbqcbi5+D0xE1DFeRTd8rM7pSf8d5AAQJF47kl8DfL7i/73FnKrjgRj1OX/+TB80ngDSCEhRgR5vAFT0XPUvLdX//tf1oHWX5i48ObbdR5bicWX8601g5z45cRxEAkmCMXZoY76hKJu/c1miRb2yJso5hFtgiuGmwlOZHajbLBk76j//vvST7bZ5h/zeGPxUioEDf/GL5t47j6k3fP+zhMHkod6P9NHJ+9W8t69/+W7bCmlh5u+Oug75JukX6wPT3JqbQ//+b4aVIcsYIF7Wn7Zyi21Hn1l1E+3+bSYVn+OvZayT/w584v4dQy5/kJrE0cAzdzz/xWGTHCJ6rpP5bLWB5Ts7/MJ/hvltVLGuWSPJKw+eSMYkCL96wGCbz/lpnVA5DHzs4XerwCM/XsYUY/2i/JJ1KfBIJMCiinykm1QJhj/aL+/uhdB2BP+jCCmOFnZo3oOF+cX6hHZ4L1Pt2CR+W+vfcfHaasV3S7X8XGjarVw8Gz/pn+Tw53Z1xJN349ashlG8g9qj1qbANTWK7q870X6ZR4DbJIGfr/wRY9bE4Zj1nNzYP2ZWr3iLY5945BtCr6Q8t1PG9/Grha9CS7DjJmP+shxIbTSUBwkBqGH6hzr3es8qyw/ru3jfXXOuoL/LFvIji4SztyLZB9Xkc12KNpkO/CY3yovkU+iM16K0vlGW4RUq26mQbUpGFhMkA4bMzH4/ZKnMbwMT0X/wEi8nHJjLUVsm4Rju5PNpCKB8S7yLjCVkuGAFgBvjyxWEQOk91WGML/vUH2QVJie7kVlRDotsLePj1GYNZ7WPP5z8WBtmKaZW5ZMJt2I6QAAAA=" alt="Essence Chest">
+      <p><b>Essence Chests</b>: baús encontrados principalmente em <b>Bjora Marches</b> (alguns também nos encontros da Icebrood Saga): <i>Valor</i>, <i>Resilience</i> e <i>Vigilance</i>. Requerem os respectivos tiers da Mastery <b>Essence Manipulation</b>.</p>
+    </div>
+  </div>
+
+  <!-- ENVOY -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="envoy-armor-armadura-lendaria">Envoy Armor (armadura lendária)</h3>
+        <p>
+          Através das Raids é possível obter a <b>armadura lendária Envoy Armor</b>,
+          via Achievements realizados dentro e fora das Raids de Heart of Thorns,
+          sendo necessário adquirir <b>Legendary Insights</b> suficientes.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Para iniciar o processo, é necessário derrotar qualquer boss de Raid e obter o item
+      <b>The Lost Art of Armor Crafting</b>. Após isso, será liberado o Achievement
+      <a href="https://wiki.guildwars2.com/wiki/Envoy_Armor_I:_Experimental_Armor" target="_blank" rel="noopener">Envoy Armor I: Experimental Armor</a>
+      na aba <i>Legendary Armor</i>.
+    </p>
+    <img width="1300" height="952" decoding="async" class="hero-img banner"
+         src="../assets/img/Envoy-Armor-render-01-1aa63c-1300.jpg"
+         alt="Envoy Armor">
+  </div>
+
+  <!-- COALESCENCE -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="coalescence-anel-lendario">Coalescence (anel lendário)</h3>
+        <p>
+          Além da armadura, é possível obter o <b>anel lendário Coalescence</b>,
+          através de Achievements realizados dentro e fora das Raids de Path of Fire,
+          utilizando os <b>Legendary Insights</b>.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Para iniciar, é necessário derrotar qualquer boss de Raid e interagir com o
+      <b>Loot Chest</b>. Após isso, será liberado o Achievement
+      <a href="https://wiki.guildwars2.com/wiki/Coalescence_I:_Unbridled" target="_blank" rel="noopener">Coalescence I: Unbridled</a>
+      na aba <i>Legendary Trinkets</i>.
+    </p>
+    <img width="501" height="353" decoding="async" class="hero-img natural" style="max-width:501px" src="../assets/img/hOlLMWK-4aeddc-501.jpg" alt="Coalescence">
+  </div>
+
+  <!-- TIERS -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="tiers-de-dificuldade">Tiers de dificuldade</h3>
+        <p>
+          Assim como outros conteúdos instanciados, as Raids possuem diferentes tiers.
+          O tier <b>Desafio (Challenge Mode)</b> contempla recompensas superiores.
+        </p>
+      </div>
+    </div>
+    <img width="508" height="270" decoding="async" class="hero-img banner" src="../assets/img/S9SzXvL-41bd00-508.webp" alt="Tiers de dificuldade">
+
+    <div class="tier">
+      <img width="32" height="32" decoding="async" src="data:image/webp;base64,UklGRsgCAABXRUJQVlA4ILwCAADwDwCdASogACAAPikQhkKhoQoCqgwBQlsAJ0yhHV3mf4wXp9oJx18qvaA/EH9u3wHmA/SX9Xfeq/gH6Ae4D9JfQz4AD9gPTJ9j7yjMAE244gmQZIW+DtN/2y319QJVFM+8aH1H7A36x9Yb0IP1uLc2SRgW9CtvyVHt6lYaNv8gukibb/lQGJyAAP7/vb7FW3gqo1oVxHqIZ3vji4n5v4k1p7+V9j+9UuQF5+iQGyTYyTom2Lwct02XO8tBryfvzmabYoysA2RvJXXXRveq5PdGoeG+L1UE91TMvZh4/lXXANOn+6X6Div7qff/V5nE5h+3NmI6itQba3ImH/oSNFA/4n/+Lk5vVYnOFeo9i6xuCkuDfqTzZK5//RaJK4n/YrOHjF7Ko6Vrzix4lNiV0J9ireNd5zDSpqS82rbX1KjutSNehRfcsJ2/uMvWqJ8/TWUs8tKDW/vNVuZNKZV0TSOY7oHGb9NP8VDTgV0bcY39rFxS89oZRxtVbQUMNum0IrMp3VNpEIHhrSn/b79MGgufBVypWfPyt/DN1iuULn8DHxwett1F/DT98ZJw+rIgglS27ob/EM7Htzc1omlb/7br0iTu7NHDlc9C/f85RTJVqG/3H9v/4Y2JMPnL7K8u3m/ZU7J+WniV4RaD+/6h/mxF3wwTTtT24lgGOHMNHB93df9QoQFGrjvEIcI+/ye7a/YJ1jwq8a5PU15P9/z7xzonQ8Q8xrxmw78LpWbWZ8xoJPYmzRSvyP/dM6hDfMAftXWx0KSaCf04QEkikfbqyo1lecNf8MF4ztdozjSljPzR31hMKf9KC/T2+X4RpVXnckyCuLBGEJE5GxqGsm8xTd/Vjyz9okKNiehjt9gL/Y4jIiXvtJc6YwjJIHGBtmqRaShJo7lI6cW/TeolZ7MEIaCg0/wYENmF1EZcAAAA" alt="Emboldened">
+      <p><b>Emboldened</b>: efeito aplicado a uma Raid por semana que aumenta dano, cura e vida do squad. Falhas acumulam esse buff, ajudando iniciantes sem alterar as recompensas.</p>
+    </div>
+    <div class="tier">
+      <img width="48" height="44" decoding="async" src="data:image/webp;base64,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" alt="Normal Mode">
+      <p><b>Normal Mode</b>: modo padrão das Raids, sem efeitos adicionais aos jogadores e sem mudanças nas mecânicas dos bosses, com as recompensas básicas.</p>
+    </div>
+    <div class="tier">
+      <img width="32" height="32" decoding="async" src="data:image/webp;base64,UklGRnwFAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSP8AAAABgFtt2/Lkwd3d454KGMDdHRag+g6ts0OkpGUFlw28jFdUDjX/g/z2nZMBImICkB07OzsBEesuamgoKioDYjGHgfXHLQcZ6yiqbKgoKClAjMxYYMlTsxXESTKE3FzX+OxssDQnR5DkLjQ9JBmCoGbs2JlzSNJi+WdDhGSMBp3NKbIP/4e+aPqT5Z+g6rcZpLcBcKiZPJ8DjMpyCCkbOUWMSjlq9VGykDZXdCqpNz8iacm9KakmEpeUnKDkCwhJDjhiUkIAEJIg8N9xY1oMqnmOY5OOC9UAjJpyDN2OlLFRGGi/1vd8AKO5ra3TJ4qiKB8fH7c7PTXIM6LpcNiQbQEAVlA4IFYEAACQGQCdASogACAAAIAOJbACdMoR+N5z+JPJn8INhnAm0HmA9QHiIf0TdAfrB/mf6r2APQA/sH9N9I72APQA/WD0nf2U+BT9lf3G+AP9dsAE24/K/wz8ze+j1Q9a9xx/K/xm8HL0D8m9EN/VfyQyy/4V/ffzM/s2uK/iH+A/JHaAP4f/JP839pPvhf1X2q+wL8P/lH+C/L36Av4b/I/7h/dP2s/uv///5v2q+qD9SfYo/T37/z6bA92A5r1NeLor6PAgPEE6SVvGj+jqN2HEAhsChqZvjQAA/v7N1Yf/wucZHF9tn0obR6frNBcpvsdCnbX//YDEE2LphiY3OrCgWDxakYtIKwgbK3mdB2Kf9txjh+E9qAACBh/o8jegW6ixw51/VnHo//J2RTyQpA7Ce1HXoOdrd2E1T9+X9fn0Mhoj6fGL+q7tu82rdZGDHRvXDch5pFrmo5mAi2VfrILql4c0e9742og8858WE6//8BXRN38IjOhLVG/6Z6pXEo4BYtWC0s1//2PH1HPRynspMMvotwz/wXiZy0uYt8Vs+z+kRdV1/oP1JQkOHl7LH6f/80JTVJs4AI2v0pcb0yD3NE83b6ZyCNsjMkpJmSt6Pydf043NUaztQ3HaoRQ8+Za5ozfM2fZ7Xn9DQewVhHZjh5cDDluEgPNX/+0tkgIAtF6CimrQ/7mvYGkfd6Ab6L7397EpEpgauRkjzQpWMdHlkHJRI7IdZkPOuKgN1P/2RAJgVInLPrCjRfrfqP/9kJKn3Gi+vcjEUb+LgmrmTtrJKOhOq6yfS4hquLBNxmkEVVAU5lCjbIAOfgnc10xk0fe46PgDxFPrnhX17Yrp3gX3pJsQ7oNaka3Igkj2tx2WzSfZYL/vUYylTfpFYE4jJNGGHUWgpQ523fr0xWZN7BZJ1Jntb57DkClPbdMU7VVrw0gxrNgwYT6CTIksNVy7LveCD2v6H0+cU4/nZkETh//MV/sGC90C3FgT7+Udv5p7n6KwV2Rjs0fATc5kKsRo9PF/8Ia/ZR19+Q5ec4v4+1/blj7SVK4OfO/F8MC/Cgmius4XhLfz3RkkqIJYP9njOKMjj/r+2yNmFbQuoUJEf9EWZxkOW61Q6/ifCO9ViCtWObQjP7Habk3jR8jsr4dcSwRUmHXVj+RsbzP7a8DPWu+EN6AltdAAdud8g8WsE+BLileFWFdEaiFdS9n4X3dUXxXZyIwxSinkrqfDr3WhmfMp2h7IfcpifMiA/MshoyAvjS3Gea5L/8qf4/vhrHIbPSwZUDq6RvB52kcFtv+OBKVjM7cDcTr9pCy1eG98H//819//flXx97v//CzO9WfCpQ0fp/GyMPz7VuNySWrim9meu8q9oPDqIx1FElhL8hTbuYYcCDMf5kcTFx8vtEFGfNtEssy8kLns1LDyix+BWBvTg6kSIYdE+yyRx5b3JWHRZh18lO5vQeGUxxnv0+Jb1/7mOcRe/UcwQAA=" alt="Challenge Mode">
+      <p><b>Challenge Mode</b>: modo desafio habilitado antes de cada boss. Altera vida do boss e algumas mecânicas, com recompensas superiores.</p>
+    </div>
+    <div class="tier">
+      <img width="32" height="32" decoding="async" src="data:image/webp;base64,UklGRuoEAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSP8AAAABgFtt2/Lkwd3d454KGMDdHRag+g6ts0OkpGUFlw28jFdUDjX/g/z2nZMBImICkB07OzsBEesuamgoKioDYjGHgfXHLQcZ6yiqbKgoKClAjMxYYMlTsxXESTKE3FzX+OxssDQnR5DkLjQ9JBmCoGbs2JlzSNJi+WdDhGSMBp3NKbIP/4e+aPqT5Z+g6rcZpLcBcKiZPJ8DjMpyCCkbOUWMSjlq9VGykDZXdCqpNz8iacm9KakmEpeUnKDkCwhJDjhiUkIAEJIg8N9xY1oMqnmOY5OOC9UAjJpyDN2OlLFRGGi/1vd8AKO5ra3TJ4qiKB8fH7c7PTXIM6LpcNiQbQEAVlA4IMQDAABQFACdASogACAAAIAOJbACdMoR6f5zwhkTckD5s/zP2wbx7/gOoB5gP1w/uX9A7AHoAf17+1+jB7AHoAfpz6S368/AT+zH/A/z3wB/yb+h/ftiAm3H6r4G+F3y2ej/ns5BuhNOe9TxAfSLWBu9PN55tv9n5DvyD+7f9L+0/AF/H/6N/tPWA8272Nf1vPKDfoODtwwwMFf3UIQNDyqlRBT2R+808iYmgO45UMAA/v/+K2SzdOda0XLDVnf0KLFNCH9DsSP3JSADp7FxLCPpyxdXEyKS5bPEUm0nHYR9UGxgte4o47edcPSVFhpMHV9R2waVKEZBzHJOO7tLRJHt1mofyVGwedl7gjj3Hehjo3imCVVXp4cR/3XLR/k0NLEb0+ffULjXTLtTdl7ALdJlVN3/4urR/cy7M3jA8hiqf/vyptYkRxp5bD77V40UP/5DCLGcc7rzdiu/ugB5+8JoGPVt3//GfGoLrnB8AO36R+1V9cQa9gWdNwR//mGsMJywk/PMH0kMWKz9Pd1ZV24/YPvynFc/fNVXqE8SwLjgD6sl/gitKVrCKrzt75p2Vx5dsQt52Nk+16CVAUbUdAx8Z6xQVv2Q3oOr+aNI30Wc6Xe7iWXPn3BD9SCf/tIV1BKI5wOjGA9B3weLvUf0z4LGOGt68xwHXgxU8mWZQ7niTNAnIspX866/vE2P/+2b/dKsnmPci4FO99FcAZdm6xQPXFHpa+n0bO1CV//8Xe5qjA9Mk6QRRoEDN23XVwOoYyRv1BJ/mhgqe/lTAJSih9XAv+cXl/bt3CTx7F3HNRMzZbooGQipRppds+uucY0kELYx5f0gyW743vs/erfYCCrxp80XqFt+n7zegQeblkeAhsUpOR7NhEfKHLwFwhAz8MYFrW8/Uj7AznWWu8H+fcHMMSxDP+KM807gnyemZDLVfoAxz4Uqedii4QpPWI1Th495OajS2ya9QZK4Q60greaPPnDbXa/xeCrHYTbsZz9DYnoB7xN69XaMgRvkQOSPt9iifl9L7uf0Aqrp7n/0rnx8ORR6Xt78m0AwrhuTi8RkFC79OrBbmZevMU4B4AtfnGn97EkNlJsg90+/wQSx/k7Dxh+LSj8e6+wyW5FCR9GjfpkEKN9DwxT/gqErcnt76hf8NvdoY+TfWCf7ms1v6K97X3O4Hz+yz9/ZN+qN/lb9/l3VEqXWwTR/kF2bZclyEx9S9iaax0z/aNvLCBjLPghhUnrbS3dDTeNepxECzoq5fVus/gkHGUeXHwPRj/zFj1ThvQZUUAAA" alt="Legendary Mode">
+      <p><b>Legendary Mode</b>: versão ainda mais difícil do desafio. Poucas mecânicas mudam, mas a vida do boss é significativamente maior. Recompensa: título colorido.</p>
+    </div>
+    <div class="tier">
+      <img width="32" height="32" decoding="async" src="data:image/webp;base64,UklGRlADAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSEQAAAABN6CojRQ4uOcXRQhABxERv/X4wDaybSVfKvDYf2xACZRA7v1X8W9KGNH/CXBBTAf2fOB+IQU7Efu/3ciGvchRh5geHFZQOCDmAgAAMBEAnQEqIAAgAD4lDoZCIYYBgAYAkS2AE6coL8A4/h+XOeKS4B7m7QiSDrOnAbBX5p/63ezl6gPPM8wD2APQA/VX0wPYl/dX0zsAE2d/T/AHvT+eT3H8B4tbg/Gd6I7p8fPE0HPQX/F9wn9Nf+N+YvGQfskOza0oI35nBqc11Pn4FaU5NXeO9njEg47DH22HcgAA/v/F6A+CaxpgpfzB3xwhnSsF3nxvEx3m7hGBuj8O5nZsqBvgEV6OFmhZiP/tdGUT4jfcUlzUc1avC18je5lzb/v8/9nCcOKin38lEkW8K8ZVw6mhG7Det2fbOPtLRR9r2rf3zyjKlrH9RJC/KnRg3VKh7HMEmdf+xM7S1+GO5JIwqP7d8cqBm8bvtP7/272GxzIcfkuuNveex4FaKBpOPiJkhZ5F8tqORI6Q/jx/BVJKymILiN5Z/8dt/5VlR3BjSe7UaLOi25ryN/aLQIZPCIeHAsGdWUXPbP/HP/LMB4XTfHMUie4Gnqfddm79c6UJ2hbA5eeifeuiP7CPvpn/T4VoC1pS8GflIPhGFC/rP00RWsB1m7x1iTY3sIolfpVaC4yf4N6pPHTwppSpcuV3r7XHXYtyVBPx18cHXmkjhzemvrS0CliYu9Xh0RP6UJnhBU7B+31Zt/sUktWFZm3gI6Tbey+qYC1i9+sf9MbqGgKScDtnh2oXp4+gK0ZdRsNo/gLPNcKTYHjOyUco9iA67O4NIVm/+eDNfxnbiuOyw4V2weUiGkC72AwX/2ip+CNukctY292lVdWKNgCJ9MoOi31NrRrt/ki3oNlTOfyX+i1bVX+Lf/4jhFj8t0Lo03YXbk3UzLXVUKvmlHO+Wz/PtMP8/2LjsifC0Ff2wMwRkt8j5Z0yeX7FQ09JhQ1r3W4YanifCiWzDdK9RWD++mJLmkkXXP+1v9IIZ7lh+w569wvRtN7DrnX/1vAHaQZq/fT360DyLIdr4v5+6/2jh4ITIwAAAA==" alt="Call of the Mists">
+      <p><b>Call of the Mists</b>: efeito aplicado a uma Raid por semana. Oferece <b>dobro de gold</b> e pontos de experiência ao completar os bosses daquela Raid em qualquer modo.</p>
+    </div>
+  </div>
+
+  <!-- QUICKPLAY -->
+  <div class="card no-break"><div class="card-head"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /> <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /> <path d="M4 22h16" /> <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /> <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /> <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /> </svg></span><div><h3>Onde há Challenge Mode e Legendary Mode</h3><p>O CM é ativado no <b>Challenge Mote</b>, objeto que fica perto do boss. Nem todo encontro tem essa opção.</p></div></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" /> <line x1="13" x2="19" y1="19" y2="13" /> <line x1="16" x2="20" y1="16" y2="20" /> <line x1="19" x2="21" y1="21" y2="19" /> <polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5" /> <line x1="5" x2="9" y1="14" y2="18" /> <line x1="7" x2="4" y1="17" y2="20" /> <line x1="3" x2="5" y1="19" y2="21" /> </svg></span><p><b>Wings</b>: Wings 1 e 2 não têm CM. Wing 3: só Keep Construct. Wing 5: Soulless Horror e Dhuum. Wings 4, 6, 7 e 8: todos os bosses. Em Mount Balrior, o mote de Decima só aparece depois de derrotar o legendary sentient conduit.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z" /> </svg></span><p><b>Raid Encounters</b>: têm CM Old Lion's Court, os quatro de End of Dragons, Cosmic Observatory, Temple of Febe, Guardian's Glade e Nexus of Eternity. Na Icebrood Saga, só Forging Steel tem desafios opcionais, e apenas em instância de squad.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" /> </svg></span><p><b>Legendary Mode</b>: existe em Ura (Mount Balrior), Cerus (Temple of Febe) e Vloxx (Nexus of Eternity), escolhido no mesmo Challenge Mote.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="8" cy="8" r="6" /> <path d="M18.09 10.37A6 6 0 1 1 10.34 18" /> <path d="M7 6h1v4" /> <path d="m16.71 13.88.7.71-2.82 2.82" /> </svg></span><p><b>Recompensa extra do CM</b>: uma vez por boss por semana, 2 de gold, 10 Magnetite Shards, experiência e uma peça exótica, somadas às do Normal Mode.</p></div>
+  </div>
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="32" height="32" decoding="async" class="icon" src="data:image/webp;base64,UklGRmYDAABXRUJQVlA4IFoDAADwEgCdASogACAAPiUOhkIhhgGABgCRLYATplCOoPAPx05AzTIwChAbYD9QPUB+on66ezB6gPQA/WvrAP1V9gD9t/Sx/aD4Iv2q/Vr2nrs1qIvbvyLygP1rMy/i1wBONf73oy/EKf2vzsf6/7Vfh2/1fJr8++wV/K/6F/rewd6GH67JaojnUq80RzPZ1zVGaFvmVE+3UNjf7Mg3IB97fqIAAP7/q/S8/dx7GDjFvH08Y/Tn+DlRy3wBGc+2R9nbRL9V3RL8nD+tOsgExATznlCSBjfcnL///Y471mtPxAxzanbzYQtR7bg977CaSlGQ+ArXGmz9A2klCAC6xbxkyoyt1E7k8mfC+uHSOEI+0cxt7nCjMwPvvrv9Ccx+XshGa7//5br6sc4gVaHrXm8DjXVS0c4MR4j0O40xe/D/+vYiF0mE9HbN7O0QunL88ioRPax5NGQQxm2b0hRJzdwT8dH4Y9owivzb8ip2JXr849gl3cjFUEONupQyXh/GsS06QcYtZRoEJOvhWTFOF92B3d9nXkKALwQN93ovRyQHcz7TCNAN0udY+MCEMecG60/B/MEhoL/X9snR8LlJDTzOf1F25CLbz13vYt708ZFeJtxVMwMzZu2L3tb4QxMkwvRS1Wf9aG1h91YCYvXnFaywt7f9S5ZUYQDVtcw4eEeQou5XG5+cZRxU1rBLYXZWb0Hw15DbmZE7i5NqKC4i46UWt8GQbusYQv/4Y9oO5dL5frjqvOLeJ6lcJfSpnSb6M7V5JEqGwe9w//PZuW4nH6xRUii34U64/1BPyjQ4uvGTm6awZcg4C5Qve9bfsXsEuNyRY9H0SfJ+a98J8uTxMZibH5f9J7kmxgiyWnmjYG5r32DuSLRwhi4xTZ83P3for/Lj7j5lSGjXC4x8hD02Nu/Gh25OyZ5xp3YJ+W+s4oTE2cvZvEO30573amv16AvPwO4ZTxhZL6cuMBQPNSL2pIGu/nyVXb4+ymAgYjSJttNLnWdwRYiEj9JNcaA1lu2xxdfko5O1OUe8I58yiE8FwALaXfxCYLKZuKT94SloyVNuOccgrFNrHAHneAX7Hi749pwTZ5xklP6H+9j3uS6IzipX+mGJcvPh/io7898Q4sMCvBVuGfkPr58Qhi7QAAA=" alt="">
+      <div>
+        <h3 id="quickplay">Quickplay</h3>
+        <p>
+          Para jogadores menos experientes, o modo <b>Quickplay</b> permite formar um squad
+          com pareamento randômico entre jogadores, enfrentando uma Raid escolhida
+          aleatoriamente entre as disponíveis.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Ao entrar na instância, todos os membros recebem o buff <b>Quickplay Morale</b>,
+      que concede bônus de dano e defesa, facilitando o aprendizado.
+    </p>
+    <p>
+      <b>Como acessar:</b> janela social (<kbd>Y</kbd>) → <i>Looking for Group</i> → <i>Raids</i> → <i>Raids (Training)</i>.
+    </p>
+    <img width="800" height="485" decoding="async" class="hero-img banner"
+         src="../assets/img/800px-Strike-Missions-concept-art-EoD-3d2f0c-800.jpg"
+         alt="Quickplay">
+    <div class="note"><b>Atenção</b>: encontros feitos no Quickplay não contam para as Daily Raid Bounties, para o achievement Weekly Raid Encounters nem para o Vigil Emissary Chest. A recompensa semanal por encontro é 5.000 de karma e experiência. O sorteio é entre 8 encontros: Old Lion's Court, Aetherblade Hideout, Xunlai Jade Junkyard, Kaineng Overlook, Boneskinner, Whisper of Jormag, Cosmic Observatory e Temple of Febe.</div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ============ RAID WINGS ============ -->
+<div class="page page-break">
+  <h2 class="section" id="secao-2"><span class="num">02</span>Raid Wings</h2>
+  <p class="section-sub">As 8 wings oficiais, com os bosses em ordem de progressão e vídeos de referência.</p>
+
+  <!-- WING 1 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="spirit-vale">SPIRIT VALE</span>
+      <span class="wing-num">WING 1</span>
+    </div>
+    <img width="1024" height="512" decoding="async" class="wing-img" src="../assets/img/amaTj17-b2d3bb-1024.jpg" alt="Spirit Vale">
+    <div class="bosses">
+      <div class="boss"><span>Vale Guardian</span><a href="https://www.youtube.com/watch?v=ByiiFeVIMtg" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Spirit Woods</span><a href="https://www.youtube.com/watch?v=YlRRaQM2YXU" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Gorseval the Multifarious</span><a href="https://www.youtube.com/watch?v=A7ZCokUFcuY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Sabetha the Saboteur</span><a href="https://www.youtube.com/watch?v=IhtLD3FzOic" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- WING 2 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="salvation-pass">SALVATION PASS</span>
+      <span class="wing-num">WING 2</span>
+    </div>
+    <img width="1300" height="650" decoding="async" class="wing-img" src="../assets/img/gh9KsI2-e3b72f-1300.jpg" alt="Salvation Pass">
+    <div class="bosses">
+      <div class="boss"><span>Slothasor</span><a href="https://www.youtube.com/watch?v=_tTFw6v0MbY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Bandit Trio</span><a href="https://www.youtube.com/watch?v=zpO1qbr43no" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Matthias Gabrel</span><a href="https://www.youtube.com/watch?v=543wdaOTHeA" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- WING 3 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="stronghold-of-the-faithful">STRONGHOLD OF THE FAITHFUL</span>
+      <span class="wing-num">WING 3</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-Stronghold-of-the-Faithful-loading-screen-7a44d4-800.jpg"
+         alt="Stronghold of the Faithful">
+    <div class="bosses">
+      <div class="boss"><span>Siege the Stronghold</span><a href="https://www.youtube.com/watch?v=grqMW0iB5N0" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Keep Construct</span><a href="https://www.youtube.com/watch?v=Fzy5opXRYyU" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Twisted Castle</span><a href="https://www.youtube.com/watch?v=WjAtRxz2ad4" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Xera</span><a href="https://www.youtube.com/watch?v=JMKk4UPgiCg" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- WING 4 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="bastion-of-the-penitent">BASTION OF THE PENITENT</span>
+      <span class="wing-num">WING 4</span>
+    </div>
+    <img width="1300" height="650" decoding="async" class="wing-img"
+         src="../assets/img/Bastion-of-the-Penitent-loading-screen-fa65ee-1300.jpg"
+         alt="Bastion of the Penitent">
+    <div class="bosses">
+      <div class="boss"><span>Cairn the Indomitable</span><a href="https://www.youtube.com/watch?v=LUm5SsLegPM" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Mursaat Overseer</span><a href="https://www.youtube.com/watch?v=zlBnQ_ZWKvY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Samarog</span><a href="https://www.youtube.com/watch?v=xfCE8Ov4INs" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Deimos</span><a href="https://www.youtube.com/watch?v=QHfbbXzgeF8" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- WING 5 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="hall-of-chains">HALL OF CHAINS</span>
+      <span class="wing-num">WING 5</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-Hall-of-Chains-loading-screen-9a2da1-800.jpg"
+         alt="Hall of Chains">
+    <div class="bosses">
+      <div class="boss"><span>Soulless Horror</span><a href="https://www.youtube.com/watch?v=6qfCX4aUo_4" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>River of Souls</span><a href="https://www.youtube.com/watch?v=16NK5EdRcdY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Statues of Grenth</span><a href="https://www.youtube.com/watch?v=oQ9QAMf1qEc" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Dhuum</span><a href="https://www.youtube.com/watch?v=qv5yhZnI1Ag" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<div class="page page-break">
+
+  <!-- WING 6 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="mythwright-gambit">MYTHWRIGHT GAMBIT</span>
+      <span class="wing-num">WING 6</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-Mythwright-Gambit-loading-screen-f35acc-800.jpg"
+         alt="Mythwright Gambit">
+    <div class="bosses">
+      <div class="boss"><span>Conjured Amalgamate</span><a href="https://www.youtube.com/watch?v=nYuxzZ3X9I4" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Twin Largos</span><a href="https://www.youtube.com/watch?v=90nZy4unqn8" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Qadim</span><a href="https://www.youtube.com/watch?v=vHUsVjgiVm8" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- WING 7 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="the-key-of-ahdashim">THE KEY OF AHDASHIM</span>
+      <span class="wing-num">WING 7</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-The-Key-of-Ahdashim-loading-screen-5f246a-800.jpg"
+         alt="The Key of Ahdashim">
+    <div class="bosses">
+      <div class="boss"><span>Cardinal Adina</span><a href="https://www.youtube.com/watch?v=vwVPbdXRQvA" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Cardinal Sabir</span><a href="https://www.youtube.com/watch?v=9NE5_cS-nDI" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Qadim the Peerless</span><a href="https://www.youtube.com/watch?v=czIZ-vSOGcI" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- WING 8 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="mount-balrior">MOUNT BALRIOR</span>
+      <span class="wing-num">WING 8</span>
+    </div>
+    <img width="1300" height="650" decoding="async" class="wing-img"
+         src="../assets/img/Mount-Balrior-loading-screen-f542cc-1300.jpg"
+         alt="Mount Balrior">
+    <div class="bosses">
+      <div class="boss"><span>Greer, the Blightbringer</span><a href="https://www.youtube.com/watch?v=Mc2nxaIZ0lI" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Decima, the Stormsinger</span><a href="https://www.youtube.com/watch?v=PscVyOaNDVM" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Ura, the Steamshrieker</span><a href="https://www.youtube.com/watch?v=zFT8kLqeE-o" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ============ RAID ENCOUNTERS ============ -->
+<div class="page page-break">
+  <h2 class="section" id="secao-3"><span class="num">03</span>Raid Encounters</h2>
+  <p class="section-sub">Encontros adicionais das Living Worlds, expansões e sagas.</p>
+
+  <!-- LW S1 -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="living-world-season-1">LIVING WORLD SEASON 1</span>
+      <span class="wing-num">ENCONTROS</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-The-Battle-for-Lion-s-Arch-loading-screen-7254a0-800.jpg"
+         alt="Living World Season 1">
+    <div class="bosses">
+      <div class="boss"><span>Old Lion's Court</span><a href="https://www.youtube.com/watch?v=q0gDvzZ3Gtw" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- ICEBROOD SAGA -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="icebrood-saga">ICEBROOD SAGA</span>
+      <span class="wing-num">ENCONTROS</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-Eye-of-the-North-loading-screen-fafef4-800.jpg"
+         alt="Icebrood Saga">
+    <div class="bosses">
+      <div class="boss"><span>Shiverpeaks Pass</span><a href="https://www.youtube.com/watch?v=e_ahtdVqMto" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Voice of the Fallen and Claw of the Fallen</span><a href="https://www.youtube.com/watch?v=vMjBttZ2f0Q" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Fraenir of Jormag</span><a href="https://www.youtube.com/watch?v=aS--oBdbOm4" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Boneskinner</span><a href="https://www.youtube.com/watch?v=bU-4OQ6gGqY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Whisper of Jormag</span><a href="https://www.youtube.com/watch?v=O59XUM5bO_I" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Forging Steel</span><a href="https://www.youtube.com/watch?v=3KugmIsdmZo" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Cold War</span><a href="https://www.youtube.com/watch?v=NF2MdW_vj0w" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- EOD -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="end-of-dragons">END OF DRAGONS</span>
+      <span class="wing-num">ENCONTROS</span>
+    </div>
+    <img width="800" height="400" decoding="async" class="wing-img"
+         src="../assets/img/800px-Arborstone-loading-screen-0e8088-800.jpg"
+         alt="End of Dragons">
+    <div class="bosses">
+      <div class="boss"><span>Aetherblade Hideout</span><a href="https://www.youtube.com/watch?v=P7HUGn3gDHY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Xunlai Jade Junkyard</span><a href="https://www.youtube.com/watch?v=5-hXIuRpeMk" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Kaineng Overlook</span><a href="https://www.youtube.com/watch?v=e6NKIbOEwRA" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Harvest Temple</span><a href="https://www.youtube.com/watch?v=x9RoMfWe7GU" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- SOTO -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="secrets-of-the-obscure">SECRETS OF THE OBSCURE</span>
+      <span class="wing-num">ENCONTROS</span>
+    </div>
+    <img width="1300" height="650" decoding="async" class="wing-img"
+         src="../assets/img/The-Wizard-s-Tower-loading-screen-de98b9-1300.jpg"
+         alt="Secrets of the Obscure">
+    <div class="bosses">
+      <div class="boss"><span>Cosmic Observatory</span><a href="https://www.youtube.com/watch?v=MIbRk4ESbQQ" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Temple of Febe</span><a href="https://www.youtube.com/watch?v=BK1iiJdZaUY" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+    </div>
+  </div>
+
+  <!-- VISIONS OF ETERNITY -->
+  <div class="wing">
+    <div class="wing-head">
+      <span id="visions-of-eternity">VISIONS OF ETERNITY</span>
+      <span class="wing-num">ENCONTROS</span>
+    </div>
+    <img width="1300" height="650" decoding="async" class="wing-img"
+         src="../assets/img/Truths-Unearthed-Guarded-Glades-loading-screen-e50b86-1300.jpg"
+         alt="Visions of Eternity">
+    <div class="bosses">
+      <div class="boss"><span>Guardian's Glade</span><a href="https://www.youtube.com/watch?v=DfZDNGF9xe8" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polygon points="6 3 20 12 6 21 6 3" /> </svg>Vídeo</a></div>
+      <div class="boss"><span>Nexus of Eternity</span><a href="https://wiki.guildwars2.com/wiki/Nexus_of_Eternity" target="_blank" rel="noopener"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 7v14" /> <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /> </svg>Wiki</a></div>
+    </div>
+  </div>
+
+  
+
+</div><!-- /page -->
+</main>
+</div>
+<footer class="footer"><p class="footer-brand"><b>DIVINE</b><span class="sep" aria-hidden="true">·</span>Guia de Raids<span class="sep" aria-hidden="true">·</span>Guild Wars 2</p></footer>
+
+<script>
+(function () {
+  var items = [].slice.call(document.querySelectorAll('.sidebar .toc a[href^="#"]')).map(function (a) {
+    return { a: a, t: document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))) };
+  }).filter(function (x) { return x.t; });
+  if (!items.length) return;
+  var cur = null, pinned = null, ticking = false;
+  function set(a) {
+    if (a === cur) return;
+    if (cur) { cur.classList.remove('is-active'); cur.removeAttribute('aria-current'); }
+    cur = a; if (!a) return;
+    a.classList.add('is-active'); a.setAttribute('aria-current', 'location');
+    var sb = a.closest('.sidebar');
+    if (sb && sb.scrollHeight > sb.clientHeight) {
+      var r = a.getBoundingClientRect(), s = sb.getBoundingClientRect();
+      if (r.top < s.top + 8 || r.bottom > s.bottom - 8) sb.scrollTop += r.top - s.top - s.height / 3;
+    }
+  }
+  function update() {
+    ticking = false;
+    if (pinned) { set(pinned); return; }
+    var best = items[0], i;
+    for (i = 0; i < items.length; i++) if (items[i].t.getBoundingClientRect().top <= 110) best = items[i];
+    var atEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atEnd) for (i = items.length - 1; i >= 0; i--) if (items[i].t.getBoundingClientRect().top < window.innerHeight - 60) { best = items[i]; break; }
+    set(best.a);
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  function unpin() { pinned = null; }
+  items.forEach(function (x) { x.a.addEventListener('click', function () { pinned = x.a; set(x.a); }); });
+  // qualquer rolagem do próprio usuário (inclusive com o mouse sobre o sumário) solta o item clicado;
+  // o clique seguinte num link volta a fixá-lo (mousedown acontece antes do click)
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
+    window.addEventListener(ev, unpin, { passive: true });
+  });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  if (location.hash) items.forEach(function (x) { if (x.a.getAttribute('href') === location.hash) pinned = x.a; });
+  update();
+})();
+</script>
+
+<script id="theme-toggle-js">
+(function () {
+  var b = document.querySelector('.theme-toggle'); if (!b) return;
+  var r = document.documentElement;
+  function eff() { var t = r.getAttribute('data-theme'); if (t) return t;
+    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  function sync() { var d = eff() === 'dark'; b.setAttribute('aria-pressed', d ? 'true' : 'false');
+    b.title = d ? 'Usar tema claro' : 'Usar tema escuro'; }
+  b.addEventListener('click', function () { var n = eff() === 'dark' ? 'light' : 'dark';
+    r.setAttribute('data-theme', n); try { localStorage.setItem('divine-tema', n); } catch (e) {} sync(); });
+  if (window.matchMedia) { try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync); } catch (e) {} }
+  sync();
+})();
+</script></body>
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guia de Fractals · Guild DIVINE (Guild Wars 2)">
+<link rel="icon" href="data:image/webp;base64,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" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/webp;base64,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" media="(prefers-color-scheme: dark)">
+<title>Guia de Fractals · DIVINE</title>
+<script>/* tema salvo: aplica antes de pintar a página */try{var t=localStorage.getItem('divine-tema');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script><style>
+/* =====================================================================
+   Codex DIVINE — design system da Guild DIVINE (Guild Wars 2)
+   Fonte da verdade: DESIGN.md (blueprint TypeUI). Embutido em cada página pela build.
+   Layout: topo imersivo de ponta a ponta + corpo editorial (sumário fixo no desktop).
+   ===================================================================== */
+
+/* ---------- FONTES (servidas de assets/fonts; funcionam offline e no PDF) ---------- */
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/barlow-condensed-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/barlow-condensed-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+/* ---------- TOKENS: CLARO ---------- */
+:root{
+  --font-display:"Barlow Condensed","Arial Narrow","Segoe UI",sans-serif;
+  --font-body:"Source Sans 3","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",Consolas,"Courier New",monospace;
+  --bg:#f5f7fa; --surface:#ffffff; --surface-2:#f0f4f9; --line:#dbe3ee; --line-strong:#c5d1e0;
+  --text:#0f1a2a; --text-soft:#44546a; --text-mute:#5a6a80;
+  --accent:#1cc4dc; --accent-text:#0a7487; --accent-tint:rgba(28,196,220,.12);
+  --gold:#8a5f0e; --gold-tint:rgba(224,176,82,.16); --gold-line:rgba(176,124,28,.45);
+  --action-bg:#0a7487; --action-bg-hover:#085f6f; --on-action:#ffffff;
+  --hero-scrim:rgba(10,17,28,.38);
+  --shadow:0 1px 2px rgba(15,26,42,.05), 0 8px 24px rgba(15,26,42,.06);
+  --nav-bg:rgba(245,247,250,.86);
+  --selection:#bdeef6;
+  /* compatibilidade com estilos inline antigos */
+  --texto-soft:var(--text-soft); --azul-esc:var(--accent-text);
+  color-scheme:light;
+}
+/* ---------- TOKENS: ESCURO (sistema e botão; nunca na impressão) ---------- */
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a111c; --surface:#111b2b; --surface-2:#162337; --line:#22324a; --line-strong:#2e4260;
+    --text:#e7eef7; --text-soft:#a9b8ca; --text-mute:#8597ad;
+    --accent-text:#5fd6e8; --accent-tint:rgba(28,196,220,.14);
+    --gold:#e0b052; --gold-tint:rgba(224,176,82,.12); --gold-line:rgba(224,176,82,.4);
+    --action-bg:#1cc4dc; --action-bg-hover:#5fd6e8; --on-action:#06121c;
+    --hero-scrim:rgba(5,9,16,.45); --shadow:none; --nav-bg:rgba(10,17,28,.82); --selection:#164b5a;
+    color-scheme:dark;
+  }
+}
+@media screen{
+  :root[data-theme="dark"]{
+    --bg:#0a111c; --surface:#111b2b; --surface-2:#162337; --line:#22324a; --line-strong:#2e4260;
+    --text:#e7eef7; --text-soft:#a9b8ca; --text-mute:#8597ad;
+    --accent-text:#5fd6e8; --accent-tint:rgba(28,196,220,.14);
+    --gold:#e0b052; --gold-tint:rgba(224,176,82,.12); --gold-line:rgba(224,176,82,.4);
+    --action-bg:#1cc4dc; --action-bg-hover:#5fd6e8; --on-action:#06121c;
+    --hero-scrim:rgba(5,9,16,.45); --shadow:none; --nav-bg:rgba(10,17,28,.82); --selection:#164b5a;
+    color-scheme:dark;
+  }
+}
+
+/* ---------- BASE ---------- */
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+html,body{margin:0;padding:0;}
+html{scroll-behavior:smooth;scrollbar-color:var(--line-strong) var(--bg);}
+body{
+  font-family:var(--font-body);font-size:16px;line-height:1.6;
+  color:var(--text);background:var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+::selection{background:var(--selection);color:var(--text);}
+a{color:var(--accent-text);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:color-mix(in srgb, var(--accent-text) 45%, transparent);}
+a:hover{text-decoration-color:currentColor;}
+a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+[id]{scroll-margin-top:84px;}
+img{max-width:100%;}
+p{margin:0 0 12px;text-wrap:pretty;}
+li{text-wrap:pretty;}
+b, strong{font-weight:700;}
+small{color:var(--text-soft);}
+code, kbd{
+  font-family:var(--font-mono);font-size:.82em;color:var(--text);
+  background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:1px 6px;
+}
+kbd{border-bottom-width:2px;}
+
+/* ---------- BARRA DO TOPO ---------- */
+.topnav{
+  position:sticky;top:0;z-index:20;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px max(20px, env(safe-area-inset-right, 0px)) 10px max(20px, env(safe-area-inset-left, 0px));
+  background:var(--nav-bg);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--line);font-size:14px;
+}
+.topnav a{color:var(--text);text-decoration:none;font-weight:600;}
+.topnav .where{display:flex;align-items:center;min-width:0;gap:4px;}
+.topnav .home{display:flex;align-items:center;gap:10px;min-width:0;font-family:var(--font-display);font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;}
+.topnav .crumb{color:var(--text-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.topnav .crumb::before{content:"/";margin:0 10px;color:var(--line-strong);}
+.topnav .actions{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.topnav .btn, .theme-toggle{
+  display:inline-flex;align-items:center;gap:8px;min-height:36px;
+  border:1px solid var(--line);background:var(--surface);color:var(--text);
+  padding:6px 14px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;
+  transition:border-color .15s ease-out, background-color .15s ease-out;
+}
+.topnav .btn:hover, .theme-toggle:hover{border-color:var(--accent);}
+.theme-toggle{padding:6px 10px;}
+.theme-toggle svg, .topnav .btn svg{width:16px;height:16px;}
+.theme-toggle .i-sol{display:none;}
+:root[data-theme="dark"] .theme-toggle .i-sol{display:inline;}
+:root[data-theme="dark"] .theme-toggle .i-lua{display:none;}
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .theme-toggle .i-sol{display:inline;}
+  :root:not([data-theme="light"]) .theme-toggle .i-lua{display:none;}
+}
+
+/* ---------- EMBLEMA (logo amarela no tema claro, branca no escuro) ---------- */
+/* fundo: no claro, a cor do texto (azul-tinta) realça a logo amarela; no escuro, a superfície */
+:root{ --emblem-bg:var(--text); }
+@media screen and (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --emblem-bg:var(--surface); } }
+@media screen{ :root[data-theme="dark"]{ --emblem-bg:var(--surface); } }
+.emblem{
+  display:inline-grid;place-items:center;flex-shrink:0;border-radius:50%;
+  background:var(--emblem-bg);border:2px solid var(--accent);
+  box-shadow:0 10px 30px rgba(28,196,220,.28);
+}
+.emblem img{grid-area:1/1;width:72%;height:72%;object-fit:contain;display:block;}
+.emblem-lg{width:124px;height:124px;}
+.emblem-sm{width:30px;height:30px;border-width:1.5px;box-shadow:none;}
+.emblem-sm img{width:78%;height:78%;}
+.emblem-escuro{display:none !important;}
+@media screen and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .emblem-claro{display:none !important;}
+  :root:not([data-theme="light"]) .emblem-escuro{display:block !important;}
+}
+@media screen{
+  :root[data-theme="dark"] .emblem-claro{display:none !important;}
+  :root[data-theme="dark"] .emblem-escuro{display:block !important;}
+}
+
+/* ---------- HERÓI (topo imersivo, de ponta a ponta) ---------- */
+.hero{position:relative;}
+.hero-bg{position:relative;height:clamp(260px, 38vw, 520px);overflow:hidden;background:var(--surface-2);}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to bottom, var(--hero-scrim) 0%, transparent 24%, transparent 56%, var(--bg) 100%);
+}
+.hero-bar{
+  position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:flex-end;
+  padding:max(16px, env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px));
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:860px;margin:0 auto;text-align:center;
+  padding:0 max(20px, env(safe-area-inset-right, 0px)) 8px max(20px, env(safe-area-inset-left, 0px));
+}
+.hero-inner .emblem{margin-top:-64px;margin-bottom:16px;}
+.hero h1{
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(40px, 6vw, 64px);line-height:.98;letter-spacing:.02em;margin:0;color:var(--text);text-wrap:balance;
+}
+.hero .hero-sub{
+  font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:.28em;
+  font-size:15px;color:var(--accent-text);margin:10px 0 0;
+}
+.hero .hero-desc{max-width:58ch;margin:16px auto 0;font-size:18px;line-height:1.5;color:var(--text-soft);text-wrap:balance;}
+.hero-chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 0;padding:0;}
+.hero-chips li, .badge-lvl{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.02em;color:var(--text-soft);
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 10px;
+  font-variant-numeric:tabular-nums;
+}
+.hero-chips li.is-date{color:var(--gold);border-color:var(--gold-line);background:var(--gold-tint);}
+.badge-lvl{display:inline-block;margin:0 4px 6px 0;background:var(--surface-2);}
+
+/* ---------- LAYOUT DO GUIA ---------- */
+.layout{
+  max-width:1160px;margin:40px auto 0;
+  padding:0 max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px));
+}
+.content{min-width:0;}
+.page{max-width:760px;margin:0 auto;}
+.page + .page{margin-top:56px;}
+@media screen and (min-width:1100px){
+  .layout{display:grid;grid-template-columns:232px minmax(0,1fr);gap:56px;align-items:start;}
+  .page{margin:0;}
+  .sidebar{position:sticky;top:76px;max-height:calc(100vh - 96px);overflow:auto;padding-bottom:24px;}
+}
+
+/* ---------- SUMÁRIO ---------- */
+.toc{margin:0 0 32px;}
+.toc h2{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-mute);margin:0 0 12px;
+}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:cap;}
+.toc ol > li{counter-increment:cap;margin:0 0 10px;font-size:15px;}
+.toc ol > li > b{font-weight:700;}
+.toc ol > li > b > a::before{content:counter(cap, decimal-leading-zero);font-family:var(--font-mono);font-size:12px;color:var(--gold);margin-right:10px;font-weight:500;}
+.toc ul{margin:6px 0 0;padding:0 0 0 14px;list-style:none;border-left:1px solid var(--line);}
+.toc ul li{font-size:14px;margin:0;}
+.toc a{display:block;padding:4px 0 4px 10px;margin-left:-11px;border-left:2px solid transparent;color:var(--text-soft);text-decoration:none;line-height:1.35;}
+.toc ol > li > b > a{margin-left:0;padding-left:0;border-left:0;color:var(--text);}
+.toc a:hover{color:var(--accent-text);}
+.toc a.is-active{color:var(--accent-text);border-left-color:var(--gold);}
+.toc ol > li > b > a.is-active{color:var(--accent-text);}
+.toc.cols ul{border:0;padding:0;}
+@media screen and (max-width:1099px){
+  .sidebar .toc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .toc.cols ol{columns:2;column-gap:28px;}
+  .toc.cols li{break-inside:avoid;}
+}
+@media (max-width:600px){ .toc.cols ol{columns:1;} }
+
+/* ---------- SEÇÕES ---------- */
+h2.section{
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.02em;
+  font-size:clamp(28px, 3.4vw, 36px);line-height:1.05;color:var(--text);
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  margin:0 0 8px;padding-bottom:12px;border-bottom:1px solid var(--line);text-wrap:balance;
+}
+/* número do capítulo: mesma fonte e tamanho do título, em dourado (lê como "01 Fundamentos") */
+h2.section .num{font-family:var(--font-display);font-size:inherit;font-weight:600;letter-spacing:.02em;color:var(--gold);font-variant-numeric:tabular-nums;}
+.section-sub{color:var(--text-soft);font-size:17px;margin:12px 0 28px;max-width:62ch;}
+h3, h4{text-wrap:balance;}
+h4{font-size:17px;font-weight:700;margin:28px 0 10px;color:var(--text);}
+
+/* ---------- CARDS ---------- */
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:24px;margin:0 0 20px;box-shadow:var(--shadow);
+}
+/* cabeçalho do card: ícone + título na mesma linha; o texto ocupa a largura toda (borda esquerda única) */
+.card .card-head{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;align-items:center;margin-bottom:4px;}
+.card .card-head > div{display:contents;}
+.card .card-head > :not(div):not(h3):not(h4):not(p){grid-column:1;}
+.card .card-head h3, .card .card-head h4{grid-column:2;font-family:var(--font-body);font-size:21px;font-weight:700;line-height:1.25;margin:0;color:var(--text);}
+.card .card-head p{grid-column:1 / -1;margin-top:14px;}
+.card .card-head > div > :first-child:not(h3):not(h4){grid-column:1 / -1;}
+.card p{margin:0 0 12px;}
+.card > :last-child, .card .card-head p:last-child{margin-bottom:0;}
+.card > .card-head + p, .card > p + p{margin-top:12px;}
+.card > h4:first-of-type{margin-top:24px;}
+.ico-wrap, .card .icon{
+  width:44px;height:44px;flex-shrink:0;border-radius:10px;
+  background:var(--accent-tint);border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.card .icon{object-fit:contain;padding:6px;}
+.ico-wrap{display:flex;align-items:center;justify-content:center;color:var(--accent-text);}
+.ico-wrap svg{width:22px;height:22px;stroke-width:1.8;}
+
+/* ---------- IMAGENS ---------- */
+.hero-img{display:block;width:100%;height:auto;border-radius:12px;margin:20px 0;background:var(--surface-2);border:1px solid var(--line);}
+.hero-img.natural{margin-inline:auto;}
+.hero-img.banner{aspect-ratio:2/1;object-fit:cover;object-position:center;}
+img.emoji{height:1.15em;width:auto;vertical-align:-0.22em;margin:0 1px;}
+.img-fallback{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--surface-2);color:var(--accent-text);font-size:13px;}
+.img-fallback.inline{width:1.1em;height:1.1em;font-size:.7em;vertical-align:-0.2em;}
+
+/* ---------- LISTAS COM ÍCONE (sem caixa dentro de caixa) ---------- */
+.tier{display:flex;gap:14px;align-items:flex-start;padding:12px 0;margin:0;}
+.tier + .tier{border-top:1px solid var(--line);}
+.card > .tier:first-of-type, .card > h4 + .tier{margin-top:8px;}
+.tier > img:not(.emoji){width:28px;height:28px;object-fit:contain;flex-shrink:0;margin-top:1px;}
+.tier > .ico-wrap{width:30px;height:30px;border-radius:8px;}
+.tier > .ico-wrap svg{width:16px;height:16px;}
+.tier p{margin:0;flex:1;min-width:0;}
+.tier b, .tier .label{color:var(--text);}
+
+/* ---------- TABELAS ---------- */
+table.map{width:100%;border-collapse:separate;border-spacing:0;margin:16px 0;font-size:15px;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-variant-numeric:tabular-nums;}
+table.map th, table.map td{padding:10px 14px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line);}
+table.map tr:last-child td{border-bottom:0;}
+table.map th{font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mute);background:var(--surface-2);}
+table.map td img{height:22px;width:auto;vertical-align:middle;margin-right:6px;}
+table.map td.arrow{text-align:center;color:var(--gold);font-weight:700;width:40px;}
+
+/* ---------- DESTAQUES ---------- */
+.highlight, .note{border-radius:12px;padding:14px 18px;margin:16px 0;font-size:15.5px;}
+.highlight{background:var(--accent-tint);border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);}
+.note{background:var(--gold-tint);border:1px solid var(--gold-line);}
+.note b:first-child{color:var(--gold);}
+ol.steps{padding-left:0;margin:12px 0;list-style:none;counter-reset:passo;}
+ol.steps li{counter-increment:passo;display:flex;gap:12px;align-items:baseline;padding:6px 0;}
+ol.steps li::before{content:counter(passo);font-family:var(--font-mono);font-size:12px;color:var(--gold);min-width:20px;height:20px;border:1px solid var(--gold-line);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+/* ---------- WINGS / DUNGEONS (arte com nome sobreposto) ---------- */
+.wing, .dungeon{
+  display:grid;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  margin:0 0 20px;box-shadow:var(--shadow);
+}
+.wing > .wing-img, .dungeon > .dungeon-img, .wing > .wing-head, .dungeon > .dungeon-head{grid-area:1/1;}
+.wing-img, .dungeon-img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block;height:auto;}
+.wing-head, .dungeon-head{
+  align-self:end;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;
+  padding:48px 20px 16px;color:#fff;
+  background:linear-gradient(to top, rgba(6,10,18,.88) 0%, rgba(6,10,18,.55) 55%, rgba(6,10,18,0) 100%);
+  font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:26px;line-height:1;
+  text-shadow:0 1px 2px rgba(0,0,0,.4);
+}
+.wing-head .wing-num, .dungeon-head .lvl{
+  font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-shadow:none;
+  color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);border-radius:6px;padding:4px 8px;white-space:nowrap;
+}
+.dungeon-head .lvls{display:flex;gap:6px;flex-wrap:wrap;}
+.bosses, .dungeon-body{grid-row:2;padding:8px 20px 12px;}
+.boss, .path{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px 0;font-size:16px;
+}
+.boss + .boss, .path + .path{border-top:1px solid var(--line);}
+.boss > span, .path > span{font-weight:600;}
+.boss a, .path a{
+  display:inline-flex;align-items:center;gap:6px;min-height:32px;white-space:nowrap;
+  font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--accent-text);text-decoration:none;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 12px;
+  transition:border-color .15s ease-out;
+}
+.boss a:hover, .path a:hover{border-color:var(--accent);}
+.boss a svg, .path a svg{width:12px;height:12px;}
+.dungeon-meta{display:flex;gap:6px 20px;flex-wrap:wrap;font-size:15px;color:var(--text-soft);padding:8px 0 12px;border-bottom:1px solid var(--line);margin-bottom:4px;}
+.dungeon-meta b{color:var(--text);}
+.dungeon-meta a{display:inline-block;padding-block:2px;}
+.paths{display:flex;flex-direction:column;}
+
+/* ---------- RECURSOS ÚTEIS ---------- */
+.resource{
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 12px;
+  transition:border-color .15s ease-out;
+}
+.resource:hover{border-color:var(--line-strong);}
+.resource .res-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
+.resource .res-name{font-weight:700;font-size:18px;color:var(--text);}
+.resource .res-desc{font-size:15.5px;color:var(--text-soft);margin:0 0 10px;}
+.resource .res-url{
+  display:inline-flex;align-items:center;min-height:30px;max-width:100%;
+  font-family:var(--font-mono);font-size:12.5px;color:var(--accent-text);text-decoration:none;word-break:break-all;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 10px;
+}
+.resource .res-url:hover{border-color:var(--accent);}
+.resource .res-new{font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.08em;color:var(--gold);border:1px solid var(--gold-line);background:var(--gold-tint);border-radius:6px;padding:1px 7px;}
+/* lista de recursos em 2 colunas no desktop e no PDF */
+@media screen and (min-width:900px), print{
+  .page:has(> .resource){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px;align-content:start;}
+  .page:has(> .resource) > :not(.resource){grid-column:1 / -1;}
+  .page:has(> .resource) > .resource{margin:0 0 14px;display:flex;flex-direction:column;}
+  .page:has(> .resource) > .resource .res-url{margin-top:auto;align-self:flex-start;}
+}
+.featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 8px;}
+@media (max-width:600px){ .featured-grid{grid-template-columns:1fr;} }
+.featured{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:border-color .15s ease-out;}
+.featured:hover{border-color:var(--accent);}
+.featured .f-name{font-weight:700;color:var(--text);font-size:16px;margin-bottom:2px;}
+.featured .f-url{font-family:var(--font-mono);font-size:12px;color:var(--accent-text);word-break:break-all;}
+
+/* ---------- RODAPÉ ---------- */
+.footer{margin:72px auto 0;padding:28px 20px 40px;border-top:1px solid var(--line);text-align:center;max-width:1160px;}
+.footer a{display:inline-block;padding-block:4px;}
+.footer-brand{
+  margin:0;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:2px 0;
+  font-family:var(--font-display);font-weight:600;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-soft);
+}
+.footer-brand b{color:var(--text);font-weight:700;letter-spacing:.18em;}
+.footer-brand .sep{color:var(--gold);margin:0 14px;}
+
+/* ---------- MOVIMENTO ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+}
+
+/* ---------- CELULAR ---------- */
+@media screen and (max-width:640px){
+  body{font-size:16px;}
+  .hero-inner .emblem{width:96px;height:96px;margin-top:-50px;}
+  .hero .hero-desc{font-size:16.5px;}
+  .layout{margin-top:28px;}
+  .card{padding:18px;}
+  .card .card-head{column-gap:12px;}
+  .card .card-head h3{font-size:19px;}
+  .wing-head, .dungeon-head{font-size:21px;padding:36px 14px 12px;}
+  .bosses, .dungeon-body{padding:6px 14px 10px;}
+  .topnav{padding:8px 12px;}
+  .topnav .crumb, .topnav .home > span:not(.emblem){display:none;}
+  .topnav .btn .lbl{display:none;}
+}
+
+/* ---------- IMPRESSÃO / PDF (sempre claro, uma coluna) ---------- */
+@media print{
+  @page{size:A4;margin:16mm 14mm;}
+  body{font-size:10.5pt;line-height:1.5;background:#fff;}
+  .topnav, .hero-bar{display:none;}
+  a{color:inherit;text-decoration:none;}
+  /* capa */
+  .hero{page-break-after:always;break-after:page;padding-top:4mm;}
+  .hero-bg{height:92mm;border-radius:12px;}
+  .hero-bg::after{display:none;}
+  .hero-inner{padding:0;}
+  .hero-inner .emblem{margin-top:-62px;width:124px;height:124px;box-shadow:none;}
+  .hero h1{font-size:44pt;}
+  .hero .hero-desc{font-size:13pt;}
+  /* corpo */
+  .layout{display:block;margin:0;padding:0;max-width:none;}
+  .sidebar{page-break-after:always;break-after:page;}
+  .page{max-width:none;}
+  .page + .page{margin-top:0;}
+  .page-break{page-break-before:always;break-before:page;}
+  .card, .wing, .dungeon{box-shadow:none;}
+  .no-break, .card{break-inside:auto;page-break-inside:auto;}
+  .tier, table.map tr, .boss, .path, .resource, .featured, .note, .highlight,
+  .hero-img, .card-head, ol.steps li, .wing, .dungeon{break-inside:avoid;page-break-inside:avoid;}
+  h2.section, .section-sub, h3, h4, .card-head{break-after:avoid;page-break-after:avoid;}
+  h2.section{font-size:24pt;}
+  .wing-img, .dungeon-img{height:52mm;aspect-ratio:auto;}
+  .hero-img{max-height:95mm;width:auto;max-width:100%;object-fit:contain;margin-inline:auto;}
+  .hero-img.banner{width:100%;height:58mm;max-height:none;aspect-ratio:auto;object-fit:cover;}
+  .footer{margin-top:36px;padding-bottom:0;}
+}
+</style>
+<script>
+/* Fallback de imagens: se um ícone/imagem externa falhar, troca por um marcador neutro. */
+document.addEventListener('error', function (e) {
+  var t = e.target;
+  if (!t || t.tagName !== 'IMG' || t.dataset.failed) return;
+  t.dataset.failed = '1';
+  if (/(^|\s)(hero-img|wing-img|dungeon-img|logo)(\s|$)/.test(t.className)) { t.style.display = 'none'; return; }
+  var s = document.createElement('span');
+  s.className = 'img-fallback' + (t.classList.contains('emoji') ? ' inline' : '');
+  s.textContent = '\u25C6'; s.title = t.alt || ''; s.setAttribute('aria-label', t.alt || '');
+  t.replaceWith(s);
+}, true);
+</script>
+</head>
+<body>
+<nav class="topnav" aria-label="Guild DIVINE"><div class="where"><a class="home" href="../index.html"><span class="emblem emblem-sm"><img width="64" height="64" decoding="async" class="emblem-img sm emblem-claro" src="data:image/webp;base64,UklGRhoPAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSGoIAAAB8Lht27E32v/vaz/P805qIx3btj21sUxT223GVm0zqRGrUa2k7UxtK03NQZXc14lrf1AljYgJwO2XAtdVEnekwDuxm5fO6fdpGUDKOwGQj44N0ueFsU9BqDsCAk9v4oUtzI+6F0rcCTIUlddyYvh5nmkDKYqcVIDEfSdZM+xPMrIYZNGSEhAPftLtrQhmo3QKuagsZBESCnhuwOZLljveDuonUCyRXFUOoshIhReSgqTv2eMfnuOzCJTIJtMURBFRKD4oSBfUvuWcT5gdAolHTjmOhCwaCvetpvUMeTYvOmw51ybOCi+DDtRsBFUUFJ49Qm3oNs5NbnPfcjrS5+5PkUXurwhReBKPHqU2zJuYtqBNuTqfVe+WUeAX0LV92QU5AKrQBEr/SW25fOTO70pCABB4dy+dz24J5Ll7IQpLYgy1ZfrEXS9CKUgVKBaCilFTf+3b+6NFBzkEqpAk3vGcYc7YnWEICABKAFU/6T5sdmz0uIjWPQeECFU4AvOpebHvrvuhAEgJ+UnMWZ/XN3sj34ZQhSHxiucbRi3p+RQEIAU+XeOT1vM8rbV2pEl+AkrcPoWh1Dw5JfK3IVBQCIsmrTbG8f+dMcbySh9IcbuECGynx7T0dodyEFB49yiNsY40p/ft2n/GkNZqy+iSkLdHhOCZAhrOSG9JtgM6ab/AWtpd6bHz01NTE6Mz9jpaq7m4LMTtkCJwbzgNL8WP+ZrW+77YhGv0yW0z0xfP+KJl07Y9BsWkxO2jdZpZxSFuTaHUrKV9qHkq5bsu9Cx3dfq4c8ye+KQ1EdUgJKrnDGndOS4p0/pOMxLylhRe2sakb6l5LPGHSueprc+zyX2qP92kFGRIIBTNae2yur+ujPN8Z9gZ6hYU6v3jmPolNU8n/1pryAUabUjqIzM7PQGIULRj0DL/2YZr433f8sJjkDel0NSzhpmdaXg1cfyjKb9so++01o4+ry4OLynRl8YZ8x7arVxCqznv5hSq5xvunrquOZ3hvCXy9SXjJu+1JK3W2ve5vwvm0zj+HQYMyMylde59yBtJPHzK56qX9/qfHafhqsyauLtvfOSk5G3nfdLXnmFB7X20lhsFUCYzi8zz5t+MQCaZU3wW+WEGDS/OmAJ8FN5n0tw5c2dk7rhEaq5tTOdrjoZSaL00l7kZfBFSXEehNXmozEfkFkTQWCYt+hjr/dgvP2v7e2xWRkrariC/mELjO1aHAsqlbWTBYE5EIFAWgECxTfQ+RSL5O+4/Q8srU9MeOUbL0xWB+5qOWZGZsLrmeTrLnSUgoDBgg+EvWy7djeptIKHQkByHcsfJ6sAAasuDP4Ybv4BZCAgIVOy8uk5/Gt/wVwT+r9GhC/wmkhOey/0WCgoxPP0AKv3Fy08CFfbRGE5tQaP5EwIQSgkUe+MvOsfT70wsCSHx3Nl8hn9Fz7IHlECFQxyOEKzgmXsQQA3jNCePpnasBQUAIhTRNL7mkLbrBkMKVD3FU1U/pPMYDiXxKq8+jwAezr10H6RCBIPssZKGl+9BQAAIoA2t73jyvX+XLW8EhdJ5th4Cncdf5uuQCi14YkPue+jj6VcgofADL7S4RMN1zzwKoaTCY6dpfc1eg1gwL6MkUOYot1YA2vBUGITCV/Qs0wJ5ZHsoQOHb2B9oNCd8vPG7MEhU3kzPGC5733PcNr8zEHaGbITQHGZBIICfePUSTz13jpwLCUChwk5aw67D/khfNPzT4u+sPkuf+e/2cr5lfGIoXijw2RxNyW5QCOBb1nnpAlvu4Mn1L0ICIehC61jw5n6eWJG+IGVExyY909m7atZiaq5b+Ala0F17TG3liWoQUIgYBwxlVCwvr4iEQgCPnaGzXPyJsz6vHVyTnZY8rmfNUPye9jd5LuMHzCIzMJwcCAUIPP888Ix3cjS5bk1zhKLaJlrfsPMIetrzSXtpb3bSvCZ4df4uas6PqniOwacbk4erQACAkJCYxowjtCnrXkLLg9TO8kSlGusc6bygo8/zaYsjEL+cmmuiPie7fRq0bAqF6whIPP53/hnyn5i1H4+g79PwK6jAy6P2O5LGsz6Xptbqu5Ca26N+ZGSE1hwEhZtUiKDxHS/GrfqqzrjdQWaHQOK1ls83/Tnjb/rGGC6t88NCZ7l32ne5i33NqRC4aYFEer5jwaLMlB/aNO78ZIkX20atWHH68PQudb7cSGcd3+q7gIZ7pn1JazlKiFsqt5aec47HFy5MzUxKW565LHuvJh2PP4oOF6jZNSqDmpumf0f+2xFS4BYlqmRTW2d9/nNoc87KdYfOO1qtmfcRAnjlHPObJ+bQcGnUKKY8DiVwyxIlp5PGWOPz+tozZNLdkAhFV8b1TjtCPz+j7/dNIRRup5RovIc+ndZeMOhpR3JjAwgJSDx8sn5aAi13LWoEKSVur1Ao1XrZCcfr+6fjaodCCgAC1d6ZmnCAhunzy0Hh9iuJkj0jfhwfkzFrSESTEoBQACCUwLCsLBrmZn4NhcIUIej399K5Xz3WP3L5gfYApFJCSFSNXphM65i0uCJEoUAgsIKa/QbS+Ux/RwEoFlKq89LYlbSGy3KaQaGQJR48SnPlqY/z6NMdmjNoeq/7RmelnaQxXL9kEBQKXeH9y457ypX9au35SyfzuezxEZtP0deOfy6aCIEiqFC/wHBZSajKJVvx4qPptNSOV5ZnD5GiSECh7iXHJZUQgtlc8+Jla8hr2xavbAMpUDQV3jxKbn4KGM28x/fx6omd2cuG3AclUFQV7skkL3TFs5fZs9mlvdnRXz0KIVGEpZCdT5M5L/difoMaDZ8NAZRAkZYKYQNOkkv38WpLCKEkirwSqNR2QT59n+uqF8edKBSAKnV+mBS9JOY9iDsAkEqi8AFWUDggigYAABAgAJ0BKkAAQAA+KRCGQiGhCwYDZgwBQlsALEexwtXpf4V/sB8GNifsv21/ZjpRztdQf4v8kP6r9OvQB5gH6H/5b+T/sB/Je4B5gP1s/WP3gPRX6AH8t/t3WAegB+1Xqsf7v/df4v4Fv2f/8X+c+AD+Q/1D/ndYB6AHYAfx38AO4B4W10/TA2XRI4lu8lwpkd3otZz/qb2Bf5L/TP+N/dfbA6lD9Rm+2svNCx18BppSkjYog5JWzH7lKhLual8HHqn+F7iyV6idLJhONqElFlL+5p0hb8iKGhFlj/sGXDseiXMeaUHPaiEes59bSaVf4j1OUIufcI91hzaUiZy4Eoe9Dsj0we90AAAA/v4thff6fRvrOQ3i+TwIkuISpnp6ULOpTTmsCn+qCmCDEPez3KWvlrtjmMier4cBwWeLZtzKE2nLibi6tgNxjFGfb6wYDC6o230o7oVfrhyzOuA2VSBoYXxr6qlfQHdmhrOdZXZYxf3CiHShLb9VZB9yMyBHICuacN6yoQ0jz52t3ohM38gnPMxrZUOYKyapC+Q2p7YxmCmqL69wuDNxnY5Nx12EFsSRw3esFijg4rG85SH3GV+fZWaeFXYnwxJsrb7ttn0po3vdjJQt3mTxaHiNEbJy4tXEgdDyogF7s7Hhuoa6HmfM0J1gqcy1yjjrMCAtfDpGTyvbDK8b6ZvKISr/cQBKpe7DTCjPH5sP/ia569kEz/qyBrfqoVAojD6d2aKFjbAx0SlOvQ95ZfCFytFXTv5rWelm73wID0UgqzCoZ4t0LbUlsJp4d/7cmbGu8rw+sWyknX0H9CDclV7SlFHfBho8DRO92VSyKC2xPanSP2PrR0G5RkyO7db9YfXTinhb0z9ZXddYNjchXKDdPP/wp1It9isWx6JEjV5iEQlbz18diHjCTxOagM6Lnsx0uMsBqpA+ukCSHZEQBMsNbshm8oa8VlY1PkrYkisDujd5hy5SEbeGB1VuKQlBYO+V6qNXj2I6dZqa4kegai0GWLLeEvzfnTFtNqxJUgM9GTPCmjcU5fyY/NJbXXa5qMiu0tV+Ax/ubniHdma5k9u8P/Y/7c6Pv/KvuctFMq2Ka50Gd+E+a+8pBAbqc+kXnrvy74Ajnlk2EnsGJbGqeFAEIH/i6QM5PO2ND1U2G1tBg3PSTOvi0OpDjweOT5DA+1sdOSkPjzpf/nKurR73sPmnEcyZbU3IlBhnEeV2W70w7fDEc2kTPxqvqrWVimv6hv8GZ+QSx9TxmZ/XdnGYA+c7PDMW9YTPbweHpPf1if5j/HVH6hfJETow7r7ntbvAnZ314saym5i07dltYvC36KT/EvvfPSDB0lYvEWdGciJ3L8n5QMkJ8c+0J7M7644xCBy6gZuL0PhWwrZ2087m3+23pPSKJLkO8D2ItkhqvNVaDFl90afgK5jhyEJ1sHZYIEbM1+t7WttIjFEkVvQ6tGvgD/oSuReOgbcNc0CwRS00B6mVKlZRNoH38Aas2xIN/0G7DDfdT0a4fsAdXcc457lNT3xcOYwB8jy5t/u6D12fqIIUuMEB/gHBb9lbtRjO6IsSfn/+wOUrgLxrWTCesxk14CKwE4fHF9fXJp++kO1vdUAmnoodzJ5cABClahZdbLv5ov0feGExia3pJYgZmB32MNvuuPilX8tRsHf22nD9Qi09Vn4lgXvhQsJDZnsb8zYdmpYWXSHxd9uvQqs2BnWXTnz6pdxEWFoiLXHjH/fQ9lgfurIC3uuHAxTIgXGOkaQp0gfiG7/+OwBWSWe9jqVXk3ygYwD/CRHJ0TRNmgPWj1a7VH2LdrPEqBj3dyPqpspLZsGnLJUlpWieWQ054ywWKfdHkm/IVtbu1fRWhSVR4FM29Q3JHH7ZPvg4iU2qFG70x76wcaDkCgjw85IUFJHq7S3WnTOfjxM2MeiFB2va1e6I27v/zwgzOj/xYnlNVOSV58g4YekodSVThCPsezAn0VW3igUraH9Dg3VsLGpbg0HHwrkt/6uVrMQq9nTusdJlzniDmh+k1/7u43nBljCie0izA7NEBAeIB9DREPBjP66yMvpHpR9iLjaCdCbeNHBf8w/7Q9XcJ7z0Lq6SD/iqIGkc7MgoW2AaYLC89r3/KXPkq3NuJhxb+H75OVtmfPxcctRrABvB/Hsb4efvRe3sif/2uZEbP7ZYf+IYcb/9nEomOYK8URNvwdtKiRWHXtp119zehnoWok3ng7IrYZAAAA==" alt=""><img width="64" height="64" decoding="async" class="emblem-img sm emblem-escuro" src="data:image/webp;base64,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" alt=""></span><span>Guild DIVINE</span></a><span class="crumb">Guia de Fractals</span></div><div class="actions"><button type="button" class="theme-toggle" aria-label="Alternar tema claro ou escuro"><svg class="ico i-lua" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /> </svg><svg class="ico i-sol" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /> </svg></button><a class="btn" href="../pdfs/fractals.pdf" download><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="7 10 12 15 17 10" /> <line x1="12" x2="12" y1="15" y2="3" /> </svg><span class="lbl">Baixar PDF</span></a></div></nav>
+
+<!-- ============ CAPA ============ -->
+<header class="hero hero-guide">
+  <div class="hero-bg"><img width="1024" height="414" decoding="async" class="hero-banner-img" src="../assets/img/mlNOp2u-0211f6-1024.jpg" alt=""></div>
+  <div class="hero-inner">
+    <span class="emblem emblem-lg"><img width="240" height="240" decoding="async" class="emblem-img lg emblem-claro" src="../assets/img/bwzdTWW-6321c6-240.webp" alt="Brasão da guilda DIVINE"><img width="240" height="240" decoding="async" class="emblem-img lg emblem-escuro" src="../assets/img/TGpP3lG-1936fb-240.webp" alt=""></span>
+    <h1>Guia de Fractals</h1>
+    <p class="hero-sub">DIVINE · Guild Wars 2</p>
+    <p class="hero-desc">Agony, instabilidades, recompensas diárias, títulos e Challenge Mode.</p>
+    <ul class="hero-chips"><li>4 Tiers</li><li>25 Fractals</li><li>7 CMs</li><li class="is-date">Atualizado em nov. 2026</li></ul>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar"><nav class="toc" aria-label="Sumário">
+    <h2>Neste guia</h2>
+    <ol>
+      <li><b><a href="#secao-1">Fundamentos</a></b>
+        <ul>
+          <li><a href="#introducao-as-fractals">Introdução às Fractals</a></li>
+          <li><a href="#agony">Agony e Agony Resistance</a></li>
+          <li><a href="#instabilidades">Instabilidades</a></li>
+          <li><a href="#recompensas">Recompensas</a></li>
+        </ul>
+      </li>
+      <li><b><a href="#secao-2">Progressão e recompensas</a></b>
+        <ul>
+          <li><a href="#ad-infinitum-backpack-lendaria">Ad Infinitum (backpack lendária)</a></li>
+          <li><a href="#conquistas-e-titulos">Conquistas e títulos</a></li>
+          <li><a href="#challenge-mode-cm">Challenge Mode (CM)</a></li>
+        </ul>
+      </li>
+    </ol>
+  </nav></aside>
+<main id="conteudo" class="content">
+
+<!-- ============ SUMÁRIO + FUNDAMENTOS ============ -->
+<div class="page page-break">
+
+  
+
+  <h2 class="section" id="secao-1"><span class="num">01</span>Fundamentos</h2>
+  <p class="section-sub">O que você precisa saber antes de entrar nas Fractals e como não morrer para a Agony.</p>
+
+  <!-- INTRODUÇÃO -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="introducao-as-fractals">Introdução às Fractals</h3>
+        <p>
+          As <b>Fractals</b> são Dungeons avançadas para jogadores nível 80,
+          presentes no conteúdo Core. Existem diversos tipos, divididas em
+          <b>100 níveis</b> distribuídos em <b>4 Tiers</b>: quanto maior o nível,
+          maior a dificuldade e melhores as recompensas.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Para acessar um Tier é necessário ter o <b>nível de Fractal</b> correspondente
+      (1–100), que aumenta sempre que você conclui uma Fractal de nível igual ou superior ao seu.
+    </p>
+    <p>
+      Para acessar uma Fractal é necessário estar em uma <b>party</b> e ir até o portal
+      de entrada localizado em <b>Fort Marriner</b>, em Lion's Arch
+      (<a href="https://wiki.guildwars2.com/wiki/Fort_Marriner" target="_blank" rel="noopener">Fort Marriner</a>).
+    </p>
+    <p>
+      Alguns benefícios e mecânicas são liberados pela Mastery <b>Fractal Attunement</b>,
+      localizada em Central Tyria. São necessários <b>11 pontos</b> para desbloquear a Mastery completa.
+    </p>
+    <img width="1300" height="731" decoding="async" class="hero-img banner" src="../assets/img/Mistlock-Observatory-2468c6-1300.jpg" alt="Mistlock Observatory, o hub das Fractals">
+  </div>
+
+  <!-- AGONY -->
+  <div class="card no-break"><div class="card-head"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /> </svg></span><div><h3>Tiers e escalas</h3><p>Existem hoje <b>25 Fractals</b>, e cada nível da escala corresponde a uma Fractal específica. AR indica o mínimo de Agony Resistance que reduz o dano da Agony ao mínimo no último nível do Tier.</p></div></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> </svg></span><p><b>Tier 1 (Initiate)</b>: níveis 1 a 25. A Agony começa no nível 20. AR no nível 25: 17.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> </svg></span><p><b>Tier 2 (Adept)</b>: níveis 26 a 50, com 1 instabilidade. AR no nível 50: 61.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> </svg></span><p><b>Tier 3 (Expert)</b>: níveis 51 a 75, com 2 instabilidades. AR no nível 75: 106. A partir do nível 71, um Fractal Avenger aparece para finalizar quem entra em downed.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> </svg></span><p><b>Tier 4 (Master)</b>: níveis 76 a 100, com 3 instabilidades. AR no nível 100: 150.</p></div>
+  </div>
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="32" height="32" decoding="async" class="icon" src="data:image/webp;base64,UklGRqgDAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSFkAAAABV6CgbRs22HZDsBH4ERFYev39ZYBNbe1NvhQBSIgUNixEAoe5s3cHGEiz+f9/ZsaI/k8A0lf9aqRS/8fFul2jjTW7BeCCNFjQ5uR6A94dxGtUTqV41I8deABWUDggKAMAAFASAJ0BKiAAIAA+KRCGQiGhCgNUDAFCWwAnTKEdXeNfg7+IHSq7uthtAHmCcff3nlAehLuAP2H/VXhDP711AHoAfoB6ZPsX/t7+y3tEXM3wN8BPlg+vru/8dxgaTvMR/qX+v+2b4yv8nycfO/+u9wb+Uf0T/e/2Lsx+jJ+0bZL3ThAY2ByS1IQd+XOAZ5P0fF3lgm/4a+SFevAAAP7//o2dZH4Lpvxezxh9nnZeJfpEd2e6+so3rdBKdiFP/bZbE0mdy1ViMBfz/N2d+f96s/5kVdMf/J7nqknWHPa4C+o3s6fe+vfwsn+gsOV8f8LR+ih/PttY4N6Bp3rYd0P/+aLLLXnDBKg385MUOBpkBDh/qZbgVA58O8If/hkZp//+Lj/c83Unh6J/2q4ZtgZXCHz0INOLIw2X/8atxi5PkUZr8LeOD4ZVmFbMdQdxatv88jsFgf9q4eX96NKIUyzs7qgGVA6STkecIBLP1MwJfir+1uh//PO+wOpPC3/rTDee1Vv4711xPV6rWlD/lbGaO9p9DBJfDCStg1DFcjcv7+yvtE5+VscqVozeFcmrz9HEsFpv6P8a6xZigk62i3/Jgf+svQjf+OXpnBS7alZEViIuV3bD/rtxgaHazjS2MD54Rd1jTP4E6rQONnprruukJmPSjKn9akJXv/A+3T/nnT2K1T+3A0bFIlX8Kw/FkOIdE/JYYnQUoY9dQfSeu3g1M/f/NACObVEV97MDVyvtw8bAQmP387v1vOLi1IWLDhPi/f1h2VVyDJLaNYolMUP7fq/GycOA0UbrX/9opowOc1l5a6ZjoSlvqG3f3WmYNOYLTHIJoHrsKg/uqByv/FV2vv09euhe1/embx6Od57R+oxDkz+CzLDZ6SHR7N+/fNLPYr9+vq29CQXz0tGGJmr5yJicV8JBCZ7HYt5+kAt1+JpByBXmI/59B5F9m37SiYeS2bTxPqww/XOGeGUz8yaGA3MI/4qC8E0HJm00savNTTjm3UAju1l2gk8wrx0i8Z3h10ZpwFfE/SDOr5E5juXg+QziX+4bOvjblV8rllaNUc3YqcX8kcVp0AA=" alt="">
+      <div>
+        <h3 id="agony">Agony</h3>
+        <p>
+          A <b>Agony</b> é um debuff aplicado em determinados momentos que causa
+          dano por segundo e diminui a quantidade de curas e barreiras recebidas. É a principal diferença das Fractals para outros conteúdos instanciados.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Para lidar com a Agony, é necessário equipar <b>Agony Infusions</b>,
+      que garantem ao personagem <b>Agony Resistance</b>. Essas Infusions só podem ser
+      utilizadas em equipamentos <b>Ascended</b> ou <b>Legendary</b>, pois esses possuem
+      <b>Infusion Slots</b>.
+    </p>
+    <p>
+      Existem diversas categorias de Infusions: as mais simples garantem apenas Agony Resistance
+      (de <b>+1</b> a <b>+30</b>), enquanto as Infusions com status também concedem atributos
+      como Power, Condition Damage etc.
+    </p>
+    <p>
+      A quantidade necessária aumenta conforme o Tier. Para realizar todos os Tiers,
+      é preciso um total de <b>150 de Agony Resistance</b>, com Infusions em todas as peças do set e slots extras nos anéis ou backpacks.
+    </p>
+    <img width="1080" height="608" decoding="async" class="hero-img"
+         src="../assets/img/sbok5w1neys21-d62c05-1080.jpg"
+         alt="Agony Resistance">
+
+    <h4>Aumentando os slots de Agony Infusion</h4>
+    <p>
+      É possível adquirir slots adicionais em anéis e backpacks ascended usando a <b>Mystic Forge</b>.
+      O mais recomendado é fazer a alteração nos anéis, por ser mais barato e viável.
+      Para isso, é necessário deixar os anéis <b>Attuned</b> e <b>Infused</b>; cada upgrade
+      garante um slot adicional, totalizando no máximo <b>3 slots</b> por anel.
+    </p>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Attuned">
+      <p><b>Receita Attuned</b>: <a href="https://wiki.guildwars2.com/wiki/Attuned_equipment#Acquisition" target="_blank" rel="noopener">wiki.guildwars2.com/wiki/Attuned_equipment</a></p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Infused">
+      <p><b>Receita Infused</b>: <a href="https://wiki.guildwars2.com/wiki/Infused_equipment#Acquisition" target="_blank" rel="noopener">wiki.guildwars2.com/wiki/Infused_equipment</a></p>
+    </div>
+    <p style="margin-top:8px;"><small>Esquema de como atingir 150 de Agony Resistance, suficiente para todos os Tiers das Fractals, disponível na imagem acima.</small></p>
+  </div>
+
+  <!-- INSTABILIDADES -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="32" height="32" decoding="async" class="icon" src="data:image/webp;base64,UklGRowEAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSNEAAAABBiiSbLtu7te2ZKgVOEMxccNsIyXswMS8R4V3j8N7992/g3MiYgLYeQnKxrwFydsR5qjO0xZoKkkIKuUOYSXco1Ndr+hWxxKJy9ASqcvAO5LfG19IV2WHoJNwBrgz8htBbwYoE4IeDFAMOslC0kkGwoVeql4Y2Y61tVXjeFJpSsfGyshtQ5FjY2v/3yp+isgrb1Z/yHqwtnIeLDgRSOdR0l4HOUE+TCLkAiSdLE4SJGW9Qqese1BMQx+H88j5YKlXLVn2rDaz/LN/sjGn4NQ6AQBWUDgglAMAADAWAJ0BKiAAIAA+IQyFQiGG/QAGAIEtgBOmUI9P8d/EDkz9wjH3qb/AfcBvAH+H3QHQA9AD9lesA9AD9ZvSy/ZL4C/2C/Xv4BP1Uuzv4B+HfVsdsPUv9tMuu830AD8sfjz+QG457y/98/LDVCP9LrCv8z/yX3He+j/RfyvzBfEv+q9wH+H/yz++f1r9sP7b/+fpm80D2Tv1ma3AyXWKCAVF8tYPjmqRZIC6zSDVgVgnEPFvj+wIEudJAAD+//8W4H2YoSCtnF3LM/2cmMtrzIDHx16+4sH3F2PC2UXGB3feB+894/7a5ivdYe4h9LQHIhKhcHr+KStNnuUM78VKSN+ZHgPGzdb4gz4xnjC/6V2erPFwlnG/OZxDocHc3AOMlMhIpcub3fJ5lzxfTJiMct8lY99x0/71sjzLV3+qeQHE16DHT+otLqmBekqs2vix/pj2f+xf9yd6/kVNKAthqVeQcjpN2LZuj/PTmq+Cvb8aPXsY2q/1GIl+L7tSu8G3FJV8AwNiMH3Rs3vmyjFqx4C/TM6cjGwzoyoZxIbbeEuTcuPes4A8VrbiJ9qMoLic78fbGmUsbuPrd5/Ny34VRa2B7hSDwcKWP/bXpkeelz0/JwpDRf7Ofkx204B4/+Mp0PGdr5A6BSi+/2GhCdSzuake2HdH7aicNwor3/HVH/aGOk9A8lNgeinIWuWtF9ZQmr8XgUo7+BmoMWq5/ptrUhHZiW1kEkphNrQ06eVNSiL9e8+IbYBZD/elWTdNb08+b7wbDdBrhJ1aj2Y46ea0FQZE9xlj9BA5Qwf2obnPqpai59v4t6vTh/6M6u/vO84sBjXsYwS1JhvKa8m/4D8LwDDHEFY3VFPkdoCtcZl1RZ9Qf1OuH0r3R529xBFHsxegooUOa+//v6Evr4MX9Azfvb/ACayoFJn4WSSOrPKBntUYhhwPFFWFeG/k7/Z/AHfdHcx5+zOCH9VVtaB45c69CzA2g8ev7pLCFmSRVz0RfJdJIorUniQn9bGPR/myqbK23rmVPoUMryaYgksSTZe9bnR4BLCndXUQEd8YnGWbDDEpX07lrOltYNZZvmQ/4i9JT/t3IB2NJwvXGq+SlyghmT8ZWjgx4d8BvVRPu/n/EwtFuQ9VwU/hFCBttxT4QpD4cdIVcLWdvVrp/O4dkAEeVUHVVQ5bhqmqTzJGMpHybs7xNl5YTFnivcZXAIMwSnHHAKQAAAA=" alt="">
+      <div>
+        <h3 id="instabilidades">Instabilidades</h3>
+        <p>
+          A partir do <b>Tier 2</b>, os jogadores têm de lidar com <b>instabilidades</b>: mecânicas adicionais à Fractal em questão. É apenas <b>uma</b> instabilidade no
+          Tier 2, e <b>três</b> instabilidades no Tier 4.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      A seleção de instabilidades muda <b>diariamente</b>, sendo necessário um bom conhecimento
+      delas para evitar transtornos. A lista completa e seus efeitos estão na
+      <a href="https://wiki.guildwars2.com/wiki/Fractals_of_the_Mists#Mistlock_Instability" target="_blank" rel="noopener">Wiki oficial</a>.
+    </p>
+    <img width="499" height="342" decoding="async" class="hero-img natural" style="max-width:499px" src="../assets/img/29V65xq-7ef489-499.jpg" alt="Instabilidades">
+  </div>
+
+  <!-- RECOMPENSAS -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="recompensas">Recompensas</h3>
+        <p>
+          As maiores recompensas vêm das <b>Daily Fractals</b>: uma rotação diária de
+          Fractals que dão recompensas extras, maiores conforme o Tier.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Há duas definições no painel: <b>Daily</b> e <b>Recommended</b>.
+      Ambas devem ser realizadas, pois garantem recompensas superiores.
+      A lista pode ser consultada no <b>painel de Achievements</b> e no próprio painel das Fractals.
+    </p>
+    <img width="1024" height="414" decoding="async" class="hero-img banner" src="../assets/img/mlNOp2u-0211f6-1024.jpg" alt="Recompensas Fractals">
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m17 2 4 4-4 4" /> <path d="M3 11v-1a4 4 0 0 1 4-4h14" /> <path d="m7 22-4-4 4-4" /> <path d="M21 13v1a4 4 0 0 1-4 4H3" /> </svg></span><p><b>Daily (Tier N)</b>: todo dia há 3 Fractals diárias, as mesmas em todos os Tiers. Completar a daily em um Tier mais alto também completa a mesma daily nos Tiers abaixo e entrega os baús de todos eles. Todo baú de daily traz Pristine Fractal Relic e Agony Infusions +1. A rotação é de 15 dias.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="10" /> <circle cx="12" cy="12" r="6" /> <circle cx="12" cy="12" r="2" /> </svg></span><p><b>Recommended</b>: uma Fractal por dia nos Tiers 1 a 3 (não existe no Tier 4), sempre em um nível fixo. As de Adept e Expert exigem a Mastery <b>Follows Advice</b>. Cada uma dá um Research Chest com Fractal Research Page e uma Mist Potion grande.</p></div>
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /> <path d="M8 16H3v5" /> </svg></span><p><b>Reset diário</b>: dailies e instabilidades mudam às 00:00 UTC (21:00 no horário de Brasília).</p></div>
+
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,UklGRkYLAABXRUJQVlA4IDoLAAAQLQCdASpAAEAAPiEMhEIhh79UBgCBLUATpltA85CdX/yvju6QIncK/ljvWB5iv2Q6lv989QD+tf0/rRPQA/bn0zf2t+Cf+1f7r9oPaN/9mCCbkvo34weYP4V8d/QfyL/JPlCcu+YH8a+t323+ofsn+YPxJ/gPA/4P6gX4z/Jf7P+Un9d/a35Z/VexMzP/AegF69fLv8j/Yf2m/rH7KeuX/G+gH1h/znuAfxr+Y/4T+uftf8Af3Lwdvq/+E/1XuAfyv+q/4f++/s7/hf//9o38P/vP8/+6n+t9nf59/df9//jv3Y/vH2B/yf+ff5f+3fuT/f//39XfsU/aj2P/14XEGR9nh/uV5qRpLR4tuIMml5V7x70f345d/MwJH2hVhNz3Jj0q4rPI8yKH+2nBTpc2osDiBNTIGcIqzfNJ/URsTxQ2gGeROHDYnkLCICKv/5Kmdk7YWXc7D9Xr8y9ktc7Odf6/eMSP/5Ejpd1GS9duhQAA/v/+IgvNLVXRdtEXs9ZacZV33Xr1Uq3TsSdhzdYPZ5+CWCVr/YbVH+uYYSg8+zDFiHuPLp5/lHOWf0V3LShLCUhSkyE7AOC4mfHaGmwa+Sw32k3sK1Pw3wWJLQ3mb74mDrHQI7WPFiOvCynrnfcsATrvcuGGllchE6829vbyZKcVfQWB4Pm9tcp4f4jj+pwz+DIkjSSefegMroaie8vLKjba/wT+AXfLAcvNY8L7OpZTUXsLc29Rs+9HXWn4taHkvu6POHshBljBbrxbOc//NzUrp0yLpw32tW0QIgVPBSCjVnsBm+cuUc7BGtHtdg8S5t7CeqFBQhmuR3+MccnhgjWbXIf2x2NZS2+JF8b7glrcRvJy6lFWayFY8+TooNwhaHzzydZAP5dyM9ZwJiV0DslSsyTgALJQ3ckkXslKT70RpWBCKUevsDi9Ld+zuvrbJPxmZlt9rQIw0FUKNEJ0dOZiyeWeOYqCTFu5x/tvnitrhoY19cv4iSRHVjylnKEb9v3LswuWHmsua4Sqe/3ljDQNSN62ROsKj53X8vcf8ncAyEAvfVf/+pjn6tcNp39LUGdLoQxRzJDcYiwP+SaA5ZUanklM4H1z0x0QIbCAOvuyGlI+dOuc2C2HHLljlhZZtqGhZMfWddRzWPs/ARcl0d1q0huO68HGWjsYaSKG9s60SNpfRQ8SahS36KUcQPtP9aebBw5xgoSO81ZMg8Ga9FpCS/fYeJNJ8Wv1hF6n87lyh+IXz3n3emKLSxnEI1N6Q1BX1kEFaxlkCAuUflS9QaLE9W7FlwyppCELXBXsps0TJvRv/Aa0d2PPDRWfzmolPihVUcH926rQYrjg1Qgbn+pGdYjfx69MQ8d4pm2Np8+BiMHTLaTZN6SyUrGub2vgiTZwvOM+LhIO1wIjUaPnGTMn61LfNxkdJJTGmPuqxlMvpJm3KlwZDeAj+oaDMhETPR9erF+CaujG3wjAZVY9SFP5uzlz7pKTz5E4PHyZa2obwbbMgyL013Aw+/75w7wzVXiS9IAE1SBiwpA5sjOevi7/fPmhKTeunwUu/LwE6VQaX7YbbP2fCSHzuJqF/UaOLnJH7Bab/k3dgWw7c/phS2UYFt27VTbn8lZ96q0bUd1AcoZox4HMGDzNgP8DA3gOjGIPwBxQequTG4bf7N4Y2/guBQNxiPbcEAFiViKjB0MfTZ3V68G+J9IuVmzctG0CMJakifbSiuC/+eAo/8UaspmP8f6ch6N1r7unKV0oaxJ5iu2Z3Hewlf8KYU3OngeL4dOCr2PfA+ojp1+5gNAgfeOFIncFSMcaPuCdHgcP6NtPXIcdu5rTdOorlcDNck1p14G1hme3LpTRGgQioOJNl8PEiPWbDo5opRkaaMFLv8OxRSTnsLw5clI9pjJYPKtjX22U8u9ilBAni1dLZvEQY8vGbDzjMMrPYadtE6nCBG2ZyHFWSdyI9L/Q7Wwf31m3DL7DHSqoGIDG421Kv2t4oESBGwBLfqUDc6fpRnT1x2TcYTljqoxGv2W1FlOrYoJhUdCvCf3R9DlA9v1gAUN4gu+Z0/2e82GrBFD/wCNWQMXf59hR6rMYsCCcO2JblqVmaIi7pjthcj3fjB4rQDwFFO6p52WaYOsxs7s2vkdxZsoftwKFeV2vNAeqzVWB9QhUFFqM9OKHu2Jn/8G6v9KXBmVgotcy9YdTzQ5kndCb/O2nfkplx3EaBzRXn/bqGOkP380xZqHOHiDgD9MV6rtlx3BmEV9SVy9AG+QJgNtQAKcpAJOFb4m28z9x2Dg1FRYR/CwPvwOkBG34y8wH13dWrkGnllFuxhmQyfkRb4Vy+aa3ZW72VNC80U1IPh/0IZoQYEpQqG603jLaqrmlw+Q4iCVnMNDnJNXdr3/q1vo9mWj2c/FF9hFbT/kXhksBUQxd9lDJAvhN/H2LmX34F6jNfiWYfrtl/EsQ3ZtmvqrzbDwV6OmXfhmDXOgHcyI/1OpW4UcOoeBcDA+rbiSSpKbd64FeMLOaZyCNgKzug646yhuopUMLtSFw97GXrzG1tvqN91E5Kfsn2EX0Tk2vowt8nla+2+mNLeRklDKKqmass1TdezsfrTeMbWNoeAOq1ZP2n5A00BWydAE6+EPHb/8I5f+CCjuff4ydBI/AwtuHZfQCAxZXr3nGbvtOUPDgt4+IiYVIppvlNtI6g0+32mif7IL6ee6pRml0pm7lulhHb33qnl4CMV9WokXbgp2S+8xYsdX8COFuFKme/wI/wQFtUNnx9t7EJz/Aj4stZJXrZDCwbCNcX3V6yyQdh/pNNS/9mOFmRJC2Ut0v2bE94209VajYv5jLoo2MHUOw0UDphl+wrwoaTKjEmP+62rIw9jmak02PSiUMLMmj3lfiJt54slRUX9ADqJnSrnMVOXvw8RkaJjwdSWlJNqtFPCzMW8m6jf1aOrQvIqCUAzjLsbnqspVh7a7f913iT1sBs9TD/7QuRBDWIDE1wjaR4QuHYH22R7AHG10+p/GwAU+N4k/ncCugcgsOM1MR7+djUGeh5fdjrQtaIexLgWVbE4qHOkZrqkOtfcOnfofNOWp83dKCczxdzAxUaYd99q2d6KM9axSWliBGBLRydMDmGTZAFe2Ka9ULw1MrDgEaa9zNhHSJxYujnby5dVEU8dHV4M5zfBlbefYTCyXLN5Dpq2Q9OfEZZXcNsYu6VgQZBXcNvM6RS3teKzb57i02M34e5TYl9CUh2LXGypu3OCihO+iKcmeVeJWV1pQ7KfDAQ5XTWtEgV78odBKKWY7e9QYHe+SyTtTQrLVbhHuPsrMFk1HAQBZzTuzgXfbzHli48jJdtFp+MDDtesu0U5cTW7iHpBSmyQtDdORr6mQtyTHP/efdEW7JyxhHaGUU4bfR2lpNEX3QmXILcrNsZEpKwiv6XYjS8kn9n9+BeM8m6OFfImsdZnK28g02ErYkBAPSIsNoYHvn6q6HZcF7ABkADrLJe6DB+kGwLLniXmTAsUwi2F1sA2K+9mfsJjHYz5FfXfJpi+WGnQ48vmg0W0AlQ8bbHixZ6a+KM3kAWrh5RL2zXRzni9Zp5hgdDpG7pDSKnEF0mBmGWE6uU/ax1EO79Ln3PcdTMpkWr9lYI3mg5fkA0ZXm8eiPsi7LFED8Sp7fwPe3BHds9Fy5k1MZWlEY1cbpEt76d2X51bTlQB3SbwbReLeOuGCEe9EVR5IcPZypDtzLOb7Lcz4G+rGnNIM3fil09wFjUTBhhvbVWpx9j2NOr7uLgRPE2NtxCnauxKpnBHe0/ee9gLUq/GaCW/gCq5nl27M+qyOqfQ7y2hIRPTwmgBB+gh5u+xnHEQqAAAA=" alt="Fractal Encryption">
+      <p><b>Fractal Encryption</b>: box específica que contém materiais, Agony Infusions, Trophies, Fractal Encryption Keys e receitas para equipamentos ascended.</p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Fractal Encryption Key">
+      <p><b>Fractal Encryption Key</b>: chave necessária para abertura das Fractal Encryptions.</p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Fractal Relic">
+      <p><b>Fractal Relics e Pristines</b>: moedas das Fractals, usadas para comprar equipamentos Ascended, Agony Infusions, poções, títulos e skins.</p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Stabilizing Matrix">
+      <p><b>Fractal Matrix</b>: material para crafting e moeda de compra para diversos itens relacionados às Fractals.</p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,UklGRuoJAABXRUJQVlA4IN4JAACQKACdASpAAEAAPiUOhUIhhv8rQAYAkS2AFt9QjzP43zE6p/WfxZu7RSu2ecN5gHOM8wHnJehn/Aeof/UPSN9R39u/YA8uv9qvhC/vH/b9J3ABN232TwB/C/kX6z+Tn9m4wnL/+09AP4z9s/w/5O/mh7795fun/oPUC/Gf5P/ivy6/JD2q9gVmf+I/1XqBeun0T/Ufm1zHfXD2AP5b/P/9V6p/5HwU/HfYA/Ov/H+4z6Vf5r/pf5n8qvan+cf5b/ve4H/LP6X/sP75+7X+f///1eezP9w/Zc/XhvzfZ5GQau8ck2xWcst0PkB79dFaBP8OwRxghON6suldvuoy4xFQDqRK2UQgNFDCH2vwoz7HH+umuXmagM5ixysA6PJe86tLqf+gv+jp4eUROMdVv606WIPXi/1wuMqrHNkmbmTw9KO0DHmv479eFGzrIwAA/v//DJ8QUp4UB8MltkhVbNwzvr+uQyszTTv7P3WNUXX1Wx6KwvdaMycLBCsj+vzi8tsCJCl4trc5V24gGSA/CmNLcr5Y5ipExowxyRzwvjaQgROEKe7qXMNO8c2t7o6R9aa6YcpWJc1marB+ZohChM/sa9RHsUUAQjTI3TVkJOWrm6Gv77CPRaJK0NxtXW3IZqA9iAWYP94DcqfPgdy/WNT7Q+JaqukCjs8cRbHMDVwQJAKDBk7x/lst4iiCNQeTCw3bIFVRm1eVWcpGk0VoCE+osXAfgOzMyOg5nOXeYt0yG4rUk8Svwao3TTRsCySwbquFpuHCS6lt7qxebMGCn1JJnVd/ERv5ZSukRwpt7ClfLG4ixVQkuJZuJIabfPaEjlF7apf6qIkOqvnlaZpiZ7Et3w/tFPfvRGr7pj4q8vAOgpRcq82p9KyW+eHE8GoOvUJlSBTtPyY/BbDPGQYQCAHOd45jruEm44xFKRElWGOgexZU7Bv1I5naebmyaI0FhdA7wHKZ+W0Pj1NFHurMU7og/hb/rds/Bgn21BdngTH0KOb8k1tFlD5+LrTsk6TrUYnmXAHPpPvZLTKF8FBMsw+I0a8z/6NSo/Sar/hM9XhGgnwjHZHM+lHPAzjMiXBXo1eKEEkuQTdLhw3oP2lzxvGFhRpcvoRG+D9tvZeRoYetLzB8VlS3OuFx0XWFtSUS0iO+K+JxTl4eu1EY9WC4/NemURc/hnZatfdGRmkViYqlmVM3SP3i/pcuVoqhnreRpYaB9lJXmYcvsofM+7z+/xcCxIlmWlfZAnSfPGfkSUWKuIJfDG7jqRpchfi2YTK9AXEenxcUHxPWBWwj+dw5PwmJrbVxXEwMjt1Hh7iyGtjmcVdC6FEri95gzpIqKWASfvUFb9nVcoLG8BNTxHOvhXsnEzUVXpzZYjudF1XJ1d46PARcp4sGb6XLqD7847vpQ544Xzc3pjPRMn5Omp4sAId/yIazsBNwN8Oc69dOehGHCY5PDv1YfX3BUDUwDq6C49J3/gbl/o9uXXelm/A8k0z84oOiQosbQBpcZ4Hg/kyxa5ypRRpv9QHw0/oksujZqnsV/+DMex8cx0E7uzYsWpUdjGIDMtrIcdoIyNtnqp1lermgR954IMHI4E0EfoKQWLDHKJ6cjLxDJc5LzwwjWoXZj1upqt6hwKWoDD//vj0FQO4Vb9ySpbzZ31tGXkc/522xyHBKacGWZCaYrnb900jlamnuvUkX4pKG1tXB+dBFdNT8jcIjkOMqaFEAKA3Z+JSwWDOjxWEpTBo5u8Q8whKwA5CHtjc9YOZgW/lkZoSOwHkcaclT1sJC7VgTMeehHbccHPKxt4Pf6BUfKzOx7u7S3ONygzys6W3Ycpn3xBOq9jat1cBUEyTAzqsxHjc/X9KbRX4xWNl6l5XMDU9XEsxhS8txqeXRsxgP1F1Y8E9/1/Xdh+7bWR5t8s3tWEWe333xDpfHKKL61CKHlCgrY2eVc22gjXZ387FORbrl8suhCNvgcLxVXuKT+Wp4gHVkx2MpyFP0cCLxtvnnuV0ICS4uLlk1v2872TZ6nQCSQ3e+0NRzeKQnu23AP1MyD4dRacg7PpT2RuiH/4ivbtsnjyGD4WLBYqOCxG2MahARS6yAIkz3NeChq5ml0ipLZhSkk/XSw2YK4YXgksgb6gGJM+Hyf9f5hBEZ7ufxPgqiXQvFb3cM+zzMWNFk0VXV57GI1kMSS67BAje9NF0oEM31T32WTOzAezwOeglvXoNVt30KjeCN3dfYNvxIuBzQxGWNQZAbP3TzAMfe2xhRwQAS9NTJZSDgIHn0iicCARhOkTp5bkWxehmTneHN8J32a0W1sW5qiulJEa/bBBwkp90ynjwkcGYnxggJkGmo6K8zTZXAcnArJfuFcjSt79G/3cZnj0nmPymzXljKoogzGj6G9KDEWKHWTfVD+E5mSHtPgWzSwNPSV8PPA8WTorJQ4sAVxJlrxEPpIs7E/DOC+AkFV4rsrVlkTJ38rY4mWK2RGUBEImFsoK4Pc/K3FTjIeqWJB5WuMbj4NQLX5bX5w5i23L/GFRCABj4VFrl1/FY/v4UO6kiBqZV0Zxs8NrdUAwztzuLusZKG0S2khLEbu3DCWML99rzFYbe6s//X/i5ijEZX3868HrT4MShWioyn3Sw/lVK/OBmkLWlGvthnEO1Xf65eWnuAetekPiXlSorqCjv9+v+9ALSgSl5XGcZqdzjkI6vdoeV+1vY3UceI8leioG1Gy4jdsQ5w867Y2F9Uc8YJ91gJ5IYFcVTfdSMpWlvkakPR/Ey9/DP8nYso/JHuYxX2/5MVxqP+BfWSjlnwV61eUpaJk3x/wWo/d+SrTpBGnQCvdujCBd0s2t82bAyehySvOWHVR5ruUJqloa56kQjQls2HxJM4ugDoi2ZMm3ujmNs12nz3eaWInSWm1OGzZYEmF2nZi4oGwFMsvi0ic7IIdDznuWcSk4VXmfsrIBajRoj8oW0//54JqLl5OaCiRBad/6j1NGZnk30ijLFpTaCYd/8p3IBQ4M+6tPS8ZoOJiqgeENTtOonJVTGd78oTX+R0k4aWBP6sRFk6uLgKmNeAw6epqttfUJq349XwKl0RRxlbKf80gO2H2uStUsmMouKHOD8QvL5gLsCUleye1ov+UG6PQzNjKBQKSCHNgPyHUr2aCEKFucIyoO9OAwlIq5p/vGiNeXPwT8T9FihhpDBe+osyjiq+nTYcKQud12HcgrgbSoBlcqanrEH+IdaprgihBvYGLxPfkD/9OkCgX06Hqcf1bwqYkiAvz73xZbsgy/utPfS05lsa6pHwnU1ctB4x5GJhEyirP7oezsSEyNcop7+3YFEkK8B6PERl6EeNB/52JnFtqAR4DxCszVyAHsIq46UO60hgPrzMBUiwAAA=" alt="Mist Potions">
+      <p><b>Mist Potions</b>: consumíveis que garantem bônus de dano, proteção e movimentação durante as Fractals.</p>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ============ PROGRESSÃO ============ -->
+<div class="page page-break">
+  <h2 class="section" id="secao-2"><span class="num">02</span>Progressão e recompensas</h2>
+  <p class="section-sub">Objetivos de longo prazo: backpack lendária, títulos e o temido Challenge Mode.</p>
+
+  <!-- AD INFINITUM -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="ad-infinitum-backpack-lendaria">Ad Infinitum (backpack lendária)</h3>
+        <p>
+          Através das Fractals é possível obter a <b>backpack lendária Ad Infinitum</b>,
+          via Achievements realizados dentro e fora das Fractals, usando também materiais
+          exclusivos do conteúdo para o crafting.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Para iniciar o processo, procure pelo NPC <b>Kelvei, the Legendary Observer</b>,
+      asura localizado dentro das Fractals of the Mists. Ao falar com ele, você recebe o item <b>Theory of the Finite Result</b>; ao usá-lo, será liberado o
+      Achievement <b>Ad Infinitum I: Finite Result</b>, na aba <i>Legendary Backpacks</i>.
+    </p>
+    <img width="1024" height="653" decoding="async" class="hero-img banner"
+         src="../assets/img/1024px-Ad-Infinitum-b8633e-1024.jpg"
+         alt="Ad Infinitum">
+  </div>
+
+  <!-- CONQUISTAS E TÍTULOS -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="conquistas-e-titulos">Conquistas e títulos</h3>
+        <p>
+          Diversas conquistas estão presentes nas Fractals, dando várias recompensas, principalmente <b>Mastery Points de Central Tyria</b> bem acessíveis.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      As Fractals também têm <b>quatro títulos</b> para adquirir.
+      Eles garantem bônus de <b>dano</b>, <b>regeneração de vida</b> e <b>Agony Resistance</b>
+      ao jogador quando dentro de uma Fractal. Para adquiri-los é necessário comprar
+      <b>Account Augmentations</b>, que também garantem itens e Agony Infusions ao final de cada Fractal.
+    </p>
+    <img width="508" height="270" decoding="async" class="hero-img natural" style="max-width:508px" src="../assets/img/Hl7e3Pz-3b8467-508.jpg" alt="Títulos de Fractals">
+    <div class="note"><b>Account Augmentations</b>: são compradas com o NPC <b>Deroir</b>, no Mistlock Observatory. Agony Impedance só pode ser comprada com nível pessoal de Fractal 100. Cada nível de Mist Attunement também adiciona 1 Fractal Encryption e uma bolsa extra de Fractal Relics ao baú final de cada Fractal. Custos: <b>MA1</b> Agony Infusion +13, 25.000 Relics, 75 Integrated Fractal Matrix e 8 Fractal Journals. <b>MA2</b> +14, 35.000 Relics, 150 Matrix e 1.200 Pristine Fractal Relics. <b>MA3</b> +15, 45.000 Relics, 225 Matrix e 16 Fractal Journals. <b>MA4</b> +16, 55.000 Relics, 300 Matrix e 2.000 Pristines. Fractal Journals são feitos com Fractal Research Pages, que vêm das Recommended.</div>
+
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Fractal Savant">
+      <p>
+        <b>Fractal Savant</b><br>
+        <small>Requisitos:</small> Fractal Empowerment 2, Karmic Retribution 2, Agony Impedance 2, Mist Attunement 1.<br>
+        <small>Benefícios:</small> +5 Agony Resistance, +1% dano e +10 vida/s.
+      </p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Fractal Prodigy">
+      <p>
+        <b>Fractal Prodigy</b><br>
+        <small>Requisito:</small> Mist Attunement 2.<br>
+        <small>Benefícios:</small> +10 Agony Resistance, +2% dano e +25 vida/s (a tooltip do jogo mostra 20).
+      </p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Fractal Champion">
+      <p>
+        <b>Fractal Champion</b><br>
+        <small>Requisito:</small> Mist Attunement 3.<br>
+        <small>Benefícios:</small> +15 Agony Resistance, +4% dano e +50 vida/s.
+      </p>
+    </div>
+    <div class="tier">
+      <img width="64" height="64" decoding="async" src="data:image/webp;base64,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" alt="Fractal God">
+      <p>
+        <b>Fractal God</b><br>
+        <small>Requisito:</small> Mist Attunement 4.<br>
+        <small>Benefícios:</small> +25 Agony Resistance, +7% dano e +100 vida/s.
+      </p>
+    </div>
+  </div>
+
+  <!-- CHALLENGE MODE -->
+  <div class="card no-break">
+    <div class="card-head">
+      <img width="64" height="64" decoding="async" class="icon" src="data:image/webp;base64,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" alt="">
+      <div>
+        <h3 id="challenge-mode-cm">Challenge Mode (CM)</h3>
+        <p>
+          Assim como Raids e Strikes, as Fractals possuem um <b>modo de desafio</b>.
+          Atualmente <b>sete</b> Fractals possuem CM: <b>94</b> (Solitary Throne), <b>95</b> (Kinfall), <b>96</b> (Nightmare), <b>97</b> (Shattered Observatory), <b>98</b> (Sunqua Peak), <b>99</b> (Silent Surf) e <b>100</b> (Lonely Tower), com mecânicas
+          e desafios diferentes em troca de recompensas superiores.
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:10px;">
+      Jogadores que buscam o título <b>Fractal God</b> devem realizar, diariamente,
+      todas as Fractals diárias (<b>CM, Daily e Recommended</b>) para obter maior número de
+      Relics, Pristines e Matrix, necessários para a obtenção dos títulos.
+    </p>
+    <p>
+      Com essa rotina, é possível obter o <b>Fractal God em 190 dias</b>.
+      Após obtê-lo, as recompensas diárias se tornam <b>notavelmente superiores</b>, gerando lucro maior.
+    </p>
+    <img width="508" height="270" decoding="async" class="hero-img banner" src="../assets/img/S9SzXvL-41bd00-508.webp" alt="Challenge Mode">
+    <div class="tier"><span class="ico-wrap" aria-hidden="true"><svg class="ico" width="1em" height="1em" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /> </svg></span><p><b>Como liberar o CM</b>: o Challenge Mote fica no nível de CM da Fractal, no Tier 4. Em Nightmare e Sunqua Peak, só pode usá-lo quem completou o meta achievement daquela Fractal. Em Solitary Throne, é preciso ter concluído a Fractal no Tier 4. Quem não estiver presente quando o CM é ativado (efeito Challenge Mote Activated!) não recebe crédito de achievement pelo boss.</p></div>
+  </div>
+
+  
+
+</div><!-- /page -->
+</main>
+</div>
+<footer class="footer"><p class="footer-brand"><b>DIVINE</b><span class="sep" aria-hidden="true">·</span>Guia de Fractals<span class="sep" aria-hidden="true">·</span>Guild Wars 2</p></footer>
+
+<script>
+(function () {
+  var items = [].slice.call(document.querySelectorAll('.sidebar .toc a[href^="#"]')).map(function (a) {
+    return { a: a, t: document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))) };
+  }).filter(function (x) { return x.t; });
+  if (!items.length) return;
+  var cur = null, pinned = null, ticking = false;
+  function set(a) {
+    if (a === cur) return;
+    if (cur) { cur.classList.remove('is-active'); cur.removeAttribute('aria-current'); }
+    cur = a; if (!a) return;
+    a.classList.add('is-active'); a.setAttribute('aria-current', 'location');
+    var sb = a.closest('.sidebar');
+    if (sb && sb.scrollHeight > sb.clientHeight) {
+      var r = a.getBoundingClientRect(), s = sb.getBoundingClientRect();
+      if (r.top < s.top + 8 || r.bottom > s.bottom - 8) sb.scrollTop += r.top - s.top - s.height / 3;
+    }
+  }
+  function update() {
+    ticking = false;
+    if (pinned) { set(pinned); return; }
+    var best = items[0], i;
+    for (i = 0; i < items.length; i++) if (items[i].t.getBoundingClientRect().top <= 110) best = items[i];
+    var atEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atEnd) for (i = items.length - 1; i >= 0; i--) if (items[i].t.getBoundingClientRect().top < window.innerHeight - 60) { best = items[i]; break; }
+    set(best.a);
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  function unpin() { pinned = null; }
+  items.forEach(function (x) { x.a.addEventListener('click', function () { pinned = x.a; set(x.a); }); });
+  // qualquer rolagem do próprio usuário (inclusive com o mouse sobre o sumário) solta o item clicado;
+  // o clique seguinte num link volta a fixá-lo (mousedown acontece antes do click)
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
+    window.addEventListener(ev, unpin, { passive: true });
+  });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  if (location.hash) items.forEach(function (x) { if (x.a.getAttribute('href') === location.hash) pinned = x.a; });
+  update();
+})();
+</script>
+
+<script id="theme-toggle-js">
+(function () {
+  var b = document.querySelector('.theme-toggle'); if (!b) return;
+  var r = document.documentElement;
+  function eff() { var t = r.getAttribute('data-theme'); if (t) return t;
+    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  function sync() { var d = eff() === 'dark'; b.setAttribute('aria-pressed', d ? 'true' : 'false');
+    b.title = d ? 'Usar tema claro' : 'Usar tema escuro'; }
+  b.addEventListener('click', function () { var n = eff() === 'dark' ? 'light' : 'dark';
+    r.setAttribute('data-theme', n); try { localStorage.setItem('divine-tema', n); } catch (e) {} sync(); });
+  if (window.matchMedia) { try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync); } catch (e) {} }
+  sync();
+})();
+</script></body>
+</html>
